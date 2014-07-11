@@ -3,104 +3,15 @@
  */
 
 @import "bootstrap/bootstrap.less";
+/*@import "slippry.less";
+@import "jquery.fancybox.less";*/
 
-/* ==========================================================================
-   Base
-   ========================================================================== */
+@import "base.less";
+@import "header.less";
+@import "footer.less";
+@import "home.less";
 
-body { }
-
-
- /* ==========================================================================
- +   Add support for multilevel dropdown menus
- +   See: http://bootply.com/74918
- +   ========================================================================== */
-
-.dropdown-submenu{position:relative;}
-.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
- .dropdown-submenu:hover>.dropdown-menu{display:block;}
-.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
- .dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
-.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
-
-
-
-
-/* ==========================================================================
-   Header
-   ========================================================================== */
-
-.banner { }
-
-
-
-/* ==========================================================================
-   Content
-   ========================================================================== */
-
-.content { }
-
-
-
-/* ==========================================================================
-   Primary Content
-   ========================================================================== */
-
-.main { }
-
-/* Gallery Shortcode */
-.gallery-row { padding: 15px 0; }
-
-
-
-/* ==========================================================================
-   Sidebar
-   ========================================================================== */
-
-.sidebar { }
-
-
-
-/* ==========================================================================
-   Posts
-   ========================================================================== */
-
-.hentry header { }
-.hentry time { }
-.hentry .byline { }
-.hentry .entry-content { }
-.hentry footer { }
-
-
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
-.content-info { }
-
-
-
-/* ==========================================================================
-   WordPress Generated Classes
-   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
-   ========================================================================== */
-
-.aligncenter { display: block; margin: 0 auto; }
-.alignleft { float: left; }
-.alignright { float: right; }
-figure.alignnone { margin-left: 0; margin-right: 0; }
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media (min-width: @screen-sm-min) { }
-
-@media (min-width: @screen-md-min) {
-.navbar-brand{float:right;}
-}
-
-@media (min-width: @screen-lg-min) { }
+/* media queries */
+@import "_tablet.less";
+@import "_desktop.less";
+@import "_widedesktop.less";

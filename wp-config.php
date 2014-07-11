@@ -24,7 +24,7 @@ if ($_SERVER['SERVER_NAME'] == "cx-sr2013.local.com") {
 	define('DB_USER', 'root');
 
 	/** MySQL database password */
-	define('DB_PASSWORD', 'alvarpoon');
+	define('DB_PASSWORD', 'root');
 }
 else if($_SERVER['SERVER_NAME'] == "cx-sr2013.sedgwick-richardson.hk"){
 	/** The name of the database for WordPress */
