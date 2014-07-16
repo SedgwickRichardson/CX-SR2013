@@ -1,5 +1,43 @@
 <?php get_template_part('templates/head'); ?>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> 
+  <?
+    $page_ancestors = get_ancestors($post->ID, 'page' );
+    if(sizeof($page_ancestors)>0){
+      $page_ancestor = $page_ancestors[sizeof($page_ancestors)-1];
+    }
+    else{
+      $page_ancestor = $post->ID;
+    }
+    switch($page_ancestor){
+      case 2:
+        echo 'id="child-of-making-the-connection"';
+        break;
+      case 9:
+        echo 'id="child-of-2013-progress"';
+        break;
+      case 14:
+        echo 'id="child-of-safety"';
+        break;
+      case 16:
+        echo 'id="child-of-climate-change"';
+        break;
+      case 18:
+        echo 'id="child-of-waste-management"';
+        break;
+      case 20:
+        echo 'id="child-of-sustainable-sourcing"';
+        break;
+      case 22:
+        echo 'id="child-of-biodiversity"';
+        break;
+      case 24:
+        echo 'id="child-of-our-people"';
+        break;
+      default:
+        echo 'id="child-of-others"';
+        break;
+    }
+  ?>>
 
   <!--[if lt IE 8]>
     <div class="alert alert-warning">

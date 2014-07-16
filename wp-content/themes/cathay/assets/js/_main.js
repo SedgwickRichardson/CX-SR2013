@@ -23,6 +23,36 @@ var Roots = {
   common: {
     init: function() {
       // JavaScript to be fired on all pages
+
+      function setMobileMenu(){
+        if(window.innerWidth<768){
+          $(".navbar-collapse").css({overflow:"auto", maxHeight: $(window).height() - $(".navbar-header").height() - 30 + "px" });
+        }
+        else{
+          $(".navbar-collapse").css({overflow:"inherit"});
+        }
+      }
+      
+      function setVideoPosition(){
+        $('.video-banner-container').css('margin-top',$('.navbar-default').height()+'px');
+      }
+      
+      //fix the mobile menu scrolling problem
+      $(document).ready(function(){
+         setMobileMenu();
+         /*var mobile_search_field = $('.navbar-collapse .search-field');
+         $(mobile_search_field).attr("placeholder","Search");
+         $(mobile_search_field).focus(function(){
+            if((this).text()==="Search"){
+              (this).text("");
+            }
+         });*/
+        $('.video-banner-container').css('margin-top',$('.navbar-default').height()+'px');
+      });
+      $(window).resize(function(){
+        setVideoPosition();
+        setMobileMenu();
+      });
     }
   },
   // Home page
