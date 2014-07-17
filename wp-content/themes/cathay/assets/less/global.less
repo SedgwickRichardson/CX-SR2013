@@ -1,0 +1,134 @@
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+   font-family: @font-regular;
+   font-size: 14px;
+}
+
+strong {
+   font-weight: normal;
+}
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.navbar {
+   margin-bottom: 0px;
+}
+.navbar-default { 
+   background-color: white;
+
+   .navbar-brand {
+      display: block;
+      padding: 0px;
+
+   }
+   .subheading {
+      margin: 10px;
+
+      strong, p {
+         text-transform: uppercase;
+         font-size: 12px;
+         font-weight: bold;
+
+      }
+      strong {
+         color: @gray-dark;
+      }
+      p {
+         color: @brand-primary;
+      }
+   }
+}
+.navbar-collapse {
+   //border-color: @gray;
+   border-top: 0px;
+   .navbar-nav {
+      li a {
+         font-size: 17px;
+         border-top: 1px solid @gray;
+
+         .caret {
+            float: right;
+            border-top: 8px solid;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+            margin-top: 6px;
+         }
+      }
+      .open .dropdown-menu {
+         margin: 0; padding: 0;
+         li a {
+            font-size: 14px;
+            padding: 15px 15px 10px 15px;
+         }
+
+      }
+   }     
+}
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.page-hero {
+   margin-left: -15px;
+
+}
+.content { }
+
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info { }
+
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }

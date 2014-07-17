@@ -22,6 +22,7 @@
     width: auto;
   }
 
+/*---------------------------side menu----------------------------------------*/
   .side-menu{
     list-style-type: none;
     margin-bottom: 50px;
@@ -58,11 +59,19 @@
     }
   }
 
-  body#child-of-making-the-connection .side-menu li.current_page_item a,
+/*---------------------------Section specific----------------------------------------*/
+
+  body#child-of-making-the-connection .side-menu li.current_page_item>a,
   body#child-of-making-the-connection .side-menu li a:hover{
     color: @cathay-green!important;
   }
 
+  body#child-of-2013-progress .side-menu li.current_page_item>a,
+  body#child-of-2013-progress .side-menu li a:hover{
+    color: @progress-red!important;
+  }
+
+/*---------------------------Content page----------------------------------------*/
   .wrap{
     margin-top: 20px;
 
@@ -73,16 +82,81 @@
         h1{
           width: 85%;
           margin-bottom: 30px;
+          font-size: 30px;
+          font-family: 'Myriad W01 Bd';
         }
 
         .title-parent{
           margin-bottom: 20px;
+          font-size: 24px;
         }
       }
 
       .btn-share{
         float: right;
         margin-top: -55px;
+      }
+
+      .content-container{
+        h2{
+          font-size: 22px;
+          margin-top: 40px;
+        }
+
+        h3{
+          font-size: 19px;
+          margin-top: 40px;
+        }
+
+        p{
+          font-size: 16px;
+        }
+
+        img{
+          margin-bottom: 40px;
+        }
+
+        li{
+          margin-bottom: 8px;
+        }
+
+        blockquote {
+          padding: 0 0 0 17px;
+
+          p{
+            font-size: 18px;
+          }
+        }
+
+        .note-container{
+          p{
+            font-size: 13px;
+          }
+          ol,ul{
+            li{
+              margin: 0;
+            }
+          }
+        }
+
+        .knowMoreContainer {
+          p{
+            font-size: inherit;
+          }
+          li{
+            margin-bottom: 5px;
+          }
+        }
+
+        .list-with-h3-heading{
+          font-size: 19px;
+        }
+
+        .factsheet-link{
+          i{
+            font-size: 14px;
+          }
+        }
       }
     }
   }
@@ -117,6 +191,7 @@
     }
   }
 
+/*---------------------------main menu----------------------------------------*/
   .navbar-default{
     margin: 0;
 
@@ -319,7 +394,7 @@
       }
     }
   }
-
+/*---------------------------footer----------------------------------------*/
   footer{
     border-top: none;
 

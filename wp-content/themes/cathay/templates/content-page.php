@@ -3,14 +3,7 @@
 <a href="#" class="btn-share">Share<i class="fa fa-share-square-o"></i></a>
 
 <div class="content-container">
-<?//=$post->post_content?>
-<img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/ceo-mobile.jpg" />
-<img class="img-responsive hidden-xs visible-sm visible-md visible-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/ceo.jpg" />
-<blockquote>
-  <p>“We are committed to practicing sustainable development as it is the right thing to do for our planet, people and  communities. We are in it for the long term in order for our business to be successful and sustainable.” </p>
-</blockquote>
-
-</div>
+<?=apply_filters('the_content', $post->post_content);?>
 
 <?
 if(get_field("next_page",$post->ID)){

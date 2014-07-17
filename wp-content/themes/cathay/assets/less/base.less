@@ -97,7 +97,7 @@ h5{
     /*background-color: #F4F4F4;*/
   }
 }
-
+/*---------------------------footer----------------------------------------*/
 .footer{
   width: 100%;
   display:inline-block;
@@ -139,8 +139,161 @@ h5{
   .content-container{
     margin-bottom: 10px;
     margin-top: 20px;
+
+    h2{
+      font-family:'Myriad W01 SmBd';
+      margin-top: 30px;
+    }
+
+    h3{
+      font-family:'Myriad W01 SmBd';
+      margin-top: 30px;
+    }
+
+    p{
+      line-height: 170%;
+    }
+
+    img{
+      margin-bottom: 20px;
+    }
+
+    li{
+      margin-bottom: 5px;
+
+      .list-container{
+        color: @gray-dark;
+      }
+    }
+
+    .factsheet-link{
+      i{
+        font-size: 12px;
+        margin-left: 3px;
+      }
+    }
+
+    .list-with-h3-heading{
+      font-size: 17px;
+      font-family: 'Myriad W01 SmBd';
+    }
+
+    blockquote {
+      padding: 0 0 0 10px;
+      border-left: 5px solid @gray-lighter;
+
+      p{
+        color: @gray;
+        font-size: 16px;
+      }
+    }
+
+    .quote-source{
+      margin-top: -10px;
+      color: @gray;
+    }
+
+    .note-link{
+      font-size: 60%;
+      top: -0.5em;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    .note-container{
+      strong{
+        font-weight: normal;
+      }
+      p,li .list-container,ol,ul{
+        font-size: 13px;
+        color: @gray-light;
+        font-family:'Myriad W01 SmBd';
+        margin: 0;
+        line-height: 120%;
+      }
+      li{
+        margin: 0;
+      }
+      ol,ul{
+        padding-left: 17px;
+      }
+    }
+
+    .colTable{
+      .col1 {
+        color: #FFFFFF;
+        text-align: left;
+      }
+      tr th{
+        padding: 5px 15px 5px 10px;
+        vertical-align: bottom;
+        border-top: 3px solid #57585b;
+      }
+      tr td{
+        line-height: 1.6;
+      }
+      .col2,.col3,.col4 {
+        background-color: #d0d2d2;
+        text-align: right;
+      }
+
+    }
+
+    .figureTable{
+      background-color:#F6EBEB; 
+      margin-bottom:15px; 
+      padding:5px;
+
+      ul{
+        padding: 0;
+
+        li{
+          list-style:outside disc;
+          margin-left:15px;
+
+          .list-container{
+            color: @gray;
+          }
+        }
+      }
+
+      .figure{
+        border-bottom: 1px solid #FFF;
+        padding: 5px;
+        color: #6F6F6E;
+        font-family: 'Myriad W01 SmBd';
+        display: block;
+        text-align: left;
+        line-height: 150%;
+
+        span{
+          font-size: 150%;
+          font-family: 'Myriad W01 SmBd';
+          /*color: #AE3F4E;*/
+        }
+      }
+    }
+
+    .knowMoreContainer {
+      padding: 10px 20px;
+      background-color: #eeeeee;
+      font-size: 90%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      ul{
+        padding-left: 17px;
+      }
+      p{
+        font-size: inherit;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
+
 
 .video-banner-container{
   position: relative;
@@ -222,6 +375,66 @@ h5{
     margin-bottom: 20px;
   }
 
+/*---------------------------section specific style----------------------------------------*/
+body#child-of-making-the-connection{
+    .page-header{
+      h1,.title-parent{
+        color: @cathay-green;
+      }
+     }
+    .content-container{
+      h1, h2, h3, h4, ol, a{
+        color: @cathay-green;
+      }
+    }
+ }
+
+ body#child-of-2013-progress{
+    .page-header{
+      h1,.title-parent{
+        color: @progress-red;
+      }
+     }
+    .content-container{
+      h1, h2, h3, h4, ol, ul, a, .highlight{
+        color: @progress-red;
+      }
+
+      .colTable tr.totalTD td, .colTable tr:hover td { background-color: #E6E7E9; }
+      .colTable tr.totalTD td,
+      .colTable tr.total-row td,
+      .colTable tr:hover td {background-color: #E6E7E9;}
+      .colTable tr.totalTD td,
+      .colTable tr.total-row td{font-weight: bold;}
+      .colTable tr th.col1{ background-color: #dcb9b8; color: #51131f;border-top: 3px solid #a84553;}
+      .colTable .subheading,.colTable .subtitle{color: #a84553;}
+      .colTable tr td{ border-bottom: 1px solid #dcb9b8; }
+      .colTable tr td.noborder{border:none;}
+      .colTable tr td.noborderRight{border-right:none;}
+      .colTable tr td.noborderBottom{border-bottom:none;}
+      .colTable tr.last td { border-bottom: 2px solid #dcb9b8; }
+      .colTable tr td.subtitle {/*color:#dcb9b8; */font-family: 'Myriad W01 Bd';}
+      .colTable tbody>tr>td{border:none;border-left: 3px solid #fff;background-color: #f7f7f8;border-bottom: 1px solid #e3cacf;}
+      .colTable tbody>tr.total-row>td{border-bottom: 1px solid #b76671;}
+      .colTable tbody>tr>th{border-left: 3px solid #fff;}
+
+      .fleetProfileTable{
+        font-family:'Myriad W01 Sm Cnd';
+        strong{font-family:'Myriad W01 Bd Cnd';}
+        td{ text-align:right; padding:0 5px !important; border-right: 1px solid #AA4354;}
+        td.alignLeft{text-align:left !important;}
+        td.flightHeader{background:#F6EBEB;}
+        tbody>tr>td{
+          border-left: 1px solid #e3cacf;
+          &:first-of-type{
+            border-left: none;
+          }
+        }
+        tbody>tr>th{border-left: none;}
+      }
+    }
+ }
+
 /*---------------------------general----------------------------------------*/
 .btn-next-page{
   i{
@@ -285,7 +498,7 @@ small, .small, .note{
   line-height: 130%;
   word-break: break-word;
 }
-.note{
+.note,.note li, .note li list-container{
   color: @gray-light;
   margin-bottom: 0.5em;
   margin-top: 1em;
@@ -300,7 +513,10 @@ button.close{
 .body-font-size{font-size: 15px!important;}
 .aligncenter { display: block; margin: 0 auto; }
 .alignleft { float: left; }
-.alignright { float: right; }
+.alignright, { float: right; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
 sup{font-size: 60%;}
 .nowrap{white-space: nowrap;}
+.noborder {border: none !important;}
+.alignRight {text-align: right;}
+.normal-weight{font-weight: normal!important;}

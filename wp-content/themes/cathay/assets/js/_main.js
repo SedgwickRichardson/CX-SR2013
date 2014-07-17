@@ -40,6 +40,13 @@ var Roots = {
       //fix the mobile menu scrolling problem
       $(document).ready(function(){
          setMobileMenu();
+
+         //add div to style list
+         $('.content-container li').wrapInner('<div class="list-container"> </div>');
+
+         //add icon to factsheet link
+         $('.factsheet-link').append('<i class="fa fa-file-text"></i>');
+         
          /*var mobile_search_field = $('.navbar-collapse .search-field');
          $(mobile_search_field).attr("placeholder","Search");
          $(mobile_search_field).focus(function(){
