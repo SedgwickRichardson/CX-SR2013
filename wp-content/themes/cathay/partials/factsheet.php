@@ -21,9 +21,25 @@ $page_ancestors = get_ancestors($post->ID, 'page' );
         break;
       case 14:
         //echo 'id="child-of-safety"';
+?>
+<div class="factsheet-container">
+  <h3>Factsheet<i class="fa fa-file-text"></i></h3>
+  <ul>
+    <li><a href="#">Safety (PDF 258kb)</a></li>
+  </ul>
+</div>
+<?
         break;
       case 16:
         //echo 'id="child-of-climate-change"';
+?>
+<div class="factsheet-container">
+  <h3>Factsheet<i class="fa fa-file-text"></i></h3>
+  <ul>
+    <li><a href="#">Climate Change (PDF 258kb)</a></li>
+  </ul>
+</div>
+<?
         break;
       case 18:
         //echo 'id="child-of-waste-management"';

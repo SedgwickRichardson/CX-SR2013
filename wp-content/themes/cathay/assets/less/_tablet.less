@@ -71,6 +71,16 @@
     color: @progress-red!important;
   }
 
+  body#child-of-safety .side-menu li.current_page_item>a,
+  body#child-of-safety .side-menu li a:hover{
+    color: @safety-green!important;
+  }
+
+  body#child-of-climate-change .side-menu li.current_page_item>a,
+  body#child-of-climate-change .side-menu li a:hover{
+    color: @climate-blue!important;
+  }
+
 /*---------------------------Content page----------------------------------------*/
   .wrap{
     margin-top: 20px;
@@ -112,6 +122,15 @@
           font-size: 16px;
         }
 
+        .intro{
+          font-size: 22px;
+          line-height: 130%;
+          /*strong{
+            font-family:'Myriad W01 Regular';
+            font-weight: normal;
+          }*/
+        }
+
         img{
           margin-bottom: 40px;
         }
@@ -136,6 +155,12 @@
             li{
               margin: 0;
             }
+          }
+        }
+
+        .commitmentsBoxContainer{
+          h3{
+            margin-top: 0;
           }
         }
 
@@ -199,7 +224,10 @@
             vertical-align: bottom;
            }*/
          }
-        
+
+         .quote-source{
+            font-size: 16px;
+          }
       }
     }
   }

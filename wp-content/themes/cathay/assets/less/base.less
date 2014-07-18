@@ -154,6 +154,15 @@ h5{
       line-height: 170%;
     }
 
+    .intro{
+      font-size: 18px;
+      line-height: 150%;
+      strong{
+        font-family:'Myriad W01 Regular';
+        font-weight: normal;
+      }
+    }
+
     img{
       margin-bottom: 20px;
     }
@@ -189,8 +198,10 @@ h5{
     }
 
     .quote-source{
+      color: @gray-dark;
       margin-top: -10px;
-      color: @gray;
+      font-size: 14px;
+      line-height: 120%;
     }
 
     .note-link{
@@ -244,6 +255,7 @@ h5{
       background-color:#F6EBEB; 
       margin-bottom:15px; 
       padding:5px;
+      border-bottom: 5px solid #797776;
 
       ul{
         padding: 0;
@@ -275,6 +287,54 @@ h5{
       }
     }
 
+    .commitmentsBoxContainer{
+      padding-bottom:15px;
+      position:relative;
+      width: 100%;
+      overflow-y: hidden;
+      overflow-x: auto;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: 0;
+      border-bottom: 5px solid #8a8a8a;
+
+      h3{
+        margin: 0;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #fff!important;
+        padding: 8px 0 8px 45px;
+        font-family: 'Myriad W01 Regular';
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+
+      .commitmentsBoxMid{/*width:576px;*/ padding: 0 20px 0 25px;}
+      .commitmentsBoxMid ul.bullet{margin: 5px 0 0px;}
+      .commitmentsBoxMid ul.bullet li{color:#575757; font-family:'Myriad W01 SmBd';}
+
+      .colTable{
+        th{
+          text-align: left;
+          border-top: 3px solid #000;
+        }
+        .col2,.col3,.col4{
+          background-color: #5d5d5d;
+          color: #fff;
+        }
+      }
+    }
+
+    .container-with-scroll{
+      width: 100%;
+      /*margin-bottom: 15px;*/
+      overflow-y: hidden;
+      overflow-x: scroll;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #ddd;
+      -webkit-overflow-scrolling: touch;
+    }
+
     .knowMoreContainer {
       padding: 10px 20px;
       background-color: #eeeeee;
@@ -299,7 +359,7 @@ h5{
         font-size: 15px;
         text-transform: uppercase;
         color: #fff!important;
-        padding: 8px 0 8px 35px;
+        padding: 8px 0 8px 45px;
         font-family:'Myriad W01 Regular';
       }
 
@@ -329,6 +389,11 @@ h5{
         }  
     }
 
+    .highlight-container{
+      padding: 20px 20px 5px 20px;
+      margin-bottom: 20px;
+    }
+
     .award-container{
       margin-bottom: 20px;
       border-bottom: 5px solid #8a8a8a;
@@ -356,6 +421,12 @@ h5{
       ul{
         color: #E3010F!important;
       }
+    }
+
+    .chartTitle{
+      font-size: 16px;
+      font-family: 'Myriad W01 SmBd';
+      margin-bottom: 0;
     }
   }
 }
@@ -439,6 +510,9 @@ h5{
 
   .bottom-factsheet-container{
     margin-bottom: 20px;
+    h3,a{
+      color: #7f7f7f!important;
+    }
   }
 
 /*---------------------------section specific style----------------------------------------*/
@@ -462,13 +536,13 @@ body#child-of-making-the-connection{
       }
      }
     .content-container{
-      h1, h2, h3, h4, ol, ul, a, .highlight{
+      h1, h2, h3, h4, ol, ul, a, .highlight, .intro{
         color: @progress-red;
       }
 
-      .colTable tr.totalTD td, .colTable tr:hover td { background-color: #E6E7E9; }
-      .colTable tr.totalTD td,
-      .colTable tr.total-row td,
+      /*.colTable tr.totalTD td, .colTable tr:hover td { background-color: #E6E7E9; }*/
+      /*.colTable tr.totalTD td,
+      .colTable tr.total-row td,*/
       .colTable tr:hover td {background-color: #E6E7E9;}
       .colTable tr.totalTD td,
       .colTable tr.total-row td{font-weight: bold;}
@@ -481,7 +555,7 @@ body#child-of-making-the-connection{
       .colTable tr.last td { border-bottom: 2px solid #dcb9b8; }
       .colTable tr td.subtitle {/*color:#dcb9b8; */font-family: 'Myriad W01 Bd';}
       .colTable tbody>tr>td{border:none;border-left: 3px solid #fff;background-color: #f7f7f8;border-bottom: 1px solid #e3cacf;}
-      .colTable tbody>tr.total-row>td{border-bottom: 1px solid #b76671;}
+      .colTable tbody>tr.total-row>td,.colTable tbody>tr.totalTD>td{border-bottom: 1px solid #b76671;border-top: 1px solid #b76671;}
       .colTable tbody>tr>th{border-left: 3px solid #fff;}
 
       .fleetProfileTable{
@@ -501,7 +575,103 @@ body#child-of-making-the-connection{
     }
  }
 
+ body#child-of-safety{
+    .page-header{
+      h1,.title-parent{
+        color: @safety-green;
+      }
+     }
+    .content-container{
+      h1, h2, h3, h4, ol, a, .intro{
+        color: @safety-green;
+      }
+
+      .commitmentsBoxContainer{
+        background-color: #f6f4e9;
+        /*border-left: 1px solid @safety-green;
+        border-right: 1px solid @safety-green;*/
+        border-top: none;
+
+        h3{
+          background: @safety-green url(../img/icon-commit-safety.png) left top no-repeat;
+        }
+
+        .col1{
+          border-top: 3px solid #9f9835;
+        }
+
+        tr{
+          th,td{
+            border-left: 3px solid #f6f4e9;
+          }
+
+          td{
+            border-bottom: 1px solid #d3ca90;
+            border-top: none;
+          }
+        }
+      }
+    }
+ }
+
+ body#child-of-climate-change{
+    .page-header{
+      h1,.title-parent{
+        color: @climate-blue;
+      }
+     }
+    .content-container{
+      h1, h2, h3, h4, ol, a, .intro{
+        color: @climate-blue;
+      }
+
+      .highlight-container{
+        background-color: #EDF1FA;
+      }
+
+      .commitmentsBoxContainer{
+        background-color: #EDF1FA;
+        /*border-left: 1px solid @climate-blue;
+        border-right: 1px solid @climate-blue;*/
+        border-top: none;
+
+        h3{
+          background: @climate-blue url(../img/icon_climate_commit.png) left top no-repeat;
+        }
+
+        .col1{
+          border-top: 3px solid #9f9835;
+        }
+
+        tr{
+          th,td{
+            border-left: 3px solid #f6f4e9;
+          }
+
+          td{
+            border-bottom: 1px solid #fff;
+            border-top: none;
+          }
+        }
+
+        .industryCommitmentsTable{
+          td{color:#575555;border-left: 3px solid #EDF1FA;}
+          td.yearTD{color:#217FC3; font-size:120%;font-family: 'Myriad W01 SmBd';vertical-align: top;padding-right: 10px;}
+        }
+      }
+    }
+ }
+
 /*---------------------------general----------------------------------------*/
+.link-cathay{color:@cathay-green!important;}
+.link-progress{color:@progress-red!important;}
+.link-safety{color:@safety-green!important;}
+.link-climate{color:@climate-blue!important;}
+.link-waste{color:@waste-green!important;}
+.link-sourcing{color:@sourcing-brown!important;}
+.link-biodiversity{color:@bio-purple!important;}
+.link-people{color:@people-orange!important;}
+
 .btn-next-page{
   i{
     color: #7a7a7a;
@@ -583,6 +753,6 @@ button.close{
 figure.alignnone { margin-left: 0; margin-right: 0; }
 sup{font-size: 60%;}
 .nowrap{white-space: nowrap;}
-.noborder {border: none !important;}
+.noborder,.noborder td {border: none !important;}
 .alignRight {text-align: right;}
 .normal-weight{font-weight: normal!important;}
