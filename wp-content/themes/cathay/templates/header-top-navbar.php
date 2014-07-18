@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       <div class="col-xs-10 col-sm-3">
-        <a class="top-logo" target="_blank" href="http://www.cathaypacific.com">Cathay Pacific</a>
+        <a class="top-logo" href="<?php echo home_url(); ?>">Cathay Pacific</a>
         <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?><span>Making the connection</span></a>
       </div>
       <div class="col-xs-9 col-sm-9 visible-sm visible-md visible-lg utility-menu-container clearfix">

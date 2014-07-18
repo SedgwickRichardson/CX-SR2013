@@ -19,6 +19,11 @@ body {
   margin: 0;
 }
 
+i, cite, em, var, address, dfn {
+  font-style: normal;
+  font-family:'Myriad W01 It';
+}
+
 a {
   /*font-size: 16px;*/
   /*word-break: break-all;*/
@@ -79,7 +84,7 @@ h3 {
 /*----------------3rd heading--------------*/
 h4 {
   font-family:'Myriad W01 SmBd';
-  text-align: center;
+  text-align: left;
   color: @gray-light;
   font-size: 15.5px;
 }
@@ -143,6 +148,10 @@ h5{
     h2{
       font-family:'Myriad W01 SmBd';
       margin-top: 30px;
+      em{
+        font-family:'Myriad W01 SmBd It';
+        font-style: normal;
+      }
     }
 
     h3{
@@ -173,6 +182,11 @@ h5{
       .list-container{
         color: @gray-dark;
       }
+    }
+
+    .caption{
+      margin-top: -15px;
+      font-family: 'Myriad W01 It';
     }
 
     .factsheet-link{
@@ -318,7 +332,7 @@ h5{
           text-align: left;
           border-top: 3px solid #000;
         }
-        .col2,.col3,.col4{
+        .col2,.col3,.col4,.col5{
           background-color: #5d5d5d;
           color: #fff;
         }
@@ -392,6 +406,30 @@ h5{
     .highlight-container{
       padding: 20px 20px 5px 20px;
       margin-bottom: 20px;
+
+      &.row{
+        padding: 0;
+
+        div.col-left{
+          border-bottom: 1px solid #fff;
+        }
+      }
+
+      h4{
+        font-size: 130%;
+      }
+
+      strong{
+        font-size: 115%;
+        font-family:'Myriad W01 SmBd';
+        font-weight: normal;
+      }
+    }
+
+    .two-col-with-gap{
+      .col-left{
+        margin-bottom: 10px;
+      }
     }
 
     .award-container{
@@ -502,6 +540,7 @@ h5{
 
   .bottom-next-page-container{
     margin-bottom: 40px;
+    margin-top: 30px;
 
     i{
       color: #7a7a7a;
@@ -640,16 +679,17 @@ body#child-of-making-the-connection{
         }
 
         .col1{
-          border-top: 3px solid #9f9835;
+          border-top: 3px solid @climate-blue;
+          background-color: #A4BDE3;
         }
 
         tr{
           th,td{
-            border-left: 3px solid #f6f4e9;
+            border-left: 3px solid #EDF1FA;
           }
 
           td{
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid #2484c6;
             border-top: none;
           }
         }
@@ -756,3 +796,5 @@ sup{font-size: 60%;}
 .noborder,.noborder td {border: none !important;}
 .alignRight {text-align: right;}
 .normal-weight{font-weight: normal!important;}
+.nobottomMargin{margin-bottom: 0!important;}
+.nopadding{padding: 0!important;}
