@@ -1,5 +1,5 @@
 <?php get_template_part('templates/head'); ?>
-<body <?php body_class(); ?> 
+<body <?php body_class(); ?>
   <?
     $page_ancestors = get_ancestors($post->ID, 'page' );
     if(sizeof($page_ancestors)>0){

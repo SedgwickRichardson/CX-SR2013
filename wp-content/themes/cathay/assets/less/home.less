@@ -1,7 +1,93 @@
-.home{
-  .main{
-    
+.video-banner-container {
+  z-index: 2000;
+}
+.circle {
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0.1;
+
+  &.big {
+    width: 150px;
+    height: 150px;
   }
+  &.small {
+    width: 50px;
+    height: 50px;
+  }
+}
+.circle1 {
+  background-color: #a94654;
+  top: 400px;
+  left: 100px;
+}
+.circle2 {
+  background-color: #ea8b38;
+  top: 300px;
+  right: 100px;
+}
+.circle3 {
+  background-color: #6a6078;
+  top: 1000px;
+  left: 0px;
+}
+.circle4 {
+  background-color: #096267;
+  top: 1500px;
+  right: 0px;
+}
+
+.home {
+  background: white url(../img/graphy.png) repeat;
+
+  .wrap .main{
+
+    .content-container {
+      text-align: center;
+
+      .spacer {
+        height: 40px;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+      }
+      .arrow {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      h1,h2,h3, p {
+        color: #202020;
+        text-align:center;
+        line-height: 140%;
+      }
+      h1 {
+        font-size: 28px;
+        margin: 0px 0px 20px 0px;
+        padding: 0;
+      }
+      p {
+        font-size: 16px;
+      }
+      img {
+        margin: 10px auto;
+        &.img-responsive {
+          width: auto;
+        }
+      }
+      h3 {
+        font-size: 21px;
+        margin: 10px 0px 0px 0px;
+      }
+      h2 {
+        font-size: 26px;
+        font-family:'Myriad W01 Regular';
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+      }
+
+    }
+  }
+
 
   /*fix horizontal scrollbar problem*/
   .container{
