@@ -6,7 +6,7 @@
  * replace the dash with an underscore when adding it to the object below.
  *
  * .noConflict()
- * The routing is enclosed within an anonymous function so that you can 
+ * The routing is enclosed within an anonymous function so that you can
  * always reference jQuery with $, even when in .noConflict() mode.
  *
  * Google CDN, Latest jQuery
@@ -16,7 +16,7 @@
 
 (function($) {
 
-// Use this variable to set up the common and page specific functions. If you 
+// Use this variable to set up the common and page specific functions. If you
 // rename this variable, you will also need to rename the namespace below.
 var Roots = {
   // All pages
@@ -32,11 +32,11 @@ var Roots = {
           $(".navbar-collapse").css({overflow:"inherit"});
         }
       }
-      
+
       function setVideoPosition(){
         $('.video-banner-container').css('margin-top',$('.navbar-default').height()+'px');
       }
-      
+
       //fix the mobile menu scrolling problem
       $(document).ready(function(){
          setMobileMenu();
@@ -46,7 +46,7 @@ var Roots = {
 
          //add icon to factsheet link
          $('.factsheet-link').append('<i class="fa fa-file-text"></i>');
-         
+
          /*var mobile_search_field = $('.navbar-collapse .search-field');
          $(mobile_search_field).attr("placeholder","Search");
          $(mobile_search_field).focus(function(){
@@ -65,7 +65,7 @@ var Roots = {
   // Home page
   home: {
     init: function() {
-      // JavaScript to be fired on the home page
+      $(window).stellar();
     }
   },
   // About us page, note the change from about-us to about_us.

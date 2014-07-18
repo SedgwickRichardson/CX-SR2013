@@ -47,8 +47,15 @@
       </nav>
     </div>
   </header>
-  <div class="video-banner-container">
-    <div class="video-banner-text-container"><p>View the CEO statement</p><a class="btn-video-play" href="#">Play video</a></div>
-    <img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop-mobile.jpg" />
-    <img class="img-responsive hidden-xs visible-sm visible-md visible-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop.jpg" />
-  </div>
+  <!-- this has to be done a bit better -->
+  <? if ($post->post_name == "home"): ?>
+    <div class="video-banner-container">
+      <img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/home_temp.jpg" />
+    </div>
+  <? else: ?>
+    <div class="video-banner-container">
+      <div class="video-banner-text-container"><p>View the CEO statement</p><a class="btn-video-play" href="#">Play video</a></div>
+      <img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop-mobile.jpg" />
+      <img class="img-responsive hidden-xs visible-sm visible-md visible-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop.jpg" />
+    </div>
+  <? endif; ?>
