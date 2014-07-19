@@ -81,6 +81,59 @@
     color: @climate-blue!important;
   }
 
+  body#child-of-waste-management .side-menu li.current_page_item>a,
+  body#child-of-waste-management .side-menu li a:hover{
+    color: @waste-green!important;
+  }
+
+  body#child-of-waste-management .side-menu li.current_page_item>a,
+  body#child-of-waste-management .side-menu li a:hover{
+    color: @sourcing-brown!important;
+  }
+
+  body#child-of-sustainable-sourcing{
+    .content-container{
+      .timeline-container{
+        background-position: 18% top;
+padding-left: 2px;
+
+        dl{
+
+          div{
+            background: #ece5dc url(../img/timeline-dot-sourcing-desktop.png) 17% top no-repeat;
+
+            &:nth-child(2n+1){
+              background-color: #f8f8f8;
+            }
+
+            dt{
+              background: none;
+              width: 20%;
+              padding: 10px 10px 10px 10px;
+              text-align: center;
+              font-size: 220%;
+
+              &:nth-child(4n+1),&:nth-child(4n+2){
+                background-color: transparent;
+                color: #736E6E;
+              }
+            }
+
+            dd{
+              background: none;
+              margin-left: 20%;
+              padding-top: 10px;
+
+              &:nth-child(4n+1),&:nth-child(4n+2){
+                background-color: transparent;
+                color: #736E6E;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 /*---------------------------Content page----------------------------------------*/
   .wrap{
     margin-top: 20px;

@@ -159,7 +159,7 @@ h5{
       margin-top: 30px;
     }
 
-    p{
+    p,li{
       line-height: 170%;
     }
 
@@ -660,7 +660,7 @@ body#child-of-making-the-connection{
       }
      }
     .content-container{
-      h1, h2, h3, h4, ol, a, .intro{
+      h1, h2, h3, h4, ol, ul, a, .intro{
         color: @climate-blue;
       }
 
@@ -697,6 +697,168 @@ body#child-of-making-the-connection{
         .industryCommitmentsTable{
           td{color:#575555;border-left: 3px solid #EDF1FA;}
           td.yearTD{color:#217FC3; font-size:120%;font-family: 'Myriad W01 SmBd';vertical-align: top;padding-right: 10px;}
+        }
+      }
+    }
+ }
+
+ body#child-of-waste-management{
+    .page-header{
+      h1,.title-parent{
+        color: @waste-green;
+      }
+     }
+    .content-container{
+      h1, h2, h3, h4, ol, ul, a, .intro{
+        color: @waste-green;
+      }
+
+      .highlight-container{
+        background-color: #EDF1FA;
+      }
+
+      .commitmentsBoxContainer{
+        background-color: #fbfbfb;
+        /*border-left: 1px solid @waste-green;
+        border-right: 1px solid @waste-green;*/
+        border-top: none;
+
+        h3{
+          background: @waste-green url(../img/icon_waste_commit.png) left top no-repeat;
+        }
+
+        .col1{
+          border-top: 3px solid @waste-green;
+          background-color: #b3cfb9;
+        }
+
+        .col2, .col3, .col4, .col5{
+          background-color: #b1b2b3;
+        }
+
+        tr{
+          th,td{
+            border-left: 3px solid #fbfbfb;
+          }
+
+          th{
+            color: @gray-dark;
+          }
+
+          td{
+            border-bottom: 1px solid @waste-green;
+            border-top: none;
+          }
+        }
+      }
+    }
+ }
+
+  body#child-of-sustainable-sourcing{
+    .page-header{
+      h1,.title-parent{
+        color: @sourcing-brown;
+      }
+     }
+    .content-container{
+      h1, h2, h3, h4, ol, ul, a, .intro{
+        color: @sourcing-brown;
+      }
+
+      .highlight-container{
+        background-color: #EDF1FA;
+      }
+
+      .timeline-container{
+        background: transparent url(../img/timeline-line-sourcing.png) 10px top repeat-y;
+        border-bottom: 5px solid #8a8a8a;
+
+        h3{
+          background-color: @sourcing-brown;
+          background-color: #a27c50;
+          color: #fff;
+          padding: 10px 10px;
+          font-family:'Myriad W01 Regular';
+          margin-bottom: 3px;
+          margin-top: 0;
+        }
+
+        dl{
+          margin-bottom: 3px;
+
+          dt{
+            font-family: 'Myriad W01 Regular';
+            font-weight: normal;
+            font-size: 150%;
+            background: #ece5dc url(../img/timeline-dot-sourcing.png) 10px top no-repeat;
+            padding: 5px 10px 0 25px;
+            
+            color: @sourcing-brown;
+
+            &:nth-child(4n+1),&:nth-child(4n+2){
+              background-color: #f8f8f8;
+              color: #736E6E;
+            }
+
+            /*&:nth-child(2n){
+              background-color: #f8f8f8;
+            }*/
+          }
+
+          dd{
+            background: #ece5dc url(../img/timeline-line-sourcing.png) 10px top repeat-y;
+            padding: 5px 10px 10px 25px;
+            margin-bottom: 3px;
+            line-height: 130%;
+
+            &:nth-child(4n+1),&:nth-child(4n+2){
+              background-color: #f8f8f8;
+            }
+
+            p{
+              line-height: 130%;
+              margin-bottom: 0.5em;
+            }
+
+            /*&:nth-child(2n){
+              background-color: #f8f8f8;
+            }*/
+          }
+        }
+      }
+
+      .commitmentsBoxContainer{
+        background-color: #fbfbfb;
+        /*border-left: 1px solid @sourcing-brown;
+        border-right: 1px solid @sourcing-brown;*/
+        border-top: none;
+
+        h3{
+          background: @sourcing-brown url(../img/icon_waste_commit.png) left top no-repeat;
+        }
+
+        .col1{
+          border-top: 3px solid @sourcing-brown;
+          background-color: #b3cfb9;
+        }
+
+        .col2, .col3, .col4, .col5{
+          background-color: #b1b2b3;
+        }
+
+        tr{
+          th,td{
+            border-left: 3px solid #fbfbfb;
+          }
+
+          th{
+            color: @gray-dark;
+          }
+
+          td{
+            border-bottom: 1px solid @sourcing-brown;
+            border-top: none;
+          }
         }
       }
     }
