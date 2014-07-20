@@ -11,4 +11,21 @@ if ($cpt) {
 }
 return $templates; // Return our modified array with base-$cpt.php at the front of the queue
 }
+
+function myextensionTinyMCE($init) {
+    // Command separated string of extended elements
+    $ext = 'dl[*],dd[*],dt[*]';
+
+    // Add to extended_valid_elements if it alreay exists
+    if ( isset( $init['extended_valid_elements'] ) ) {
+        $init['extended_valid_elements'] .= ',' . $ext;
+    } else {
+        $init['extended_valid_elements'] = $ext;
+    }
+
+    // Super important: return $init!
+    return $init;
+}
+
+add_filter('tiny_mce_before_init', 'myextensionTinyMCE' );
 ?>

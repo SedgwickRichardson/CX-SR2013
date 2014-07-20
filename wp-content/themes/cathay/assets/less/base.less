@@ -148,6 +148,7 @@ h5{
     h2{
       font-family:'Myriad W01 SmBd';
       margin-top: 30px;
+
       em{
         font-family:'Myriad W01 SmBd It';
         font-style: normal;
@@ -332,6 +333,9 @@ h5{
           text-align: left;
           border-top: 3px solid #000;
         }
+        tr{
+          td,th{font-size: 95%;}
+        }
         .col2,.col3,.col4,.col5{
           background-color: #5d5d5d;
           color: #fff;
@@ -346,6 +350,15 @@ h5{
       overflow-x: scroll;
       -ms-overflow-style: -ms-autohiding-scrollbar;
       border: 1px solid #ddd;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .img-container-with-scroll{
+      width: 100%;
+      /*margin-bottom: 15px;*/
+      overflow-y: hidden;
+      overflow-x: auto;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
       -webkit-overflow-scrolling: touch;
     }
 
@@ -779,50 +792,63 @@ body#child-of-making-the-connection{
           color: #fff;
           padding: 10px 10px;
           font-family:'Myriad W01 Regular';
-          margin-bottom: 3px;
+          margin-bottom: 0px;
           margin-top: 0;
         }
 
         dl{
-          margin-bottom: 3px;
+          margin-bottom: 0px;
 
-          dt{
-            font-family: 'Myriad W01 Regular';
-            font-weight: normal;
-            font-size: 150%;
-            background: #ece5dc url(../img/timeline-dot-sourcing.png) 10px top no-repeat;
-            padding: 5px 10px 0 25px;
-            
+          div{
+            background-color: #ece5dc;
             color: @sourcing-brown;
+            /*margin-bottom: 3px;*/
 
-            &:nth-child(4n+1),&:nth-child(4n+2){
+            &:nth-child(2n+1){
               background-color: #f8f8f8;
-              color: #736E6E;
+              color: @gray-dark;
+              dt{
+                color: #736E6E;
+              }
             }
 
-            /*&:nth-child(2n){
-              background-color: #f8f8f8;
-            }*/
-          }
+            dt{
+              font-family:'Myriad W01 Lt';
+              font-weight: normal;
+              font-size: 170%;
+              background: transparent url(../img/timeline-dot-sourcing.png) 10px top no-repeat;
+              padding: 5px 10px 0 25px;
+              /*color: @sourcing-brown;*/
 
-          dd{
-            background: #ece5dc url(../img/timeline-line-sourcing.png) 10px top repeat-y;
-            padding: 5px 10px 10px 25px;
-            margin-bottom: 3px;
-            line-height: 130%;
+              /*&:nth-child(4n+1),&:nth-child(4n+2){
+                background-color: #f8f8f8;
+                color: #736E6E;
+              }*/
 
-            &:nth-child(4n+1),&:nth-child(4n+2){
-              background-color: #f8f8f8;
+              /*&:nth-child(2n){
+                background-color: #f8f8f8;
+              }*/
             }
 
-            p{
+            dd{
+              background: transparent url(../img/timeline-line-sourcing.png) 10px top repeat-y;
+              padding: 5px 10px 10px 25px;
               line-height: 130%;
-              margin-bottom: 0.5em;
-            }
 
-            /*&:nth-child(2n){
-              background-color: #f8f8f8;
-            }*/
+              /*&:nth-child(4n+1),&:nth-child(4n+2){
+                background-color: #f8f8f8;
+              }*/
+
+              p{
+                line-height: 130%;
+                margin-bottom: 0.5em;
+                color: @gray-dark;
+              }
+
+              /*&:nth-child(2n){
+                background-color: #f8f8f8;
+              }*/
+            }
           }
         }
       }
@@ -834,12 +860,12 @@ body#child-of-making-the-connection{
         border-top: none;
 
         h3{
-          background: @sourcing-brown url(../img/icon_waste_commit.png) left top no-repeat;
+          background: @sourcing-brown url(../img/icon_sourcing_commit.png) left top no-repeat;
         }
 
         .col1{
           border-top: 3px solid @sourcing-brown;
-          background-color: #b3cfb9;
+          background-color: #c5a883;
         }
 
         .col2, .col3, .col4, .col5{
@@ -864,6 +890,142 @@ body#child-of-making-the-connection{
     }
  }
 
+ body#child-of-biodiversity{
+    .page-header{
+      h1,.title-parent{
+        color: @bio-purple;
+      }
+     }
+    .content-container{
+      h1, h2, h3, h4, ol, ul, a, .intro{
+        color: @bio-purple;
+      }
+
+      .highlight-container{
+        background-color: #EDF1FA;
+      }
+
+      .timeline-container{
+        background: transparent url(../img/timeline-line-sourcing.png) 10px top repeat-y;
+        border-bottom: 5px solid #8a8a8a;
+
+        h3{
+          background-color: @bio-purple;
+          background-color: #a27c50;
+          color: #fff;
+          padding: 10px 10px;
+          font-family:'Myriad W01 Regular';
+          margin-bottom: 0px;
+          margin-top: 0;
+        }
+
+        dl{
+          margin-bottom: 0px;
+
+          div{
+            background-color: #ece5dc;
+            color: @bio-purple;
+            /*margin-bottom: 3px;*/
+
+            &:nth-child(2n+1){
+              background-color: #f8f8f8;
+              color: @gray-dark;
+              dt{
+                color: #736E6E;
+              }
+            }
+
+            dt{
+              font-family:'Myriad W01 Lt';
+              font-weight: normal;
+              font-size: 170%;
+              background: transparent url(../img/timeline-dot-sourcing.png) 10px top no-repeat;
+              padding: 5px 10px 0 25px;
+              /*color: @bio-purple;*/
+
+              /*&:nth-child(4n+1),&:nth-child(4n+2){
+                background-color: #f8f8f8;
+                color: #736E6E;
+              }*/
+
+              /*&:nth-child(2n){
+                background-color: #f8f8f8;
+              }*/
+            }
+
+            dd{
+              background: transparent url(../img/timeline-line-sourcing.png) 10px top repeat-y;
+              padding: 5px 10px 10px 25px;
+              line-height: 130%;
+
+              /*&:nth-child(4n+1),&:nth-child(4n+2){
+                background-color: #f8f8f8;
+              }*/
+
+              p{
+                line-height: 130%;
+                margin-bottom: 0.5em;
+                color: @gray-dark;
+              }
+
+              /*&:nth-child(2n){
+                background-color: #f8f8f8;
+              }*/
+            }
+          }
+        }
+      }
+
+      .commitmentsBoxContainer{
+        background-color: #fbfbfb;
+        /*border-left: 1px solid @bio-purple;
+        border-right: 1px solid @bio-purple;*/
+        border-top: none;
+
+        h3{
+          background: @bio-purple url(../img/icon_biodiversity_commit.png) left top no-repeat;
+        }
+
+        .col1{
+          border-top: 3px solid @bio-purple;
+          background-color: #9b8a9c;
+        }
+
+        .col2, .col3, .col4, .col5{
+          background-color: #b1b2b3;
+        }
+
+        tr{
+          th,td{
+            border-left: 3px solid #fbfbfb;
+          }
+
+          th{
+            color: @gray-dark;
+          }
+
+          td{
+            border-bottom: 1px solid @bio-purple;
+            border-top: none;
+          }
+        }
+      }
+    }
+ }
+
+ body#child-of-our-people{
+    .page-header{
+      h1,.title-parent{
+        color: @people-orange;
+      }
+     }
+    .content-container{
+      h1, h2, h3, h4, ol, ul, a, .intro{
+        color: @people-orange;
+      }
+    }
+  }
+
 /*---------------------------general----------------------------------------*/
 .link-cathay{color:@cathay-green!important;}
 .link-progress{color:@progress-red!important;}
@@ -884,6 +1046,11 @@ body#child-of-making-the-connection{
       color: #ababab;
     }
   }
+}
+
+.img-scrollable{
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 .btn-share{

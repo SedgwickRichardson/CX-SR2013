@@ -65,9 +65,25 @@ $page_ancestors = get_ancestors($post->ID, 'page' );
         break;
       case 22:
         //echo 'id="child-of-biodiversity"';
+?>
+<div class="factsheet-container">
+  <h3>Factsheet<i class="fa fa-file-text"></i></h3>
+  <ul>
+    <li><a href="<?=get_stylesheet_directory_uri()?>/assets/pdf/factsheet/CX_SDR2013_G1_Biodiversity_Factsheet">Biodiversity (PDF 258kb)</a></li>
+  </ul>
+</div>
+<?
         break;
       case 24:
         //echo 'id="child-of-our-people"';
+?>
+<div class="factsheet-container">
+  <h3>Factsheet<i class="fa fa-file-text"></i></h3>
+  <ul>
+    <li><a href="<?=get_stylesheet_directory_uri()?>/assets/pdf/factsheet/CX_SDR2013_H1_Our_People_Factsheet">Our People (PDF 258kb)</a></li>
+  </ul>
+</div>
+<?
         break;
       default:
         //echo 'id="child-of-others"';

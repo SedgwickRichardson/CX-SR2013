@@ -86,53 +86,67 @@
     color: @waste-green!important;
   }
 
-  body#child-of-waste-management .side-menu li.current_page_item>a,
-  body#child-of-waste-management .side-menu li a:hover{
+  body#child-of-sustainable-sourcing .side-menu li.current_page_item>a,
+  body#child-of-sustainable-sourcing .side-menu li a:hover{
     color: @sourcing-brown!important;
   }
 
   body#child-of-sustainable-sourcing{
     .content-container{
       .timeline-container{
-        background-position: 18% top;
-padding-left: 2px;
+        /*background-position: 18% top;*/
+        padding-left: 2px;
+        position: relative;
+        background: none;
 
         dl{
 
           div{
             background: #ece5dc url(../img/timeline-dot-sourcing-desktop.png) 17% top no-repeat;
 
-            &:nth-child(2n+1){
-              background-color: #f8f8f8;
-            }
+            /*&:nth-child(2n+1){
+              background-color: transparent;
+              color: #736E6E;
+            }*/
 
             dt{
               background: none;
-              width: 20%;
+              width: 16%;
               padding: 10px 10px 10px 10px;
               text-align: center;
               font-size: 220%;
+              font-family:'Myriad W01 Lt';
 
-              &:nth-child(4n+1),&:nth-child(4n+2){
+              /*&:nth-child(4n+1),&:nth-child(4n+2){
                 background-color: transparent;
-                color: #736E6E;
-              }
+                color: inherit;
+              }*/
             }
 
             dd{
               background: none;
-              margin-left: 20%;
+              margin-left: 18%;
               padding-top: 10px;
 
-              &:nth-child(4n+1),&:nth-child(4n+2){
+              /*&:nth-child(4n+1),&:nth-child(4n+2){
                 background-color: transparent;
-                color: #736E6E;
-              }
+                color: inherit;
+              }*/
             }
           }
         }
       }
     }
+  }
+
+  body#child-of-biodiversity .side-menu li.current_page_item>a,
+  body#child-of-biodiversity .side-menu li a:hover{
+    color: @bio-purple!important;
+  }
+
+  body#child-of-our-people .side-menu li.current_page_item>a,
+  body#child-of-our-people .side-menu li a:hover{
+    color: @people-orange!important;
   }
 /*---------------------------Content page----------------------------------------*/
   .wrap{
@@ -283,6 +297,15 @@ padding-left: 2px;
           strong{
             font-family:'Myriad W01 Regular';
             font-weight: normal;
+          }
+        }
+
+        .img-container-with-scroll{
+          img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+            width: 100%;
           }
         }
 
