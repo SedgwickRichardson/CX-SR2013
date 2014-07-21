@@ -11,6 +11,7 @@ else{
 	echo apply_filters('the_content', $post->post_content);
 }
 ?>
+
 <?
 if(get_field("next_page",$post->ID)){
 	$p = get_field("next_page",$post->ID);

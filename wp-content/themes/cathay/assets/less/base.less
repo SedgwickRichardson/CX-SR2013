@@ -209,6 +209,7 @@ h5{
       p{
         color: @gray;
         font-size: 16px;
+        line-height: 130%;
       }
     }
 
@@ -590,6 +591,10 @@ body#child-of-making-the-connection{
     .content-container{
       h1, h2, h3, h4, ol, ul, a, .highlight, .intro{
         color: @progress-red;
+      }
+
+      .btn-enlarge{
+        display: none;
       }
 
       /*.colTable tr.totalTD td, .colTable tr:hover td { background-color: #E6E7E9; }*/
@@ -1035,6 +1040,25 @@ body#child-of-making-the-connection{
 .link-sourcing{color:@sourcing-brown!important;}
 .link-biodiversity{color:@bio-purple!important;}
 .link-people{color:@people-orange!important;}
+
+.btn-enlarge{
+  display: block;
+  width: 131px;
+  height: 38px;
+  text-indent: -9999px;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  background: transparent url(../img/btn-enlarge.png) no-repeat;
+
+  &:hover{
+    background-position: -131px 0;
+  }
+}
+
+.container-div{
+  position: relative;
+}
 
 .btn-next-page{
   i{
