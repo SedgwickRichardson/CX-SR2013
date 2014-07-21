@@ -389,26 +389,29 @@
           border: none;
           width: auto;
           float: none;
-          display: inline-block!important;
+          /*display: inline-block!important;*/
 
           &>li{
             padding: 0;
             border: none;
+            width: 10%;
 
             &>a{
               color: #383838;
               font-size: 14px;
               font-family: 'Myriad W01 SmBd';
-              padding: 15px 13px;
+              padding: 15px 10px;
               border-top: 5px solid transparent;
             }
 
             &.menu-making-the-connection{
+              width: 15%;
               &.active a,&>a:hover{
                   border-top: 5px solid @cathay-green;
               }
             }
             &.menu-2013-progress{
+              width: 15%;
               &.active a,&>a:hover{
                 border-top: 5px solid @progress-red;
               }
@@ -424,11 +427,13 @@
               }
             }
             &.menu-waste-management{
+              width: 15%;
               &.active a,&>a:hover{
                 border-top: 5px solid @waste-green;
               }
             }
             &.menu-sustainable-sourcing{
+              width: 15%;
               &.active a,&>a:hover{
                 border-top: 5px solid @sourcing-brown;
               }
