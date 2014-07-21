@@ -4,7 +4,9 @@
 
 <div class="content-container">
 <?
-if($post->post_name=="sustainable-sourcing-matters"){
+if($post->post_name=="sustainable-sourcing-matters" || 
+	$post->post_name=="climate-updates-2013" || 
+	$post->post_name=="climate-change-matters"){
 	echo get_field("html_content",$post->ID);
 }
 else{

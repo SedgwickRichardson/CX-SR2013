@@ -22,6 +22,62 @@
     width: auto;
   }
 
+  .main{
+    .content-container{
+      .timeline-container{
+        padding-left: 2px;
+        position: relative;
+        background: none;
+
+        dl{
+
+          div{
+            /*background: #ece5dc url(../img/timeline-dot-sourcing-desktop.png) 17% top no-repeat;*/
+
+            dt{
+              background: none!important;
+              width: 16%;
+              padding: 10px 10px 10px 10px;
+              text-align: center;
+              font-size: 220%;
+              font-family:'Myriad W01 Lt';
+            }
+
+            dd{
+              background: none!important;
+              margin-left: 18%;
+              padding-top: 10px;
+
+              div{
+                background: none!important;
+
+                .dd-left{
+                  float: left;
+                  width: 20%;
+                  background: none!important;
+                  font-family:'Myriad W01 Regular';
+                }
+
+                .dd-right{
+                  margin-left: 20%;
+                  background: none!important;
+                }
+              }
+            }
+          }
+        }
+
+        .timeline-bottom{
+          p,li{font-size: 85%;}
+        }
+      }
+    }
+
+    .timeline-container-with-bottom-text{
+      border-bottom: none;
+    }
+  }
+
 /*---------------------------side menu----------------------------------------*/
   .side-menu{
     list-style-type: none;
@@ -89,6 +145,39 @@
     color: @climate-blue!important;
   }
 
+ body#child-of-climate-change{
+    .content-container{
+      .timeline-container{
+        /*padding-left: 2px;
+        position: relative;
+        background: none;*/
+
+        dl{
+
+          div{
+            background: #e7ebf9 url(../img/timeline-dot-climate-desktop.png) 17% top no-repeat;
+
+            dt{
+              /*background: none;
+              width: 16%;
+              padding: 10px 10px 10px 10px;
+              text-align: center;
+              font-size: 220%;
+              font-family:'Myriad W01 Lt';*/
+            }
+
+            dd{
+              /*background: none;
+              margin-left: 18%;
+              padding-top: 10px;*/
+            }
+          }
+        }
+      }
+    }
+ }
+  
+
   body#child-of-waste-management .side-menu li.current_page_item>a,
   body#child-of-waste-management .side-menu li a:hover{
     color: @waste-green!important;
@@ -102,44 +191,28 @@
   body#child-of-sustainable-sourcing{
     .content-container{
       .timeline-container{
-        /*background-position: 18% top;*/
-        padding-left: 2px;
+        /*padding-left: 2px;
         position: relative;
-        background: none;
+        background: none;*/
 
         dl{
 
           div{
             background: #ece5dc url(../img/timeline-dot-sourcing-desktop.png) 17% top no-repeat;
 
-            /*&:nth-child(2n+1){
-              background-color: transparent;
-              color: #736E6E;
-            }*/
-
             dt{
-              background: none;
+              /*background: none;
               width: 16%;
               padding: 10px 10px 10px 10px;
               text-align: center;
               font-size: 220%;
-              font-family:'Myriad W01 Lt';
-
-              /*&:nth-child(4n+1),&:nth-child(4n+2){
-                background-color: transparent;
-                color: inherit;
-              }*/
+              font-family:'Myriad W01 Lt';*/
             }
 
             dd{
-              background: none;
+              /*background: none;
               margin-left: 18%;
-              padding-top: 10px;
-
-              /*&:nth-child(4n+1),&:nth-child(4n+2){
-                background-color: transparent;
-                color: inherit;
-              }*/
+              padding-top: 10px;*/
             }
           }
         }
