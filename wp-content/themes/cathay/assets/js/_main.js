@@ -55,6 +55,20 @@ var Roots = {
             }
          });*/
         $('.video-banner-container').css('margin-top',$('.navbar-default').height()+'px');
+
+        //init the video popup
+        $('.fancybox-media').fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none',
+          padding: 0,
+          width: '95%',
+          height: '95%',
+          autoSize : false,
+          helpers : {
+            media : {}
+          }
+        });
+
       });
       $(window).resize(function(){
         setVideoPosition();

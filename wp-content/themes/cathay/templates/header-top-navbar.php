@@ -53,9 +53,20 @@
       <img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/home_temp.jpg" />
     </div>
   <? else: ?>
+    <!-- <div id="video-container">
+      <iframe src="//player.vimeo.com/video/72421196?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div> -->
     <div class="video-banner-container">
-      <div class="video-banner-text-container"><p>View the CEO statement</p><a class="btn-video-play" href="#">Play video</a></div>
-      <img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop-mobile.jpg" />
-      <img class="img-responsive hidden-xs visible-sm visible-md visible-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop.jpg" />
+      <div class="video-banner-text-container"><p>View the CEO statement</p><a href="http://www.youtube.com/watch?v=0ndu54A7Mcc" class="fancybox-media btn-video-play">Play video</a></div>
+      <div class="video-overlay"></div>
+      <img src="<?=get_stylesheet_directory_uri()?>/assets/img/video-ceo.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
+      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/img/video-ceo.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/ceo.webm" type="video/webm">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/ceo.mp4" type="video/mp4">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/ceo.ogv" type="video/ogg">
+        <img src="<?=get_stylesheet_directory_uri()?>/assets/img/video-ceo.jpg" class="img-responsive" />
+      </video>
+      <!-- <img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop-mobile.jpg" />
+      <img class="img-responsive hidden-xs visible-sm visible-md visible-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop.jpg" /> -->
     </div>
   <? endif; ?>
