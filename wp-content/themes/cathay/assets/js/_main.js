@@ -62,7 +62,7 @@ var Roots = {
         $allVideos.each(function() {
           var $el = $(this);
           var newWidth = newHeight /  $el.data('aspectRatio');
-          var maxWidth = window.innerWidth - parseInt($('#video-popup').css('padding-left'),10) - parseInt($('#video-popup').css('padding-right'),10);
+          var maxWidth = $('body').innerWidth() - parseInt($('#video-popup').css('padding-left'),10) - parseInt($('#video-popup').css('padding-right'),10);
           if(newWidth > maxWidth){
             newWidth = maxWidth;
             newHeight = newWidth * $el.data('aspectRatio');
