@@ -570,6 +570,56 @@ h5{
   }
 }
 
+#video-popup{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 9999;
+  background-color: #333;
+  padding: 30px 15px;
+
+  .thumbnail{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    .caption{
+      padding-left: 0;
+      padding-right: 0;
+
+      h3,p{
+        color: #fff;
+      }
+      h3{
+        font-family:'Myriad W01 SmBd';
+        margin-bottom: 5px;
+      }
+      a{
+        display: block;
+        margin-top: -10px;
+        color: #fff;
+      }
+    }
+  }
+
+  #btn-close-video-popup{
+    display: block;
+    width: 100%;
+    height: 42px;
+    background: url(../img/btn-video-close.png) center center no-repeat;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    text-indent: -9999px;
+    margin-left: -15px;
+  }
+}
+
 
 .video-banner-container{
   position: relative;
@@ -601,6 +651,20 @@ h5{
       color: #fff;
       line-height: 120%;
       margin-bottom: 0;
+    }
+
+    .btn-video-watch{
+      background: transparent url(../img/btn-watch-video.png) no-repeat;
+      width: 135px;
+      height: 43px;
+      display: block;
+      /*text-indent: -9999px;*/
+      margin-top: 10px;
+      font-family: 'Myriad W01 SmBd';
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 12px 0 0 15px;
     }
 
     .btn-video-play{

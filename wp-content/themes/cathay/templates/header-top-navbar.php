@@ -56,8 +56,76 @@
     <!-- <div id="video-container">
       <iframe src="//player.vimeo.com/video/72421196?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div> -->
+    <?=get_template_part('partials/video-panel'); ?>
     <div class="video-banner-container">
-      <div class="video-banner-text-container"><p>View the CEO statement</p><a href="http://www.youtube.com/watch?v=0ndu54A7Mcc" class="fancybox-media btn-video-play">Play video</a></div>
+      <div class="video-banner-text-container">
+<?
+    global $page_ancestor;
+    //echo $page_ancestor;
+    switch($page_ancestor){
+      case 2:
+        //echo 'id="child-of-making-the-connection"';
+?>
+        <p>Lorem ipsum dolor sit amet</p>
+        <a class="btn-video-watch btn-show-video-popup" href="javascript:;">Watch videos</a>
+<?
+        break;
+      case 9:
+        //echo 'id="child-of-2013-progress"';
+        break;
+      case 14:
+        //echo 'id="child-of-safety"';
+?>
+        <p>Lorem ipsum dolor sit amet</p>
+        <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
+        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://www.youtube.com/watch?v=UFHV2bXuLJw" target="_blank">Play video</a>
+<?
+        break;
+      case 16:
+        //echo 'id="child-of-climate-change"';
+?>
+        <p>Lorem ipsum dolor sit amet</p>
+        <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
+        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://www.youtube.com/watch?v=UFHV2bXuLJw" target="_blank">Play video</a>
+<?
+        break;
+      case 18:
+        //echo 'id="child-of-climate-change"';
+?>
+        <p>Lorem ipsum dolor sit amet</p>
+        <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
+        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://www.youtube.com/watch?v=UFHV2bXuLJw" target="_blank">Play video</a>
+<?
+        break;
+      case 20:
+        //echo 'id="child-of-climate-change"';
+?>
+        <p>Lorem ipsum dolor sit amet</p>
+        <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
+        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://www.youtube.com/watch?v=UFHV2bXuLJw" target="_blank">Play video</a>
+<?
+        break;
+      case 22:
+        //echo 'id="child-of-climate-change"';
+?>
+        <p>Lorem ipsum dolor sit amet</p>
+        <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
+        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://www.youtube.com/watch?v=UFHV2bXuLJw" target="_blank">Play video</a>
+<?
+        break;
+      case 24:
+        //echo 'id="child-of-climate-change"';
+?>
+        <p>Lorem ipsum dolor sit amet</p>
+        <a class="btn-video-watch btn-show-video-popup" href="javascript:;">Watch videos</a>
+<?
+        break;
+      default:
+        //echo 'id="child-of-others"';
+        break;
+    }
+?>
+      </div>
       <div class="video-overlay"></div>
       <img src="<?=get_stylesheet_directory_uri()?>/assets/img/video-ceo.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
       <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/img/video-ceo.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">

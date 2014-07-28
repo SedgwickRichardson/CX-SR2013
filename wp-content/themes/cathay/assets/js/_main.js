@@ -24,6 +24,8 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on all pages
 
+      /*var isIE8 = jQuery.browser.msie && + jQuery.browser.version === 8;*/
+
       function setMobileMenu(){
         if(window.innerWidth<768){
           $(".navbar-collapse").css({overflow:"auto", maxHeight: $(window).height() - $(".navbar-header").height() - 30 + "px" });
@@ -37,9 +39,192 @@ var Roots = {
         $('.video-banner-container').css('margin-top',$('.navbar-default').height()+'px');
       }
 
+      
+
+      function setEmbedVideoSize(){
+        var window_height = window.innerHeight;
+        //console.log(window_height+" "+$('#video-carousel-container').height()+" "+parseInt($('#video-popup').css('padding-top'),10)+" "+parseInt($('#video-popup').css('padding-bottom'),10)+" "+$('#btn-close-video-popup').height());
+        //15 is the offset for scrollbar
+        /*var newHeight = window_height - $('#video-carousel-container').height() - parseInt($('#video-popup').css('padding-top'),10) - parseInt($('#video-popup').css('padding-bottom'),10) - $('#btn-close-video-popup').height();*/
+
+        var newHeight;
+
+        //now assume max height of carousel is 190px
+        if($('#video-carousel-container').length>0){
+          newHeight = window_height - 190 - parseInt($('#video-carousel-container').css('margin-bottom'),10) - parseInt($('#video-popup').css('padding-top'),10) - parseInt($('#video-popup').css('padding-bottom'),10) - $('#btn-close-video-popup').height();
+        }
+        else{
+          newHeight = window_height - parseInt($('#video-popup').css('padding-top'),10) - parseInt($('#video-popup').css('padding-bottom'),10) - $('#btn-close-video-popup').height();
+          //console.log(window_height+" "+parseInt($('#video-popup').css('padding-top'),10)+" "+parseInt($('#video-popup').css('padding-bottom'),10)+" "+$('#btn-close-video-popup').height());
+        }
+        //console.log(newHeight);
+        // Resize all videos according to their own aspect ratio
+        $allVideos.each(function() {
+          var $el = $(this);
+          var newWidth = newHeight /  $el.data('aspectRatio');
+          var maxWidth = window.innerWidth - parseInt($('#video-popup').css('padding-left'),10) - parseInt($('#video-popup').css('padding-right'),10);
+          if(newWidth > maxWidth){
+            newWidth = maxWidth;
+            newHeight = newWidth * $el.data('aspectRatio');
+          }
+          $el
+          .width(newWidth)
+          .height(newHeight);
+
+          $('#embed-video-container').width(newWidth).height(newHeight);
+          $(this).parent().width(newWidth).height(newHeight);
+        });
+      }
+
+      function initVideo(){
+        if($('#video-popup').length===0){
+          return;
+        }
+
+        /*var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);*/
+
+        var yt_int, yt_players={},
+             initYT = function() {
+                //console.log('initYT 1');
+                $("#video-popup .ytplayer").each(function() {
+                  //console.log('initYT 1');
+                  yt_players[this.id] = new YT.Player(this.id);
+                  //console.log('initYT 2');
+                });
+                //console.log('initYT 2');
+             };
+        $.getScript("//www.youtube.com/player_api", function() {
+
+           yt_int = setInterval(function(){
+              if(typeof YT === "object"){
+                initYT();
+                clearInterval(yt_int);
+              }
+              //console.log('getScript');
+           },500);
+        });
+
+        $('#video-carousel .owl-item').each(function(){
+           var slide_index = $(this).index();
+
+           $(this).find('a').click(function(){
+            //console.log('video img clicked');
+            $('#embed-video-container div').each(function(){
+              $(this).css({'visibility':'hidden'/*, 'text-indent':'-9999px'*/});
+              /*if ( isIE8 ) {
+                $('#video_'+$(this).index()).empty();
+              }else{*/
+                yt_players['player_'+slide_index].pauseVideo();
+                //console.log('restting each video');
+              //}
+            });
+            
+            /*if( isIE8 ){
+              var filter = false;
+              if (typeof videoContentArray === 'undefined') return;
+              for(var i=0; i<videoContentArray.length; i++)
+              {
+                if(videoContentArray[i].section == levelArray[0])
+                {
+                  if (!filter) { filter = [] }
+                  for(var j=0; j<videoContentArray[i].video.length; j++){
+                    filter.push(videoContentArray[i].video[j]);
+                  }
+                }
+              }
+              
+              $('<div id="video_'+ $(this).index() +'_replace">').appendTo('#video_'+$(this).index());
+              var videoPath = filter[$(this).index()].path.replace('embed', 'v');       
+              var params = { allowScriptAccess: "always" };
+              var atts = { id: 'player_'+ $(this).index() };
+              var destinationDiv = 'video_'+ $(this).index() +'_replace';
+              swfobject.embedSWF(videoPath+"?enablejsapi=1&playerapiid=ytplayer&version=3&rel=0", destinationDiv, "701", "394", "8", null, null, params, atts);
+            }*/
+            //console.log('index = '+slide_index);
+            $('#embed-video-container div').eq(slide_index).css({'visibility':'visible'/*, 'text-indent':'0'*/});
+           });
+        });
+      }
+
       //fix the mobile menu scrolling problem
       $(document).ready(function(){
          setMobileMenu();
+
+         /*----------------------init video panel-----------------------*/
+        function videoCarouselAfterAction(){
+          if(typeof this.owl === "undefined"){
+            return;
+          }
+
+          var btn_prev = $("#video-carousel-prev");
+          var btn_next = $("#video-carousel-next");
+
+          var owl = $('#video-carousel');
+
+          //console.log("peopleCarouselAfterAction "+this.owl);
+
+          if(window.innerWidth>=768 && window.innerWidth<992 && this.owl.owlItems.length < 3){
+            $(btn_prev).hide();
+            $(btn_next).hide();
+            return;
+          }
+
+          if(this.owl.currentItem === 0){
+            $(btn_prev).hide();
+          }
+          else{
+            $(btn_prev).show();
+          }
+
+          if(this.owl.visibleItems[this.owl.visibleItems.length-1] === this.owl.owlItems.length-1){
+            $(btn_next).hide();
+          }
+          else{
+            $(btn_next).show();
+          }
+          //console.log(this.owl.visibleItems[this.owl.visibleItems.length-1]+" "+this.owl.currentItem);
+        }
+
+        //if there're more than 3 video, make a carousel
+        if($('#video-carousel div').length>3){
+          $('#video-carousel').owlCarousel({pagination: false,
+                                       items : 4,
+                                       itemsDesktop : [1199,4],
+                                       itemsDesktopSmall : [991,3],
+                                       itemsTablet: false,
+                                       itemsMobile : false,
+                                       afterInit : function(){
+                                        //console.log('afterInit 1');
+                                        videoCarouselAfterAction();
+                                        //console.log('afterInit 2');
+                                        initVideo();
+                                      },
+                                       afterAction : videoCarouselAfterAction});
+          $("#video-carousel-prev").click(function(){
+            $('#video-carousel').trigger('owl.prev');
+          });
+          $("#video-carousel-next").click(function(){
+            $('#video-carousel').trigger('owl.next');
+          });
+        }
+        else{
+          $('#video-carousel-container').addClass("no-carousel");
+          initVideo();
+        }
+
+        //init the video size in popup
+         $allVideos = $("iframe[src^='//www.youtube.com']");
+
+        // Figure out and save aspect ratio for each video
+        $allVideos.each(function(){
+          $(this).data('aspectRatio', this.height / this.width).removeAttr('height').removeAttr('width');
+        });
+        setEmbedVideoSize();
+
+        /*----------------------end init video panel-----------------------*/
 
          //add div to style list
          $('.content-container li').wrapInner('<div class="list-container"> </div>');
@@ -69,10 +254,23 @@ var Roots = {
           }
         });
 
+        $('.btn-show-video-popup').click(function(){
+          if($('#video-popup').is(':hidden')){
+            $('#video-popup').fadeIn();
+          }
+        });
+
+        $('#btn-close-video-popup').click(function(){
+          $(this).parent().fadeOut();
+        });
+
       });
+
       $(window).resize(function(){
         setVideoPosition();
         setMobileMenu();
+        setEmbedVideoSize();
+        
       });
     }
   },
