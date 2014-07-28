@@ -1,6 +1,7 @@
 <?php get_template_part('templates/head'); ?>
 <body <?php body_class(); ?>
   <?
+    global $page_ancestor;
     $page_ancestors = get_ancestors($post->ID, 'page' );
     if(sizeof($page_ancestors)>0){
       $page_ancestor = $page_ancestors[sizeof($page_ancestors)-1];
