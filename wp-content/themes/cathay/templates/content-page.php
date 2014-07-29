@@ -6,14 +6,14 @@
 <?
 if($post->post_name=="sustainable-sourcing-matters" || 
 	$post->post_name=="climate-updates-2013" || 
-	$post->post_name=="climate-change-matters"){
+	$post->post_name=="climate-change-matters" || 
+	$post->post_name=="our-2020-sustainability-commitments"){
 	echo get_field("html_content",$post->ID);
 }
 else{
 	echo apply_filters('the_content', $post->post_content);
 }
 ?>
-
 <?
 if(get_field("next_page",$post->ID)){
 	$p = get_field("next_page",$post->ID);

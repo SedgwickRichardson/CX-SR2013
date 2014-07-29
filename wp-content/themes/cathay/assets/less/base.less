@@ -344,6 +344,18 @@ h5{
       }
     }
 
+    .commitments2020BoxContainer{
+      td{
+        p{
+          margin-left: 40px;
+          margin-bottom: 0;
+        }
+        .icon-acheived,.icon-onplan,.icon-offplan{
+          float: left;
+        }
+      }
+    }
+
     .container-with-scroll{
       width: 100%;
       /*margin-bottom: 15px;*/
@@ -749,6 +761,53 @@ body#child-of-making-the-connection{
 
       .knowMoreContainer{
         border-top: 5px solid @cathay-green;
+      }
+
+      .commitmentsBoxContainer{
+        background-color: #e8edee;
+        /*border-left: 1px solid @climate-blue;
+        border-right: 1px solid @climate-blue;*/
+        border-top: none;
+
+        h3{
+          background: @cathay-green url(../img/icon_connection_commit.png) left top no-repeat;
+        }
+
+        .col1{
+          border-top: 3px solid @cathay-green;
+          background-color: #8ea4a9;
+        }
+
+        tr{
+          th,td{
+            border-left: 3px solid #e8edee;
+          }
+
+          td{
+            border-bottom: 1px solid @cathay-green;
+            border-top: none;
+          }
+        }
+      }
+
+      .sustainability-commitments-container{
+        background-color: #eeeeee;
+        margin-top: 10px;
+        padding: 10px 10px 10px 30px;
+
+        ul{
+          list-style-type: none;
+          margin-bottom: 0;
+          padding-left: 0;
+          li{
+            display: inline-block;
+            margin-right: 40px;
+            margin-bottom: 0;
+            span{
+              margin-right: 10px;
+            }
+          }
+        }
       }
     }
  }
@@ -1300,6 +1359,36 @@ body#child-of-making-the-connection{
       color: #ababab;
     }
   }
+}
+
+.icon-acheived{
+  display: inline-block;
+  background: transparent url(../img/icon-achieved.png) no-repeat;
+  height: 19px;
+  width: 19px;
+  top: 3px;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.icon-onplan{
+  display: inline-block;
+  background: transparent url(../img/icon-onplan.png) no-repeat;
+  height: 19px;
+  width: 19px;
+  top: 3px;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.icon-offplan{
+  display: inline-block;
+  background: transparent url(../img/icon-offplan.png) no-repeat;
+  height: 19px;
+  width: 19px;
+  top: 3px;
+  position: relative;
+  text-indent: -9999px;
 }
 
 .img-scrollable{
