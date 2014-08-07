@@ -39,7 +39,28 @@ var Roots = {
         $('.video-banner-container').css('margin-top',$('.navbar-default').height()+'px');
       }
 
-      
+      function initBackToTop()
+      {
+        console.log('initBackToTop');
+        //back-to-top 
+        var wind = $(window);
+        $(wind).scroll(function(){
+          if ($(wind).scrollTop() > 50){
+            $('#back-to-top').fadeIn();
+          } else{
+            $('#back-to-top').fadeOut();
+          }
+        });
+        
+        $('#back-to-top').click(function(){
+          var body = (window.opera) ? (document.compatMode === "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+          if($(wind).scrollTop() > 0){
+            $(body).animate({
+              scrollTop: 0
+            }, 450);
+          }
+        });
+      }
 
       function setEmbedVideoSize(){
         var window_height = window.innerHeight;
@@ -152,6 +173,10 @@ var Roots = {
       //fix the mobile menu scrolling problem
       $(document).ready(function(){
          setMobileMenu();
+         initBackToTop();
+
+         //fix the left menu
+         $("#sidebar").sticky({topSpacing:170,getWidthFrom:".sidebar",responsiveWidth: true});
 
          /*----------------------init video panel-----------------------*/
         function videoCarouselAfterAction(){

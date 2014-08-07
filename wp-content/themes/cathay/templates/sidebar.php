@@ -1,3 +1,4 @@
+<div id="sidebar">
 <ul class="side-menu">
 <?php
 	//dynamic_sidebar('sidebar-primary');
@@ -7,3 +8,4 @@
 ?>
 </ul>
 <?=get_template_part('partials/factsheet'); ?>
+</div>
