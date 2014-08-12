@@ -504,14 +504,27 @@ h5{
       ul{
           padding-left: 20px;
           margin-bottom: 0;
+          list-style-type: none;
+          padding: 0;
+
+          li{
+            line-height: 130%;
+          }
 
           .list-container{
-            font-size: 14px;
-            font-family:'Myriad W01 SmBd';
+            font-size: 90%;
+            /*font-family:'Myriad W01 SmBd';*/
+
+            ul{
+              font-size: 110%;
+              list-style-type: disc;
+              padding-left: 1.2em;
+            }
 
             strong{
               font-family:'Myriad W01 SmBd';
               font-weight: normal;
+              font-size: 110%;
             }
           }
         }  
@@ -541,7 +554,7 @@ h5{
     }
 
     .two-col-with-gap{
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       
       .col-left{
         margin-bottom: 10px;
@@ -837,17 +850,18 @@ body#child-of-making-the-connection{
       .colTable tr.total-row td,*/
       .colTable tr:hover td {background-color: #E6E7E9;}
       .colTable tr.totalTD td,
-      .colTable tr.total-row td{font-weight: bold;}
+      .colTable td.totalTD,
+      .colTable tr.total-row td{font-weight: bold;background-color: #E6E7E9}
       .colTable tr th.col1{ background-color: #dcb9b8; color: #51131f;border-top: 3px solid #a84553;}
       .colTable .subheading,.colTable .subtitle{color: #a84553;}
       .colTable tr td{ border-bottom: 1px solid #dcb9b8; }
-      .colTable tr td.noborder{border:none;}
-      .colTable tr td.noborderRight{border-right:none;}
-      .colTable tr td.noborderBottom{border-bottom:none;}
+      .colTable tr td.noborder{border:none!important;}
+      .colTable tr td.noborderRight{border-right:none!important;}
+      .colTable tr td.noborderBottom{border-bottom:none!important;}
       .colTable tr.last td { border-bottom: 2px solid #dcb9b8; }
       .colTable tr td.subtitle {/*color:#dcb9b8; */font-family: 'Myriad W01 Bd';}
       .colTable tbody>tr>td{border:none;border-left: 3px solid #fff;background-color: #f7f7f8;border-bottom: 1px solid #e3cacf;}
-      .colTable tbody>tr.total-row>td,.colTable tbody>tr.totalTD>td{border-bottom: 1px solid #b76671;border-top: 1px solid #b76671;}
+      .colTable tbody>tr.total-row>td,.colTable tbody>tr.totalTD>td{border-bottom: 1px solid #b76671;border-top: 1px solid #b76671;border-right: 1px solid #b76671;}
       .colTable tbody>tr>th{border-left: 3px solid #fff;}
 
       .fleetProfileTable{
@@ -863,6 +877,40 @@ body#child-of-making-the-connection{
           }
         }
         tbody>tr>th{border-left: none;}
+      }
+
+      .commitmentsBoxContainer{
+        background-color: #F6EBEB;
+        /*border-left: 1px solid @climate-blue;
+        border-right: 1px solid @climate-blue;*/
+        border-top: none;
+
+        h3{
+          background: @progress-red url(../img/icon_progress_commit.png) left top no-repeat;
+        }
+
+        .colTable{
+          .col1{
+            border-top: 3px solid @progress-red;
+            background-color: #dcb9b8;
+          }
+          .col2{
+            background-color: #d0d2d2;
+            border-top: 3px solid #57585b;
+            color: @gray-dark;
+          }
+
+          tr{
+            th,td{
+              border-left: 3px solid #F6EBEB;
+            }
+
+            td{
+              border-bottom: 1px solid @progress-red;
+              border-top: none;
+            }
+          }
+        }
       }
     }
  }
@@ -1478,6 +1526,7 @@ sup{font-size: 60%;}
 .nowrap{white-space: nowrap;}
 .noborder,.noborder td {border: none !important;}
 .alignRight {text-align: right;}
+.alignCenter {text-align: center;}
 .normal-weight{font-weight: normal!important;}
 .nobottomMargin{margin-bottom: 0!important;}
 .nopadding{padding: 0!important;}

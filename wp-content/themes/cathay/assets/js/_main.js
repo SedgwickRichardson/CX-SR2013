@@ -176,7 +176,7 @@ var Roots = {
          initBackToTop();
 
          //fix the left menu
-         $("#sidebar").sticky({topSpacing:170,getWidthFrom:".sidebar",responsiveWidth: true});
+         $("#sidebar").sticky({topSpacing:190,getWidthFrom:".sidebar",responsiveWidth: true});
 
          /*----------------------init video panel-----------------------*/
         function videoCarouselAfterAction(){
@@ -303,6 +303,84 @@ var Roots = {
   home: {
     init: function() {
       $(window).stellar();
+      var isIE8 = document.all && !document.addEventListener;
+      var bannerVar;
+      $.localScroll({hash:false,offset:-($('.navbar').height())});
+
+      function setupBannerRotator(){
+         if($('.main-banner-text').length > 1){
+             $('.main-banner-text:first').addClass('current').fadeIn(500);
+             bannerVar = setInterval(function(){textRotate();}, 8000);
+         }
+      }
+
+      function textRotate(){
+         var current = $('#main-banner-text-container > .current');
+         current.removeClass('current').children('h2').animate({opacity:0},500,function(){
+          //console.log("1");
+          $(this).parent().children('p').animate({width:"30px"},300,function(){
+            //console.log("2");
+            $(this).parent().fadeOut('300',function(){
+              //clearInterval(bannerVar);
+              //console.log("3");
+              if(current.next().length === 0){
+                next = $('.main-banner-text:first');
+              }
+              else{
+                next = current.next();
+              }
+              $(next).children('p').css("width","30px");
+              $(next).children('h2').css("opacity","0.001");
+              $(next).addClass('current').fadeIn(500,function(){
+                //console.log("4");
+                $(this).children('p').animate({width:"100%"},300,function(){
+                  //console.log("5");
+                  $(this).parent().children('h2').animate({opacity:"0.999"},300);
+                });
+               });
+            });
+          });
+         });
+      }
+
+      $(document).ready(function(){
+        setupBannerRotator();
+        
+        if(!isIE8){
+          var controller = new ScrollMagic();
+
+          var ceo_tween = TweenMax.from($('#ceo-img'), 1, {autoAlpha: 0});
+
+          new ScrollScene({triggerElement: "#section-ceo", duration: 400, offset: -200})
+            .setTween(ceo_tween)
+            .addTo(controller);
+
+          var progress_offset = -50;
+          $('#section-progress li .list-container').each(function(){
+            new ScrollScene({triggerElement: "#section-progress", duration: 200, offset: progress_offset})
+            .setTween(TweenMax.from($(this), 1, {autoAlpha: 0, marginLeft: -200}))
+            .addTo(controller);
+
+            progress_offset += 10;
+          });
+
+          var sd_tween = TweenMax.from($('#sd-img'), 1, {autoAlpha: 0, marginLeft: -300});
+
+          new ScrollScene({triggerElement: "#section-strategy", duration: 400, offset: -200})
+            .setTween(sd_tween)
+            .addTo(controller);
+
+          var key_offset = -80;
+          $('#section-key .key-circle').each(function(){
+            new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
+            .setTween(TweenMax.from($(this), 1, {autoAlpha: 0}))
+            .addTo(controller);
+
+            key_offset += 30;
+          });
+
+        }
+      });
     }
   },
   // About us page, note the change from about-us to about_us.

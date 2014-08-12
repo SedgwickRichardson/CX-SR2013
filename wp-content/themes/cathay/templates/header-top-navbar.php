@@ -49,8 +49,37 @@
   </header>
   <!-- this has to be done a bit better -->
   <? if ($post->post_name == "home"): ?>
-    <div class="video-banner-container">
-      <img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/home_temp.jpg" />
+    <div class="video-banner-container main-banner">
+      <div id="main-banner-text-container">
+        <h1>Connecting</h1>
+        <!-- <span class="main-banner-line-left"></span>
+        <span class="main-banner-line-right"></span> -->
+        <div class="main-banner-text">
+          <!-- <h1>Connecting</h1> -->
+          <h2>Our Stakeholders</h2>
+          <p>with</p>
+          <h2><strong>Sustainability</strong></h2>
+        </div>
+        <div class="main-banner-text">
+          <!-- <h1>Connecting</h1> -->
+          <h2>the Cathay Pacific’s Sustainable Development Strategy</h2>
+          <p>with</p>
+          <h2><strong>Business Vision</strong></h2>
+        </div>
+        <div class="main-banner-text">
+          <!-- <h1>Connecting</h1> -->
+          <h2>Addressing Operational Impacts</h2>
+          <p>with</p>
+          <h2><strong>Creating Value</strong></h2>
+        </div>
+        <div class="main-banner-text">
+          <!-- <h1>Connecting</h1> -->
+          <h2>Our Sustainability Commitments</h2>
+          <p>with</span>
+          <h2><strong>Innovative Solutions</strong></h2>
+        </div>
+      </div>
+      <img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/main-banner.jpg" />
     </div>
   <? else: ?>
     <!-- <div id="video-container">
@@ -127,12 +156,12 @@
 ?>
       </div>
       <div class="video-overlay"></div>
-      <img src="<?=get_stylesheet_directory_uri()?>/assets/img/video-ceo.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
-      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/img/video-ceo.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
-        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/ceo.webm" type="video/webm">
-        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/ceo.mp4" type="video/mp4">
-        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/ceo.ogv" type="video/ogg">
-        <img src="<?=get_stylesheet_directory_uri()?>/assets/img/video-ceo.jpg" class="img-responsive" />
+      <img src="<?=get_stylesheet_directory_uri()?>/assets/img/video-plane.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
+      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/img/video-plane.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.webm" type="video/webm">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.mp4" type="video/mp4">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.ogv" type="video/ogg">
+        <img src="<?=get_stylesheet_directory_uri()?>/assets/img/video-plane.jpg" class="img-responsive" />
       </video>
       <!-- <img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop-mobile.jpg" />
       <img class="img-responsive hidden-xs visible-sm visible-md visible-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop.jpg" /> -->

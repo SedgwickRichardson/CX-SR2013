@@ -39,10 +39,86 @@
 .home {
   background: white url(../img/graphy.png) repeat;
 
+  .main-banner{
+    position: relative;
+
+    #main-banner-text-container{
+      position: absolute;
+      width: 100%;
+      top: 10%;
+      /*display: inline-block;*/
+      height: 90%;
+
+      .main-banner-line-left{
+        position: absolute;
+        background: url(../img/main-banner-line-left.png) right top no-repeat;
+        width: 40%;
+        height: 19px;
+        top: 53%;
+        right: 53%;
+      }
+
+      .main-banner-line-right{
+        position: absolute;
+        background: url(../img/main-banner-line-right.png) left top no-repeat;
+        width: 40%;
+        height: 19px;
+        top: 53%;
+        left: 53%;
+      }
+
+      h1{
+        font-family: 'Myriad W01 SmBd Cnd';
+        font-weight: normal;
+        font-size: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 80%;
+        padding: 0;
+        margin-bottom: 5px;
+      }
+
+      .main-banner-text{
+        text-align: center;
+        display:none;
+        position: absolute;
+        left: 50%;
+        width: 300px;
+        margin-left: -150px;
+
+        h2{
+          font-family:'Myriad W01 Sm Cnd';
+          font-weight: normal;
+          font-size: 14px;
+          text-align: center;
+          color: #fff;
+          margin: 0;
+
+          strong{
+            font-family:'Myriad W01 SmBd Cnd';
+            font-weight: normal;
+          }
+        }
+        
+        p{
+          font-family:'Myriad W01 Regular';
+          margin: 0.2em 0;
+          background: url(../img/main-banner-line.png) center center no-repeat;
+          color: #fff;
+          display: inline-block;
+          width: 100%;
+        }
+
+      }
+    }
+  }
+
   .wrap .main{
 
     .content-container {
       text-align: center;
+      padding-bottom: 30px;
 
       .spacer {
         height: 40px;
@@ -60,9 +136,10 @@
         line-height: 140%;
       }
       h1 {
-        font-size: 28px;
-        margin: 0px 0px 20px 0px;
+        font-size: 21px;
+        margin: 30px 0px 10px 0px;
         padding: 0;
+        font-weight: normal;
       }
       p {
         font-size: 16px;
@@ -78,13 +155,101 @@
         margin: 10px 0px 0px 0px;
       }
       h2 {
-        font-size: 26px;
+        font-size: 16px;
         font-family:'Myriad W01 Regular';
         margin: 0;
         padding: 0;
         font-weight: normal;
       }
 
+      .headline-container{
+        h1{
+          font-family: 'Myriad W01 SmBd';
+          color: @cathay-green;
+          font-size: 21px;
+          position: relative;
+          padding: 0 50px;
+          margin-top: 30px;
+
+          .quote-left{
+            display: inline-block;
+            background: url(../img/main-quote-left.png) no-repeat;
+            width: 48px;
+            height: 45px;
+            text-indent: -9999px;
+            position: absolute;
+            top: 0;
+            left: 0px;
+          }
+          .quote-right{
+            display: inline-block;
+            background: url(../img/main-quote-right.png) no-repeat;
+            width: 48px;
+            height: 45px;
+            text-indent: -9999px;
+            position: absolute;
+            right: 0px;
+            top: 0;
+          }
+        }
+      }
+
+      .btn-read-more{
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px 10px 36px;
+        background: #5d5d5d url(../img/btn-read-more-arrow.png) 15px center no-repeat;
+        margin-top: 20px;
+        display: inline-block;
+      }
+
+      .progress-container{
+        text-align: left;
+
+        h1{
+          margin-bottom: 30px;
+        }
+
+        .col-right{
+          ul{
+            li.last{
+              background: url(../img/main-dot.png) no-repeat;
+            }
+          }
+        }
+
+        ul{
+          list-style-type: none;
+          margin-bottom: 0;
+
+          li{
+            background: url(../img/main-dot-line.png) no-repeat;
+            padding-left: 25px;
+            margin-bottom: 0;
+            font-size: 16px;
+            padding-bottom: 30px;
+
+            strong{
+              font-size: 36px;
+              font-family:'Myriad W01 SmBd';
+              color: @progress-red;
+              display: block;
+            }
+          }
+        }
+      }
+
+      .acheive-container{
+        .logo-container{
+          position: relative;
+          -webkit-box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.17);
+          -moz-box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.17);
+          box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.17);
+          padding: 20px 10px;
+          background-color: #fff;
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 
