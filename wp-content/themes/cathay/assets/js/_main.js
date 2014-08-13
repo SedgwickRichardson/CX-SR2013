@@ -380,7 +380,7 @@ var Roots = {
             key_offset += 30;
           });*/
           
-          var key_offset = -50;
+          var key_offset = -80;
           new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-safety'), 1, {left:229, top: 130, autoAlpha: 0}))
           .addTo(controller);
