@@ -316,7 +316,7 @@ var Roots = {
 
       function textRotate(){
          var current = $('#main-banner-text-container > .current');
-         current.removeClass('current').children('h2').animate({opacity:0},500,function(){
+         current.removeClass('current').children('h2').animate({opacity:0.001},500,function(){
           //console.log("1");
           $(this).parent().children('p').animate({width:"30px"},300,function(){
             //console.log("2");
@@ -357,11 +357,11 @@ var Roots = {
 
           var progress_offset = -50;
           $('#section-progress li .list-container').each(function(){
-            new ScrollScene({triggerElement: "#section-progress", duration: 200, offset: progress_offset})
+            new ScrollScene({triggerElement: "#section-progress", duration: 150, offset: progress_offset})
             .setTween(TweenMax.from($(this), 1, {autoAlpha: 0, marginLeft: -200}))
             .addTo(controller);
 
-            progress_offset += 10;
+            progress_offset += 20;
           });
 
           var sd_tween = TweenMax.from($('#sd-img'), 1, {autoAlpha: 0, marginLeft: -300});
@@ -370,13 +370,22 @@ var Roots = {
             .setTween(sd_tween)
             .addTo(controller);
 
-          var key_offset = -80;
+          var key_offset = -100;
           $('#section-key .key-circle').each(function(){
             new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
             .setTween(TweenMax.from($(this), 1, {autoAlpha: 0}))
             .addTo(controller);
 
             key_offset += 30;
+          });
+
+          var acheive_offset = -80;
+          $('#section-acheive .logo').each(function(){
+            new ScrollScene({triggerElement: "#section-acheive", duration: 200, offset: acheive_offset})
+            .setTween(TweenMax.from($(this), 1, {autoAlpha: 0}))
+            .addTo(controller);
+
+            acheive_offset += 40;
           });
 
         }

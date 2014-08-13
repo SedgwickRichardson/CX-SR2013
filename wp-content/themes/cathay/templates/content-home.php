@@ -63,7 +63,7 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center" id="section-strategy">
+	<div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center" id="section-strategy">
 		<img id="sd-img" class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/main-sd-strategy.png" />
 		<h1>Our Sustainable Development Strategy and 20/20 Commitments</h1>
 		<p>Since 2010, we have been developing our <a href="<?=site_url();?>/making-the-connection/approach-to-sustainable-development/sustainable-development-strategy/">Sustainable Development Strategy</a> and <a href="<?=site_url();?>/2013-progress/sustainable-development-strategy-2020-commitments/">Commitments</a> to bring about positive change and minimise the impact of our operations on the environment. Only then can our business operate far into the future.</p>
