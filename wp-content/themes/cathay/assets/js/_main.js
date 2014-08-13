@@ -381,27 +381,27 @@ var Roots = {
           });*/
           
           var key_offset = -80;
-          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          new ScrollScene({triggerElement: "#section-key", duration: 120, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-safety'), 1, {left:229, top: 130, autoAlpha: 0}))
           .addTo(controller);
           key_offset += 30;
-          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          new ScrollScene({triggerElement: "#section-key", duration: 120, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-climate'), 1, {left:230, autoAlpha: 0}))
           .addTo(controller);
           key_offset += 30;
-          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          new ScrollScene({triggerElement: "#section-key", duration: 120, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-waste'), 1, {left:230, top:178,autoAlpha: 0}))
           .addTo(controller);
           key_offset += 30;
-          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          new ScrollScene({triggerElement: "#section-key", duration: 120, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-sourcing'), 1, {left:190, top:175,autoAlpha: 0}))
           .addTo(controller);
           key_offset += 30;
-          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          new ScrollScene({triggerElement: "#section-key", duration: 120, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-bio'), 1, {left:162, autoAlpha: 0}))
           .addTo(controller);
           key_offset += 30;
-          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          new ScrollScene({triggerElement: "#section-key", duration: 120, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-people'), 1, {left:192, top: 132,autoAlpha: 0}))
           .addTo(controller);
 
