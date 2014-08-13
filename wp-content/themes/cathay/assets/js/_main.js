@@ -345,6 +345,7 @@ var Roots = {
 
       $(document).ready(function(){
         setupBannerRotator();
+        $('img[usemap]').rwdImageMaps();
         
         if(!isIE8){
           var controller = new ScrollMagic();
@@ -370,14 +371,40 @@ var Roots = {
             .setTween(sd_tween)
             .addTo(controller);
 
-          var key_offset = -100;
+          /*var key_offset = -100;
           $('#section-key .key-circle').each(function(){
             new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
             .setTween(TweenMax.from($(this), 1, {autoAlpha: 0}))
             .addTo(controller);
 
             key_offset += 30;
-          });
+          });*/
+          
+          var key_offset = -50;
+          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          .setTween(TweenMax.from($('#section-key #circle-safety'), 1, {left:229, top: 130, autoAlpha: 0}))
+          .addTo(controller);
+          key_offset += 30;
+          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          .setTween(TweenMax.from($('#section-key #circle-climate'), 1, {left:230, autoAlpha: 0}))
+          .addTo(controller);
+          key_offset += 30;
+          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          .setTween(TweenMax.from($('#section-key #circle-waste'), 1, {left:230, top:178,autoAlpha: 0}))
+          .addTo(controller);
+          key_offset += 30;
+          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          .setTween(TweenMax.from($('#section-key #circle-sourcing'), 1, {left:190, top:175,autoAlpha: 0}))
+          .addTo(controller);
+          key_offset += 30;
+          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          .setTween(TweenMax.from($('#section-key #circle-bio'), 1, {left:162, autoAlpha: 0}))
+          .addTo(controller);
+          key_offset += 30;
+          new ScrollScene({triggerElement: "#section-key", duration: 150, offset: key_offset})
+          .setTween(TweenMax.from($('#section-key #circle-people'), 1, {left:192, top: 132,autoAlpha: 0}))
+          .addTo(controller);
+
 
           var acheive_offset = -80;
           $('#section-acheive .logo').each(function(){

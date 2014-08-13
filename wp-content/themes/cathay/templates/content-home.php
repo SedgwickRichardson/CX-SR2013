@@ -5,6 +5,10 @@
 		<div class="circle circle2 small" data-stellar-ratio="0.2"></div>
 		<div class="circle circle3 small" data-stellar-ratio="0.9"></div>
 		<div class="circle circle4 big" data-stellar-ratio="0.6"></div>
+		<div class="circle circle5 big" data-stellar-ratio="0.5"></div>
+		<div class="circle circle6 small" data-stellar-ratio="0.2"></div>
+		<div class="circle circle7 big" data-stellar-ratio="0.9"></div>
+		<div class="circle circle8 big" data-stellar-ratio="0.6"></div>
 
 	</div>
 <div class="row">
@@ -37,14 +41,14 @@
 			<h1>2013 progress</h1>
 		</div>
 		<div class="row">
-			<div class="col-sm-6 col-lg-4 col-lg-offset-2">
+			<div class="col-sm-6 col-lg-5 col-lg-offset-1">
 				<ul id="progress-list-1">
 					<li id="progress-1"><strong>HK$2,620 million</strong> Attributable profit</li>
 					<li><strong>29.9 million</strong> Number of passengers carried by CX and KA</li>
 					<li class="last"><strong>31,600</strong> Number of group staff worldwide</li>
 				</ul>
 			</div>
-			<div class="col-sm-6 col-lg-4 col-right">
+			<div class="col-sm-6 col-lg-5 col-right">
 				<ul id="progress-list-2">
 					<li><strong>15,472 thousand</strong> Attributable profit</li>
 					<li><strong>12.9% improvement</strong> in ATK since 1998</li>
@@ -76,15 +80,23 @@
 </div>
 <div class="row">
 	<div class="key-container" id="section-key">
-		<img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/circle-key-all.png" />
+		<img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/circle-key-all.png" usemap="#key-map" />
+		<map name="key-map">
+		  <area shape="rect" coords="2,2,217,171" href="<?=site_url(); ?>/waste-management/">
+		  <area shape="rect" coords="4,172,187,297" href="<?=site_url(); ?>/climate-change/">
+		  <area shape="rect" coords="54,306,219,471" href="<?=site_url(); ?>/safety/">
+		  <area shape="rect" coords="360,-3,520,165" href="<?=site_url(); ?>/sustainable-sourcing/">
+		  <area shape="rect" coords="384,175,594,299" href="<?=site_url(); ?>/biodiversity/">
+		  <area shape="rect" coords="356,307,522,471" href="<?=site_url(); ?>/our-people/">
+		</map>
 		<div class="key-matter-container center-block hidden-xs visible-sm visible-md visible-lg">
-			<div class="key-circle circle-safety"><a href="<?=site_url(); ?>/waste-management/">Safety</a></div>
-			<div class="key-circle circle-climate"><a href="<?=site_url(); ?>/waste-management/">Climate Change</a></div>
-			<div class="key-circle circle-waste"><a href="<?=site_url(); ?>/waste-management/">Waste Management</a></div>
-			<div class="key-circle circle-sourcing"><a href="<?=site_url(); ?>/waste-management/">Sustable Sourcing</a></div>
-			<div class="key-circle circle-bio"><a href="<?=site_url(); ?>/waste-management/">Biodiversity</a></div>
-			<div class="key-circle circle-people"><a href="<?=site_url(); ?>/waste-management/">Our People</a></div>
-			<div class="circle-key"><a href="<?=site_url(); ?>/waste-management/">Key Matters</a></div>
+			<div class="key-circle" id="circle-safety"><a href="<?=site_url(); ?>/safety/">Safety</a></div>
+			<div class="key-circle" id="circle-climate"><a href="<?=site_url(); ?>/climate-change/">Climate Change</a></div>
+			<div class="key-circle" id="circle-waste"><a href="<?=site_url(); ?>/waste-management/">Waste Management</a></div>
+			<div class="key-circle" id="circle-sourcing"><a href="<?=site_url(); ?>/sustainable-sourcing/">Sustable Sourcing</a></div>
+			<div class="key-circle" id="circle-bio"><a href="<?=site_url(); ?>/biodiversity/">Biodiversity</a></div>
+			<div class="key-circle" id="circle-people"><a href="<?=site_url(); ?>/our-people/">Our People</a></div>
+			<div class="circle-key">Key Matters</div>
 		</div>
 	</div>
 </div>
@@ -117,10 +129,11 @@
 				</tr>
 			</table>
 		</div>
-		<a class="btn-read-more" href="<?=site_url();?>/2013-progress/selected-awards-cathay-pacific-dragonair-2013/">Read more</a>
 	</div>
 </div>
-
+<div class="row">
+<a class="btn-read-more" href="<?=site_url();?>/2013-progress/selected-awards-cathay-pacific-dragonair-2013/">Read more</a>
+</div>
 <?
 if(get_field("next_page",$post->ID)){
 	$p = get_field("next_page",$post->ID);
