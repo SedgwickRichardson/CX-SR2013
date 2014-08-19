@@ -174,6 +174,8 @@ var Roots = {
       $(document).ready(function(){
          setMobileMenu();
          initBackToTop();
+         //console.log($('.navbar').height());
+         $('content-container').localScroll({hash:true,offset:-($('.navbar').height())});
 
          //fix the left menu
          $("#sidebar").sticky({topSpacing:190,getWidthFrom:".sidebar",responsiveWidth: true});
