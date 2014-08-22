@@ -2,6 +2,7 @@
 	<div class="clearfix">
 	<?
 		//print_r($post->ancestors);
+	if (count($post->ancestors) > 0){
 		if (count($post->ancestors) == 1){
 			$target = $post->ancestors[0];
 		}
@@ -9,6 +10,7 @@
 			$target = $post->ancestors[count($post->ancestors)-1];
 		}
 		echo '<p class="title-parent pull-left">'.get_post($target)->post_title.'</p>';
+	}
 
 		
 		if(get_field("next_page",$post->ID)){

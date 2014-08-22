@@ -10,12 +10,15 @@ $page_ancestors = get_ancestors($post->ID, 'page' );
       case 2:
 ?>
 <div class="factsheet-container">
-	<h3>Factsheet<i class="fa fa-file-text"></i></h3>
+	<h3>Factsheet<i class="fa fa-file-text-o"></i></h3>
 	<ul>
 		<li><a href="<?=get_stylesheet_directory_uri()?>/assets/pdf/factsheet/CX_SDR2013_">Sustainability Governance (PDF 258kb)</a></li>
 		<li><a href="<?=get_stylesheet_directory_uri()?>/assets/pdf/factsheet/CX_SDR2013_">Stakeholder Engagement and Issues Materiality (PDF 259kb)</a></li>
 		<li><a href="<?=get_stylesheet_directory_uri()?>/assets/pdf/factsheet/CX_SDR2013_">Community Investment (PDF 762kb)</a></li>
 	</ul>
+</div>
+<div class="factsheet-container">
+  <h3><a href="#">Sustainability all around you<i class="fa fa-file-image-o"></i></a></h3>
 </div>
 <?
         break;

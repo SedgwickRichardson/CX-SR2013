@@ -172,6 +172,7 @@ var Roots = {
 
       //fix the mobile menu scrolling problem
       $(document).ready(function(){
+         $('.fancybox').fancybox({padding:0});
          setMobileMenu();
          initBackToTop();
          //console.log($('.navbar').height());
@@ -358,13 +359,13 @@ var Roots = {
             .setTween(ceo_tween)
             .addTo(controller);
 
-          var progress_offset = -50;
+          var progress_offset = -150;
           $('#section-progress li .list-container').each(function(){
-            new ScrollScene({triggerElement: "#section-progress", duration: 150, offset: progress_offset})
+            new ScrollScene({triggerElement: "#section-progress", duration: 350, offset: progress_offset})
             .setTween(TweenMax.from($(this), 1, {autoAlpha: 0, marginLeft: -200}))
             .addTo(controller);
 
-            progress_offset += 20;
+            progress_offset += 0;
           });
 
           var sd_tween = TweenMax.from($('#sd-img'), 1, {autoAlpha: 0, marginLeft: -300});
@@ -382,28 +383,28 @@ var Roots = {
             key_offset += 30;
           });*/
           
-          var key_offset = -80;
-          new ScrollScene({triggerElement: "#section-key", duration: 100, offset: key_offset})
+          var key_offset = -180;
+          new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-safety'), 1, {left:229, top: 130, autoAlpha: 0}))
           .addTo(controller);
           key_offset += 30;
-          new ScrollScene({triggerElement: "#section-key", duration: 100, offset: key_offset})
+          new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-climate'), 1, {left:230, autoAlpha: 0}))
           .addTo(controller);
           key_offset += 30;
-          new ScrollScene({triggerElement: "#section-key", duration: 100, offset: key_offset})
+          new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-waste'), 1, {left:230, top:178,autoAlpha: 0}))
           .addTo(controller);
           key_offset += 30;
-          new ScrollScene({triggerElement: "#section-key", duration: 100, offset: key_offset})
+          new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-sourcing'), 1, {left:190, top:175,autoAlpha: 0}))
           .addTo(controller);
           key_offset += 30;
-          new ScrollScene({triggerElement: "#section-key", duration: 100, offset: key_offset})
+          new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-bio'), 1, {left:162, autoAlpha: 0}))
           .addTo(controller);
           key_offset += 30;
-          new ScrollScene({triggerElement: "#section-key", duration: 100, offset: key_offset})
+          new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-people'), 1, {left:192, top: 132,autoAlpha: 0}))
           .addTo(controller);
 

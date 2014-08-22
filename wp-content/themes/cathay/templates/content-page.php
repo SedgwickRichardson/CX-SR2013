@@ -8,11 +8,13 @@
 if($post->post_name=="sustainable-sourcing-matters" || 
 	$post->post_name=="climate-updates-2013" || 
 	$post->post_name=="climate-change-matters" || 
-	$post->post_name=="sustainable-development-strategy-2020-commitments"){
+	$post->post_name=="sustainable-development-strategy-2020-commitments" || 
+	$post->post_name=="abbreviations-glossary"){
 	echo get_field("html_content",$post->ID);
 }
-//else if($post->post_name=="climate-updates-2013"){
-//}
+/*else if($post->post_name=="acknowledgements"){
+
+}*/
 else{
 	echo apply_filters('the_content', $post->post_content);
 }

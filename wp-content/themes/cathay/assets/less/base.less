@@ -9,6 +9,7 @@
 @sourcing-brown: #a27c50;
 @bio-purple: #6a6078;
 @people-orange: #ea8b38;
+@others: #2b87a6;
 
 
 body {
@@ -69,6 +70,13 @@ h2{
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+  em,i{
+    font-family:'Myriad W01 SmBd It';
+  }
+  strong{
+    font-family: 'Myriad W01 Bd';
+    font-weight: normal;
+  }
 }
 
 /*----------------2nd heading--------------*/
@@ -79,6 +87,13 @@ h3 {
   font-size: 17px;
   margin-top: 10px;
   margin-bottom: 10px;
+  em,i{
+    font-family:'Myriad W01 SmBd It';
+  }
+  strong{
+    font-family: 'Myriad W01 Bd';
+    font-weight: normal;
+  }
 }
 
 /*----------------3rd heading--------------*/
@@ -87,6 +102,10 @@ h4 {
   text-align: left;
   color: @gray-light;
   font-size: 15.5px;
+  strong{
+    font-family: 'Myriad W01 Bd';
+    font-weight: normal;
+  }
 }
 
 h5{
@@ -712,6 +731,7 @@ h5{
 }
 
 .factsheet-container{
+  margin-bottom: 20px;
     h3{
       font-size: 13px;
       color: #7f7f7f;
@@ -719,6 +739,14 @@ h5{
       background-color: #eeeeee;
       padding: 7px;
       margin-bottom: 5px;
+
+      a{
+        color: #7f7f7f;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
 
       i{
         margin-left: 5px;
@@ -758,11 +786,29 @@ h5{
     margin-bottom: 20px;
     h3,a{
       color: #7f7f7f!important;
+      line-height: 130%;
+    }
+    h3{
+      a{
+        color: #7f7f7f!important;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
     }
   }
 
 /*---------------------------section specific style----------------------------------------*/
 body#child-of-making-the-connection{
+
+  .btn-enlarge-making{
+    background: transparent url(../img/btn-enlarge-making.png) no-repeat;
+    right:15px;
+    &:hover{
+      background-position: -131px 0;
+    }
+  }
     .page-header{
       h1,.title-parent{
         color: @cathay-green;
@@ -1062,6 +1108,7 @@ body#child-of-making-the-connection{
 
       .emissionsTable{
         width: 100%; background:#EDF1FA;
+        margin-bottom: 20px;
 
         .emissionItemLeft{float:left; width:50%; border-right:5px solid #FFF;}
         .emissionItemRight{float:left; width:50%;}
@@ -1072,6 +1119,32 @@ body#child-of-making-the-connection{
         .figureDetail{display:block; padding-left:15px; font-size: 100%;font-family: 'Myriad W01 Lt';line-height: 120%;}
         .figure-triangle{
           position:relative; top:-10px; margin:0 2px 0 4px; width:6px;
+        }
+      }
+
+      .fuelBurnTable{
+        background-color: #EDF1FA;
+        padding: 10px;
+        border-bottom: 1px solid @climate-blue;
+        margin-bottom: 20px;
+        border-top: 3px solid #2484c6;
+
+        .mainFigure{
+          font-size: 310%;
+          font-family: 'Myriad W01 SmBd';
+          line-height: 100%;
+          color: @climate-blue;
+        }
+        .unit{
+          font-family: 'Myriad W01 SmBd';
+          font-size: 132%;
+          line-height: 100%;
+          font-weight: normal;
+          color: @climate-blue;
+          margin: 0;
+        }
+        p{
+          margin-bottom: 0;
         }
       }
     }
@@ -1384,7 +1457,69 @@ body#child-of-making-the-connection{
     }
   }
 
+  body#child-of-others{
+    .page-header{
+      h1,.title-parent{
+        color: @others;
+      }
+     }
+    .content-container{
+      h1, h2, h3, h4, ol, ul, a, .intro{
+        color: @others;
+      }
+
+      .abbrContainer{
+        /*background-color: #EDF1FA;*/
+        /*border-left:1px solid @climate-blue;
+        border-right: 1px solid @climate-blue;*/
+        border-top: none;
+
+        h3{
+          background-color: @others;
+          color: #fff!important;
+          padding: 10px 10px;
+          font-family: 'Myriad W01 Regular';
+          margin-bottom: 0px;
+          margin-top: 0!important;
+        }
+
+        dl{
+          border-bottom: 5px solid #8a8a8a;
+          dt{
+            padding: 10px;
+            text-align: left;
+            padding-bottom: 0!important;
+          }
+          dd{
+            border-bottom: 1px solid @others;
+            padding: 10px;
+            padding-top: 0!important;
+          }
+        }
+      }
+    }
+  }
+
 /*---------------------------general----------------------------------------*/
+.wrap{
+  .main{
+    .content-container{
+      .thumbnail{
+        padding: 0;
+        border: none;
+        img{
+          margin-bottom: 10px;
+        }
+        .caption{
+          margin-top: -10px;
+          padding: 0;
+          font-family: 'Myriad W01 Regular';
+        }
+      }
+    }
+  }
+}
+
 #back-to-top {
   position: fixed;
   bottom: 20px;
@@ -1545,3 +1680,11 @@ sup{font-size: 60%;}
 .normal-weight{font-weight: normal!important;}
 .nobottomMargin{margin-bottom: 0!important;}
 .nopadding{padding: 0!important;}
+.image-bottom-padding{margin-bottom: 20px!important;}
+.logo-container{
+  margin: 20px 0!important;
+  img{
+    margin-right: 10px!important;
+    margin-bottom: 20px!important;
+  }
+}

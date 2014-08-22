@@ -264,7 +264,7 @@
               }
               &#circle-bio{
                 top: 178px;
-                left: 394px;
+                left: 393px;
                 width:187px;
                 height: 117px;
                 background: url(../img/main-circle-bio.png) no-repeat;
@@ -319,6 +319,11 @@
                     background: url(../img/main-logo-cdp.gif) no-repeat;
                     width:244px;
                     height: 25px;
+                  }
+                  &#cdli{
+                    background: url(../img/main-logo-cdli.gif) no-repeat;
+                    width:200px;
+                    height: 90px;
                   }
                   &#hssi{
                     background: url(../img/main-logo-hssi.png) no-repeat;
@@ -413,6 +418,11 @@
           top:-21px;
         }
       }
+
+      .fuelBurnTable{
+        float: left;
+        margin-right: 40px;
+      }
     }
  }
   
@@ -468,9 +478,37 @@
   body#child-of-our-people .side-menu li a:hover{
     color: @people-orange!important;
   }
+
+  body#child-of-others .side-menu li.current_page_item>a,
+  body#child-of-others .side-menu li a:hover{
+    color: @others!important;
+  }
+
+  body#child-of-others{
+    .content-container{
+      .note{
+        font-size: 0.8em;
+      }
+      .abbrContainer{
+        dl{
+          dt{
+            padding-bottom: 10px!important;
+            border-bottom: 1px solid @others;
+            width: 15%;
+          }
+          dd{
+            padding-top: 10px!important;
+            margin-left: 15%;
+          }
+        }
+      }
+    }
+
+  }
 /*---------------------------Content page----------------------------------------*/
   .wrap{
     margin-top: 20px;
+    min-height: 300px;
 
     .main{
       .page-header{
