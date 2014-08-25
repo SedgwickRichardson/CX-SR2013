@@ -496,9 +496,9 @@ var Roots = {
           
           $('#reportDownloadListContainer input').change(function () {
             if($(this).is(':checked') && $(this).parent().is('.sectionTitleDivContainer')) {
-               $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', 'checked');
+               $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', true);
             } else {
-              $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').removeAttr('checked');
+              $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', false);
             }
             var checkTotal = 0;
             checkTotal = $('#reportDownloadListContainer .sectionItem input:checked').length;
@@ -508,9 +508,11 @@ var Roots = {
           
           $('#factsheetDownloadListContainer input').change(function(){
             if($(this).is(':checked') && $(this).parent().is('.sectionTitleDivContainer')) {
-               $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', 'checked');
+               $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', true);
+               console.log("checked");
             } else {
-              $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').removeAttr('checked');
+              $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', false);
+              console.log("not checked "+$('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())));
             }
             var checkTotal = 0;
             checkTotal = $('#factsheetDownloadListContainer .sectionItem input:checked').length;

@@ -25,6 +25,8 @@ if ($_SERVER['SERVER_NAME'] == "cx-sr2013.local.com") {
 
 	/** MySQL database password */
 	define('DB_PASSWORD', 'root');
+	define( 'WP_SITEURL',  'http://cx-sr2013.local.com' );
+	define( 'WP_HOME', 'http://cx-sr2013.local.com' );
 }
 else if($_SERVER['SERVER_NAME'] == "cx-sr2013.sedgwick-richardson.hk"){
 	/** The name of the database for WordPress */
@@ -35,6 +37,8 @@ else if($_SERVER['SERVER_NAME'] == "cx-sr2013.sedgwick-richardson.hk"){
 
 	/** MySQL database password */
 	define('DB_PASSWORD', 'sedgw1ck');
+	define( 'WP_SITEURL',  'http://cx-sr2013.sedgwick-richardson.hk' );
+	define( 'WP_HOME', 'http://cx-sr2013.sedgwick-richardson.hk' );
 }
 
 /** MySQL hostname */

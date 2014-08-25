@@ -1569,7 +1569,7 @@ body#child-of-making-the-connection{
       .downloadControlContainer .itemDiv .itemTitle{font-size:110%; font-family:'Myriad W01 SmBd'; float:left;}
       .downloadControlContainer .itemDiv .btn_item_dl{text-transform: uppercase;font-size: 75%;background-color: #6a6c6c;color: #fff!important;text-decoration: none;padding: 10px;display: inline-block;line-height: 100%; float:right;font-family:'Myriad W01 SmBd';}
       .downloadControlContainer .itemDiv .btn_item_dl i{margin-right: 5px;font-size: 14px;}
-      .downloadControlContainer .itemDiv .btn_item_dl:hover{background-position:0 -30px !important;}
+      .downloadControlContainer .itemDiv .btn_item_dl:hover{background-color: #8d8f92;}
       .downloadControlContainer .itemDiv .cartTitle{font-size:90%; font-weight: bold;color:#413F41; padding-bottom:5px;}
       .downloadControlContainer .itemDiv .cartTitle span{color:#2B875A;}
       .downloadControlContainer .itemDiv .cartCaption{display:block;  font-size: 80%;}
@@ -1597,6 +1597,47 @@ body#child-of-making-the-connection{
       .blueRoundContainerMid .sectionItem .sectionTitle{float:left; font-size: 90%;padding-left:10px;}
       .blueRoundContainerMid .sectionItem .pdfSize{font-size: 80%; color:#212F1F; float:right; margin-right:10px;}
     }
+  }
+
+  body.report-archive{
+    .content-container{
+      .noMarginRight{margin-right:0px !important;}
+      .reportArchiveItem{/* float: left; */padding: 15px 10px;/* width: 280px; *//* margin-right: 19px; */position: relative;/* margin-bottom: 15px; */border-top: 1px solid @others;
+        &.last{
+          border-bottom: 1px solid @others;
+        }
+      }
+      .reportArchiveItem:hover{background-color:#F1F1F1;}
+      .reportTitle{font-family:'Myriad W01 SmBd'; color:#221F1F; padding-bottom:8px;}
+      .reportThumbnail{float:left;margin-bottom: 0!important;}
+      .reportAccess{/* padding-left: 15px; */
+        /* width: 50px; */
+        float: right;
+        position: absolute;
+        /* height: 145px; */
+        right: 10px;
+        bottom: 0;}
+      /*.reportAccess div{position:absolute; bottom:0;}*/
+      .reportAccess div a{
+          text-transform: uppercase;
+          font-size: 75%;
+          background-color: #6a6c6c;
+          color: #fff!important;
+          text-decoration: none;
+          padding: 10px;
+          display: inline-block;
+          line-height: 100%;
+          font-family: 'Myriad W01 SmBd';margin-bottom: 15px;
+          display: block;
+
+          i{
+            margin-right: 5px;
+            font-size: 14px;
+          }
+        }
+      .reportAccess div a:hover{background-color: #8d8f92;}
+    }
+    
   }
 
 /*---------------------------general----------------------------------------*/

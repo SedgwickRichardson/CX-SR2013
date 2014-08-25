@@ -6,7 +6,7 @@
   <div class="downloadSectionTitle">Sustainable Development Report 2013</div>
   <div class="itemDiv clearfix">
     <div class="itemTitle">Download Full Report (English version)</div>
-    <a href="../pdf/CX_SDR13_Full_eng.pdf" target="_blank" class="btn_item_dl"><i class="fa fa-file-text-o"></i>Download</a> </div>
+    <a href="<?=get_stylesheet_directory_uri()?>/assets/pdf/CX_SDR13_Full_eng.pdf" target="_blank" class="btn_item_dl"><i class="fa fa-file-text-o"></i>Download</a> </div>
   <div class="itemDiv lastItem" id="reportSelectedNoDiv">
     <div class="clearfix" style="margin-bottom:20px;">
       <div class="itemTitle">Download Report Sections (English version)</div>
@@ -14,7 +14,7 @@
     <div class="cartTitle">Selected Downloads <span>(0)</span></div>
     <span class="cartCaption"> 0 files added. Add files from list below and download pdf file to your computer.</span> </div>
 </div>
-<form id="form1" action="http://sedgwick-richardson.hk/CX-SR2012/resources/pdf_submit.php" method="post">
+<form id="form1" action="<?=get_stylesheet_directory_uri()?>/pdf_submit.php" method="post">
   <div id="reportDownloadListContainer">
     <div class="sectionTitleContainer">
       <div class="sectionTitleDivContainer firstItem">
@@ -183,7 +183,7 @@
   <div class="downloadSectionTitle" style="padding-top:40px;">Factsheets</div>
   <div class="itemDiv clearfix">
     <div class="itemTitle">Download Full Report (English version)</div>
-    <a href="../pdf/CX_SDR13_factsheet_eng.pdf" target="_blank" class="btn_item_dl"><i class="fa fa-file-text-o"></i>Download</a></a> </div>
+    <a href="<?=get_stylesheet_directory_uri()?>/assets/pdf/CX_SDR13_factsheet_eng.pdf" target="_blank" class="btn_item_dl"><i class="fa fa-file-text-o"></i>Download</a></a> </div>
   <div class="itemDiv lastItem" id="factsheetSelectedNoDiv">
     <div class="clearfix" style="margin-bottom:20px;">
       <div class="itemTitle">Download Report Sections (English version)</div>
