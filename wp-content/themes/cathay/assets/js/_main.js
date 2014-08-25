@@ -427,6 +427,103 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on the about us page
     }
+  },
+  video_gallery: {
+    init: function() {
+      // JavaScript to be fired on the about us page
+      $(document).ready(function(){
+        $(".various").fancybox({
+          width   : '95%',
+          height    : '95%',
+          autoSize  : false,
+          openEffect  : 'none',
+          closeEffect : 'none',
+          padding: 0
+        });
+      });
+    }
+  },
+  pdf_download: {
+    init: function() {
+      // JavaScript to be fired on the about us page
+      $(document).ready(function(){
+        $("#btnReportSelectDownload").click(function(){
+          if($('#reportDownloadListContainer .sectionItem input:checkbox:checked').length>0){
+            $("#form1").submit();
+          }
+          return false;
+        });
+        
+        $("#btnFactsheetSelectDownload").click(function(){
+          if($('#factsheetDownloadListContainer .sectionItem input:checkbox:checked').length>0){
+            $("#form2").submit();
+          }
+          return false;
+         });
+
+        function stakeHolderExpandableInit(){
+          var reportSelectCount = 0;
+          
+          $('.expandContentLargeContent').each(function(){
+            $(this).css('display','none');
+          });
+          
+          $('.sectionTitleDivContainer').each(function(){
+            $(this).click(
+              function(e){
+              
+                if($(e.target).is('input')){
+                  return;
+                }
+                
+                if($('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this))).css('display') === 'none')
+                {
+                  $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this))).css('display','block');
+                  $('.sectionTitleContainer').eq($('.sectionTitleDivContainer').index($(this))).addClass('expandActive');
+                  $('.arrowBtn').eq($('.sectionTitleDivContainer').index($(this))).addClass('active');
+                  $('.arrowBtn').eq($('.sectionTitleDivContainer').index($(this))).click(function(){
+                    $(this).parents().children('.expandContentLargeContent').css('display','none');
+                    $(this).parents().children('.sectionTitleContainer').removeClass('expandActive');
+                    $(this).removeClass('active');
+                  });
+                }else{
+                  $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this))).css('display','none');
+                  $('.sectionTitleContainer').eq($('.sectionTitleDivContainer').index($(this))).removeClass('expandActive');
+                  $('.arrowBtn').eq($('.sectionTitleDivContainer').index($(this))).removeClass('active');
+                }
+            });
+          });
+          
+          $('#reportDownloadListContainer input').change(function () {
+            if($(this).is(':checked') && $(this).parent().is('.sectionTitleDivContainer')) {
+               $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', 'checked');
+            } else {
+              $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').removeAttr('checked');
+            }
+            var checkTotal = 0;
+            checkTotal = $('#reportDownloadListContainer .sectionItem input:checked').length;
+            $("#reportSelectedNoDiv span").html("(" + checkTotal + ")");
+            $("#reportSelectedNoDiv .cartCaption").html(checkTotal+' files added. Add files from list below and download pdf file to your computer.');
+          });
+          
+          $('#factsheetDownloadListContainer input').change(function(){
+            if($(this).is(':checked') && $(this).parent().is('.sectionTitleDivContainer')) {
+               $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', 'checked');
+            } else {
+              $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').removeAttr('checked');
+            }
+            var checkTotal = 0;
+            checkTotal = $('#factsheetDownloadListContainer .sectionItem input:checked').length;
+
+            $("#factsheetSelectedNoDiv span").html("(" + checkTotal + ")");
+            $("#factsheetSelectedNoDiv .cartCaption").html(checkTotal+' files added. Add files from list below and download pdf file to your computer.');
+          });
+        }
+
+        stakeHolderExpandableInit();
+
+      });
+    }
   }
 };
 

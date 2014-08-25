@@ -1504,6 +1504,101 @@ body#child-of-making-the-connection{
     }
   }
 
+  body.video-gallery{
+
+    .content-container{
+
+      h2{
+        border-top: 1px solid @others;
+        padding-top: 15px;
+      }
+
+      .thumbnail{
+        position: relative;
+
+        .gallery-img-container{
+          position: relative;
+
+          .btn-gallery-play{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -46px;
+            margin-top: -46px;
+            width: 93px;
+            height: 93px;
+            background: url(../img/btn-video-gallery-play.png) no-repeat;
+            text-indent: -999px;
+          }
+        }
+
+        .caption{
+          background-color: #f6f5f5;
+          padding: 15px 10px 10px!important;
+          /*min-height: 110px;*/
+
+          /*&.caption1{
+            min-height: 215px;
+          }
+          &.caption2{
+            min-height: 140px;
+          }*/
+
+          h3{
+            font-weight: 700;
+            margin-bottom: 0.3em;
+            margin-top: 0;
+          }
+          p{
+            font-size: 90%;
+            line-height: 130%;
+            margin-bottom: 0;
+          }
+        }
+        
+      }
+    }
+  }
+
+  body.pdf-download{
+    .content-container{
+      .downloadControlContainer{margin:20px 0 0 0;}
+      .downloadControlContainer .downloadSectionTitle{font-size:110%; font-family:'Myriad W01 SmBd'; color:#2B87A5;}
+      .downloadControlContainer .topDiv{ width:862px; height:16px;}
+      .downloadControlContainer .itemDiv{margin-bottom: 5px;background:#E5F1F5; padding:10px;}
+      .downloadControlContainer .itemDiv .itemTitle{font-size:110%; font-family:'Myriad W01 SmBd'; float:left;}
+      .downloadControlContainer .itemDiv .btn_item_dl{text-transform: uppercase;font-size: 75%;background-color: #6a6c6c;color: #fff!important;text-decoration: none;padding: 10px;display: inline-block;line-height: 100%; float:right;font-family:'Myriad W01 SmBd';}
+      .downloadControlContainer .itemDiv .btn_item_dl i{margin-right: 5px;font-size: 14px;}
+      .downloadControlContainer .itemDiv .btn_item_dl:hover{background-position:0 -30px !important;}
+      .downloadControlContainer .itemDiv .cartTitle{font-size:90%; font-weight: bold;color:#413F41; padding-bottom:5px;}
+      .downloadControlContainer .itemDiv .cartTitle span{color:#2B875A;}
+      .downloadControlContainer .itemDiv .cartCaption{display:block;  font-size: 80%;}
+      .downloadControlContainer .firstItem{padding-top:0;}
+      .downloadControlContainer .lastItem{border-bottom:none;margin-bottom: 0;}
+      .downloadControlContainer .btmDiv{width:862px; height:17px;}
+      .expandActive .sectionTitleDivContainer{background:#F1F1F2;}
+      .expandActive .sectionTitleDivContainer:hover{background-image:none !important;}
+      .expandActive .blueRoundContainerMid{background:#F1F1F2; padding-bottom:20px !important;}
+      .sectionTitleContainer{border-bottom:1px solid #7F7F7F; position:relative;}
+      .sectionTitleContainer .arrowBtn{position:absolute; bottom:0; width:100%; height:20px; /*background:url(../images/resources/bg_arrow_expand.png) no-repeat;*/ display:none;}
+      .sectionTitleContainer .arrowBtn.active{background:url(../img/bg_arrow_expand.png) no-repeat center -90px !important; display:block !important; cursor:pointer;}
+      .sectionTitleDivContainer{padding:7px 0;background:url(../img/bg_arrow_expand.png) no-repeat center 15px;}
+      .sectionTitleDivContainer:hover{background-color: #F1F1F2;}
+      /*.sectionTitleContainer:hover .arrowBtn{display:block;}*/
+      .sectionTitleContainer .firstItem{border-top:1px solid #7F7F7F !important;}
+      .sectionTitleContainer .lastItem{border-bottom:none !important;}
+      .sectionTitleDiv{position:relative; cursor:pointer;}
+      .sectionTitleDiv .btnActiveArrow{font-family:'Myriad W01 SmBd'; padding-left:10px; color:#221F1F; float:left;}
+      .sectionTitleDiv .btnActiveArrow_active{font-family:'Myriad W01 SmBd'; font-size:16px; padding-left:10px; color:#221F1F; float:left;}
+      .sectionTitleDiv .pdfSize{color:#221F1F; float:right; margin-right:10px;}
+      .downloadCheckBox{float:left; position:relative; z-index:999;}
+      .blueRoundContainerMid{padding:0; /*border-bottom:1px solid #7F7F7F;*/}
+      .blueRoundContainerMid .sectionItem{padding:0px 0 0px 27px;}
+      .blueRoundContainerMid .sectionItem .sectionTitle{float:left; font-size: 90%;padding-left:10px;}
+      .blueRoundContainerMid .sectionItem .pdfSize{font-size: 80%; color:#212F1F; float:right; margin-right:10px;}
+    }
+  }
+
 /*---------------------------general----------------------------------------*/
 .wrap{
   .main{
