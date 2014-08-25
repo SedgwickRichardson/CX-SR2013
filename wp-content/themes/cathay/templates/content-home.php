@@ -51,7 +51,7 @@
 			<div class="col-sm-6 col-lg-5 col-right">
 				<ul id="progress-list-2">
 					<li><strong>15,472 thousand tonnes</strong>CO<sub>2</sub> emissions from fuel burn</li>
-					<li><strong>12.9% improvement</strong> in ATK since 1998</li>
+					<li><strong>13.3% improvement</strong> in ATK since 1998</li>
 					<li class="last"><strong>19.3% improvement</strong> in RTK since 1998</li>
 				</ul>
 			</div>
