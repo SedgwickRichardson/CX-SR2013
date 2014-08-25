@@ -1,18 +1,18 @@
 <footer class="content-info" role="contentinfo">
   <div class="bottom-btn-container hidden-xs visible-sm visible-md visible-lg">
     <div class="btn-download">
-        <a href="#"><span class="fa-stack-2x fa-lg">
+        <a href="<?=home_url();?>/resources/pdf-download/"><span class="fa-stack-2x fa-lg">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-file-text-o fa-stack fa-inverse"></i>
         </span></a>
-        <p><a href="#">Download Report</a></p>
+        <p><a href="<?=home_url();?>/resources/pdf-download/">Download Report</a></p>
     </div>
     <div class="btn-video-gallery">
-        <a href="#"><span class="fa-stack-2x fa-lg">
+        <a href="<?=home_url();?>/resources/video-gallery/"><span class="fa-stack-2x fa-lg">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-film fa-stack fa-inverse"></i>
         </span></a>
-        <p><a href="#">Video Gallery</a></p>
+        <p><a href="<?=home_url();?>/resources/video-gallery/">Video Gallery</a></p>
     </div>
     <a href="#" class="btn-feedback">Feedback</a>
   </div>
