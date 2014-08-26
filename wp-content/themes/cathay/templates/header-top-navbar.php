@@ -95,58 +95,133 @@
       case 2:
         //echo 'id="child-of-making-the-connection"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <!-- <p>Lorem ipsum dolor sit amet</p> -->
         <a class="btn-video-watch btn-show-video-popup" href="javascript:;">Watch videos</a>
+        </div>
+      <div class="video-overlay"></div>
+      <img src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
+      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/video/plane.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.webm" type="video/webm">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.mp4" type="video/mp4">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.ogv" type="video/ogg">
+        <img src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.jpg" class="img-responsive" />
+      </video>
 <?
         break;
       case 9:
         //echo 'id="child-of-2013-progress"';
+?>
+        <!-- <p>Lorem ipsum dolor sit amet</p> -->
+        </div>
+      <div class="video-overlay"></div>
+      <img src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
+      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/video/plane.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.webm" type="video/webm">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.mp4" type="video/mp4">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.ogv" type="video/ogg">
+        <img src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.jpg" class="img-responsive" />
+      </video>
+<?
         break;
       case 14:
         //echo 'id="child-of-safety"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <!-- <p>Lorem ipsum dolor sit amet</p> -->
         <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
-        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://www.youtube.com/watch?v=UFHV2bXuLJw" target="_blank">Play video</a>
+        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://youtu.be/rqZ3oWJ1dr8" target="_blank">Play video</a>
+        </div>
+      <div class="video-overlay"></div>
+      <img src="<?=get_stylesheet_directory_uri()?>/assets/video/safety.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
+      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/video/safety.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/safety.webm" type="video/webm">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/safety.mp4" type="video/mp4">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/safety.ogv" type="video/ogg">
+        <img src="<?=get_stylesheet_directory_uri()?>/assets/video/safety.jpg" class="img-responsive" />
+      </video>
 <?
         break;
       case 16:
         //echo 'id="child-of-climate-change"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <!-- <p>Lorem ipsum dolor sit amet</p> -->
         <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
-        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://www.youtube.com/watch?v=UFHV2bXuLJw" target="_blank">Play video</a>
+        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://youtu.be/C_Q9YEgAXYo" target="_blank">Play video</a>
+        </div>
+      <div class="video-overlay"></div>
+      <img src="<?=get_stylesheet_directory_uri()?>/assets/video/climate.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
+      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/video/climate.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/climate.webm" type="video/webm">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/climate.mp4" type="video/mp4">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/climate.ogv" type="video/ogg">
+        <img src="<?=get_stylesheet_directory_uri()?>/assets/video/climate.jpg" class="img-responsive" />
+      </video>
 <?
         break;
       case 18:
-        //echo 'id="child-of-climate-change"';
+        //echo 'id="child-of-waste"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <!-- <p>Lorem ipsum dolor sit amet</p> -->
         <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
-        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://www.youtube.com/watch?v=UFHV2bXuLJw" target="_blank">Play video</a>
+        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://youtu.be/BezF1LljE4Y" target="_blank">Play video</a>
+        </div>
+      <div class="video-overlay"></div>
+      <img src="<?=get_stylesheet_directory_uri()?>/assets/video/waste.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
+      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/video/waste.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/waste.webm" type="video/webm">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/waste.mp4" type="video/mp4">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/waste.ogv" type="video/ogg">
+        <img src="<?=get_stylesheet_directory_uri()?>/assets/video/waste.jpg" class="img-responsive" />
+      </video>
 <?
         break;
       case 20:
-        //echo 'id="child-of-climate-change"';
+        //echo 'id="child-of-sourcing"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <!-- <p>Lorem ipsum dolor sit amet</p> -->
         <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
-        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://www.youtube.com/watch?v=UFHV2bXuLJw" target="_blank">Play video</a>
+        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://youtu.be/dfLuQlZv5JI" target="_blank">Play video</a>
+        </div>
+      <div class="video-overlay"></div>
+      <img src="<?=get_stylesheet_directory_uri()?>/assets/video/sourcing.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
+      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/video/sourcing.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/sourcing.webm" type="video/webm">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/sourcing.mp4" type="video/mp4">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/sourcing.ogv" type="video/ogg">
+        <img src="<?=get_stylesheet_directory_uri()?>/assets/video/sourcing.jpg" class="img-responsive" />
+      </video>
 <?
         break;
       case 22:
-        //echo 'id="child-of-climate-change"';
+        //echo 'id="child-of-biodiversity"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <!-- <p>Lorem ipsum dolor sit amet</p> -->
         <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
-        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://www.youtube.com/watch?v=UFHV2bXuLJw" target="_blank">Play video</a>
+        <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://youtu.be/nmRhCZDvjQs" target="_blank">Play video</a>
+        </div>
+      <div class="video-overlay"></div>
+      <img src="<?=get_stylesheet_directory_uri()?>/assets/video/biodiversity.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
+      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/video/biodiversity.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/biodiversity.webm" type="video/webm">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/biodiversity.mp4" type="video/mp4">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/biodiversity.ogv" type="video/ogg">
+        <img src="<?=get_stylesheet_directory_uri()?>/assets/video/biodiversity.jpg" class="img-responsive" />
+      </video>
 <?
         break;
       case 24:
-        //echo 'id="child-of-climate-change"';
+        //echo 'id="child-of-people"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <!-- <p>Lorem ipsum dolor sit amet</p> -->
         <a class="btn-video-watch btn-show-video-popup" href="javascript:;">Watch videos</a>
+        </div>
+      <div class="video-overlay"></div>
+      <img src="<?=get_stylesheet_directory_uri()?>/assets/video/people.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
+      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/video/people.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/people.webm" type="video/webm">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/people.mp4" type="video/mp4">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/people.ogv" type="video/ogg">
+        <img src="<?=get_stylesheet_directory_uri()?>/assets/video/people.jpg" class="img-responsive" />
+      </video>
 <?
         break;
       default:
@@ -154,15 +229,6 @@
         break;
     }
 ?>
-      </div>
-      <div class="video-overlay"></div>
-      <img src="<?=get_stylesheet_directory_uri()?>/assets/img/video-plane.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
-      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/img/video-plane.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
-        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.webm" type="video/webm">
-        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.mp4" type="video/mp4">
-        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.ogv" type="video/ogg">
-        <img src="<?=get_stylesheet_directory_uri()?>/assets/img/video-plane.jpg" class="img-responsive" />
-      </video>
       <!-- <img class="img-responsive visible-xs hidden-sm hidden-md hidden-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop-mobile.jpg" />
       <img class="img-responsive hidden-xs visible-sm visible-md visible-lg" src="<?=get_stylesheet_directory_uri()?>/assets/img/video-loop.jpg" /> -->
     </div>
