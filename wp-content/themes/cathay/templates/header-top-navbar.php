@@ -13,11 +13,11 @@
       </div>
       <div class="col-xs-9 col-sm-9 visible-sm visible-md visible-lg utility-menu-container clearfix">
          <?php get_search_form(); ?>
-         <ul id="font-size-switcher">
+         <!-- <ul id="font-size-switcher">
             <li><a href="javascript:;" onclick="changeFontSize(0, this);" id="fontSmall">A</a></li>
             <li><a href="javascript:;" onclick="changeFontSize(1, this);" id="fontMid">A</a></li>
             <li><a href="javascript:;" onclick="changeFontSize(2, this);" id="fontLarge">A</a></li>
-          </ul>
+          </ul> -->
         <?php
             if (has_nav_menu('utility_menu')) :
               wp_nav_menu(array('theme_location' => 'utility_menu', 'menu_class' => 'nav navbar-nav','depth' => 1));

@@ -23,8 +23,8 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/vQNNUfJCumg?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/making_the_connection_thumb.jpg" /></a>
-      <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/vQNNUfJCumg?autoplay=1&amp;rel=0">view video</a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/vQNNUfJCumg?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/working_towards_sustainable_future_thumb.jpg" /></a>
+      <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/fnZpypJQQzc?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption caption1">
         <h3>Working Toward a Sustainable Future</h3>

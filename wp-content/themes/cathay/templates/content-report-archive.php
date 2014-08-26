@@ -9,7 +9,7 @@
               <div class="clearfix">
                 <img src="<?=get_stylesheet_directory_uri()?>/assets/img/img_report_2012.jpg" alt="" class="reportThumbnail">
                 <div class="reportAccess">
-                  <div style=""><a target="_blank" href="http://downloads.cathaypacific.com/cx/aboutus/sd/2012/pdf/CX_SDR12_Full_eng.pdf"><i class="fa fa-file-text-o"></i>Download PDF</a><a target="_blank" href="http://downloads.cathaypacific.com/cx/aboutus/sd/2012/index.htm"><i class="fa fa-desktop"></i>Go to website</a></div>
+                  <div style=""><a target="_blank" href="http://downloads.cathaypacific.com/cx/aboutus/sd/2012/pdf/CX_SDR12_Full_eng.pdf"><i class="fa fa-file-text-o"></i>Download PDF</a><a target="_blank" href="http://downloads.cathaypacific.com/cx/aboutus/sd/2012/"><i class="fa fa-desktop"></i>Go to website</a></div>
                 </div>
               </div>
             </div>

@@ -24,7 +24,11 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on all pages
 
-      /*var isIE8 = jQuery.browser.msie && + jQuery.browser.version === 8;*/
+      /*var isIE8 = $(browser).msie && +$(browser).version === 8;*/
+      var isIE8 = false;
+      if($("html").hasClass("ie8")){
+        isIE8 = true;
+      }
 
       function setMobileMenu(){
         if(window.innerWidth<768){
@@ -128,19 +132,35 @@ var Roots = {
            },500);
         });
 
+         $('#btn-close-video-popup').click(function(){
+          $('#embed-video-container>div').each(function(){
+            if(isIE8){
+              $('#video_'+$(this).index()).empty();
+            }
+            else{
+              yt_players['player_'+$(this).index()].pauseVideo();
+            }
+          });
+
+          $(this).parent().fadeOut();
+        });
+
         $('#video-carousel .owl-item').each(function(){
            var slide_index = $(this).index();
 
            $(this).find('a').click(function(){
             //console.log('video img clicked');
-            $('#embed-video-container div').each(function(){
+            $('#embed-video-container>div').each(function(){
+              if($(this).index()===slide_index){
+                return;
+              }
               $(this).css({'visibility':'hidden'/*, 'text-indent':'-9999px'*/});
-              /*if ( isIE8 ) {
+              if(isIE8){
                 $('#video_'+$(this).index()).empty();
-              }else{*/
-                yt_players['player_'+slide_index].pauseVideo();
-                //console.log('restting each video');
-              //}
+              }
+              else{
+                yt_players['player_'+$(this).index()].pauseVideo();
+              }
             });
             
             /*if( isIE8 ){
@@ -286,10 +306,6 @@ var Roots = {
           if($('#video-popup').is(':hidden')){
             $('#video-popup').fadeIn();
           }
-        });
-
-        $('#btn-close-video-popup').click(function(){
-          $(this).parent().fadeOut();
         });
 
       });

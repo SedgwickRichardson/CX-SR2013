@@ -22,8 +22,12 @@
     width: auto;
   }
 
+  .wrap{
   .main{
     .content-container{
+      .table{
+        font-size: 90%;
+      }
       .timeline-container{
         padding-left: 2px;
         position: relative;
@@ -76,6 +80,7 @@
     .timeline-container-with-bottom-text{
       border-bottom: none;
     }
+  }
   }
 
 /*---------------------------side menu----------------------------------------*/
@@ -518,6 +523,20 @@
           padding-bottom: 99999px!important;
           overflow: hidden;*/
         }
+      }
+    }
+  }
+
+  body.report-archive{
+    .content-container{
+      .reportArchiveItem:hover{background-color:#F1F1F1;}
+      .reportTitle{font-family:'Myriad W01 SmBd'; color:#221F1F; padding-bottom:8px;}
+      .reportThumbnail{width: inherit;float:left;margin-bottom: 0!important;}
+      .reportAccess{
+        float: right;
+        position: absolute;
+        right: 10px;
+        bottom: 0;
       }
     }
   }
