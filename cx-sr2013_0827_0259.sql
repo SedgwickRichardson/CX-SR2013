@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 3.3.9
+-- version 3.4.5
 -- http://www.phpmyadmin.net
 --
--- 主機: localhost
--- 建立日期: Aug 26, 2014, 03:00 PM
--- 伺服器版本: 5.5.8
--- PHP 版本: 5.3.5
+-- 主机: localhost
+-- 生成日期: 2014 年 08 月 26 日 20:58
+-- 服务器版本: 5.5.16
+-- PHP 版本: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -16,13 +17,13 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 /*!40101 SET NAMES utf8 */;
 
 --
--- 資料庫: `cx-sr2013`
+-- 数据库: `cx-sr2013`
 --
 
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_commentmeta`
+-- 表的结构 `wp_commentmeta`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
@@ -35,15 +36,10 @@ CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
   KEY `meta_key` (`meta_key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- 列出以下資料庫的數據： `wp_commentmeta`
---
-
-
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_comments`
+-- 表的结构 `wp_comments`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_comments` (
@@ -70,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- 列出以下資料庫的數據： `wp_comments`
+-- 转存表中的数据 `wp_comments`
 --
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
@@ -79,7 +75,7 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_links`
+-- 表的结构 `wp_links`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_links` (
@@ -100,15 +96,10 @@ CREATE TABLE IF NOT EXISTS `wp_links` (
   KEY `link_visible` (`link_visible`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- 列出以下資料庫的數據： `wp_links`
---
-
-
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_options`
+-- 表的结构 `wp_options`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_options` (
@@ -118,10 +109,10 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=863 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=871 ;
 
 --
--- 列出以下資料庫的數據： `wp_options`
+-- 转存表中的数据 `wp_options`
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -220,7 +211,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (96, 'widget_archives', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (97, 'widget_meta', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (98, 'sidebars_widgets', 'a:4:{s:19:"wp_inactive_widgets";a:0:{}s:15:"sidebar-primary";a:0:{}s:14:"sidebar-footer";a:0:{}s:13:"array_version";i:3;}', 'yes'),
-(99, 'cron', 'a:5:{i:1409076990;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1409082960;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1409120204;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1409124180;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(99, 'cron', 'a:5:{i:1409082960;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1409120190;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1409120204;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1409124180;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (121, '_transient_timeout_plugin_slugs', '1405928081', 'no'),
 (122, '_transient_plugin_slugs', 'a:21:{i:0;s:26:"wp-security-scan/index.php";i:1;s:30:"advanced-custom-fields/acf.php";i:2;s:19:"akismet/akismet.php";i:3;s:36:"contact-form-7/wp-contact-form-7.php";i:4;s:58:"contact-form-7-to-database-extension/contact-form-7-db.php";i:5;s:33:"duplicate-post/duplicate-post.php";i:6;s:23:"edit-flow/edit_flow.php";i:7;s:36:"google-sitemap-generator/sitemap.php";i:8;s:9:"hello.php";i:9;s:41:"better-wp-security/better-wp-security.php";i:10;s:45:"limit-login-attempts/limit-login-attempts.php";i:11;s:17:"mobble/mobble.php";i:12;s:21:"pagemash/pagemash.php";i:13;s:41:"search-and-replace/search-and-replace.php";i:14;s:45:"simple-page-ordering/simple-page-ordering.php";i:15;s:39:"the-taxonomy-sort/the-taxonomy-sort.php";i:16;s:37:"tinymce-advanced/tinymce-advanced.php";i:17;s:49:"tinymce-valid-elements/tinymce_valid_elements.php";i:18;s:33:"w3-total-cache/w3-total-cache.php";i:19;s:41:"wordpress-importer/wordpress-importer.php";i:20;s:24:"wordpress-seo/wp-seo.php";}', 'no'),
 (127, '_transient_twentyfourteen_category_count', '1', 'yes'),
@@ -239,7 +230,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (249, 'wpseo_titles', 'a:60:{s:10:"title_test";i:0;s:17:"forcerewritetitle";b:0;s:14:"hide-feedlinks";b:0;s:12:"hide-rsdlink";b:0;s:14:"hide-shortlink";b:0;s:16:"hide-wlwmanifest";b:0;s:5:"noodp";b:0;s:6:"noydir";b:0;s:15:"usemetakeywords";b:0;s:16:"title-home-wpseo";s:42:"%%sitename%% %%page%% %%sep%% %%sitedesc%%";s:18:"title-author-wpseo";s:0:"";s:19:"title-archive-wpseo";s:38:"%%date%% %%page%% %%sep%% %%sitename%%";s:18:"title-search-wpseo";s:0:"";s:15:"title-404-wpseo";s:0:"";s:19:"metadesc-home-wpseo";s:0:"";s:21:"metadesc-author-wpseo";s:0:"";s:22:"metadesc-archive-wpseo";s:0:"";s:18:"metakey-home-wpseo";s:0:"";s:20:"metakey-author-wpseo";s:0:"";s:22:"noindex-subpages-wpseo";b:0;s:20:"noindex-author-wpseo";b:0;s:21:"noindex-archive-wpseo";b:1;s:14:"disable-author";b:0;s:12:"disable-date";b:0;s:10:"title-post";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:13:"metadesc-post";s:0:"";s:12:"metakey-post";s:0:"";s:12:"noindex-post";b:0;s:17:"noauthorship-post";b:0;s:13:"showdate-post";b:0;s:16:"hideeditbox-post";b:0;s:10:"title-page";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:13:"metadesc-page";s:0:"";s:12:"metakey-page";s:0:"";s:12:"noindex-page";b:0;s:17:"noauthorship-page";b:1;s:13:"showdate-page";b:0;s:16:"hideeditbox-page";b:0;s:16:"title-attachment";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:19:"metadesc-attachment";s:0:"";s:18:"metakey-attachment";s:0:"";s:18:"noindex-attachment";b:0;s:23:"noauthorship-attachment";b:1;s:19:"showdate-attachment";b:0;s:22:"hideeditbox-attachment";b:0;s:18:"title-tax-category";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:21:"metadesc-tax-category";s:0:"";s:20:"metakey-tax-category";s:0:"";s:24:"hideeditbox-tax-category";b:0;s:20:"noindex-tax-category";b:0;s:18:"title-tax-post_tag";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:21:"metadesc-tax-post_tag";s:0:"";s:20:"metakey-tax-post_tag";s:0:"";s:24:"hideeditbox-tax-post_tag";b:0;s:20:"noindex-tax-post_tag";b:0;s:21:"title-tax-post_format";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:24:"metadesc-tax-post_format";s:0:"";s:23:"metakey-tax-post_format";s:0:"";s:27:"hideeditbox-tax-post_format";b:0;s:23:"noindex-tax-post_format";b:1;}', 'yes'),
 (250, 'wpseo', 'a:18:{s:14:"blocking_files";a:0:{}s:26:"ignore_blog_public_warning";b:1;s:31:"ignore_meta_description_warning";b:0;s:20:"ignore_page_comments";b:0;s:16:"ignore_permalink";b:0;s:11:"ignore_tour";b:1;s:15:"ms_defaults_set";b:0;s:23:"theme_description_found";s:0:"";s:21:"theme_has_description";N;s:19:"tracking_popup_done";b:1;s:7:"version";s:7:"1.5.3.3";s:11:"alexaverify";s:0:"";s:20:"disableadvanced_meta";b:1;s:12:"googleverify";s:0:"";s:8:"msverify";s:0:"";s:15:"pinterestverify";s:0:"";s:12:"yandexverify";s:0:"";s:14:"yoast_tracking";b:0;}', 'yes'),
 (282, 'db_upgraded', '', 'yes'),
-(284, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:7:"upgrade";s:8:"download";s:58:"http://downloads.wordpress.org/release/wordpress-3.9.2.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:58:"http://downloads.wordpress.org/release/wordpress-3.9.2.zip";s:10:"no_content";s:69:"http://downloads.wordpress.org/release/wordpress-3.9.2-no-content.zip";s:11:"new_bundled";s:70:"http://downloads.wordpress.org/release/wordpress-3.9.2-new-bundled.zip";s:7:"partial";s:68:"http://downloads.wordpress.org/release/wordpress-3.9.2-partial-1.zip";s:8:"rollback";b:0;}s:7:"current";s:5:"3.9.2";s:7:"version";s:5:"3.9.2";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.8";s:15:"partial_version";s:5:"3.9.1";}}s:12:"last_checked";i:1409042058;s:15:"version_checked";s:5:"3.9.1";s:12:"translations";a:0:{}}', 'yes'),
+(284, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:2:{i:0;O:8:"stdClass":10:{s:8:"response";s:7:"upgrade";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-3.9.2.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-3.9.2.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-3.9.2-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-3.9.2-new-bundled.zip";s:7:"partial";s:69:"https://downloads.wordpress.org/release/wordpress-3.9.2-partial-1.zip";s:8:"rollback";b:0;}s:7:"current";s:5:"3.9.2";s:7:"version";s:5:"3.9.2";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.8";s:15:"partial_version";s:5:"3.9.1";}i:1;O:8:"stdClass":11:{s:8:"response";s:10:"autoupdate";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-3.9.2.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-3.9.2.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-3.9.2-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-3.9.2-new-bundled.zip";s:7:"partial";s:69:"https://downloads.wordpress.org/release/wordpress-3.9.2-partial-1.zip";s:8:"rollback";s:70:"https://downloads.wordpress.org/release/wordpress-3.9.2-rollback-1.zip";}s:7:"current";s:5:"3.9.2";s:7:"version";s:5:"3.9.2";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.8";s:15:"partial_version";s:5:"3.9.1";s:13:"support_email";s:27:"updatehelp392@wordpress.org";}}s:12:"last_checked";i:1409077090;s:15:"version_checked";s:5:"3.9.1";s:12:"translations";a:0:{}}', 'yes'),
 (285, 'rewrite_rules', 'a:72:{s:19:"sitemap_index\\.xml$";s:19:"index.php?sitemap=1";s:31:"([^/]+?)-sitemap([0-9]+)?\\.xml$";s:51:"index.php?sitemap=$matches[1]&sitemap_n=$matches[2]";s:24:"([a-z]+)?-?sitemap\\.xsl$";s:25:"index.php?xsl=$matches[1]";s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:12:"robots\\.txt$";s:18:"index.php?robots=1";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:20:".*wp-app\\.php(/.*)?$";s:19:"index.php?error=403";s:18:".*wp-register.php$";s:23:"index.php?register=true";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:27:"comment-page-([0-9]{1,})/?$";s:38:"index.php?&page_id=4&cpage=$matches[1]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:20:"(.?.+?)(/[0-9]+)?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";s:27:"[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:"[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:"[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:20:"([^/]+)/trackback/?$";s:31:"index.php?name=$matches[1]&tb=1";s:40:"([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:35:"([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:28:"([^/]+)/page/?([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&paged=$matches[2]";s:35:"([^/]+)/comment-page-([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&cpage=$matches[2]";s:20:"([^/]+)(/[0-9]+)?/?$";s:43:"index.php?name=$matches[1]&page=$matches[2]";s:16:"[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:26:"[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:46:"[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";}', 'yes'),
 (286, 'can_compress_scripts', '1', 'yes'),
 (287, 'tadv_settings', 'a:6:{s:9:"toolbar_1";s:122:"bold,italic,blockquote,bullist,numlist,alignleft,aligncenter,alignright,link,unlink,table,fullscreen,undo,redo,wp_adv,code";s:9:"toolbar_2";s:121:"formatselect,alignjustify,strikethrough,outdent,indent,pastetext,removeformat,charmap,wp_more,emoticons,forecolor,wp_help";s:9:"toolbar_3";s:0:"";s:9:"toolbar_4";s:0:"";s:7:"options";s:15:"advlist,menubar";s:7:"plugins";s:107:"anchor,code,insertdatetime,nonbreaking,print,searchreplace,table,visualblocks,visualchars,emoticons,advlist";}', 'yes'),
@@ -249,17 +240,17 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (419, '_site_transient_poptags_40cd750bba9870f18aada2478b24840a', 'a:40:{s:6:"widget";a:3:{s:4:"name";s:6:"widget";s:4:"slug";s:6:"widget";s:5:"count";s:4:"4463";}s:4:"post";a:3:{s:4:"name";s:4:"Post";s:4:"slug";s:4:"post";s:5:"count";s:4:"2778";}s:6:"plugin";a:3:{s:4:"name";s:6:"plugin";s:4:"slug";s:6:"plugin";s:5:"count";s:4:"2683";}s:5:"admin";a:3:{s:4:"name";s:5:"admin";s:4:"slug";s:5:"admin";s:5:"count";s:4:"2196";}s:5:"posts";a:3:{s:4:"name";s:5:"posts";s:4:"slug";s:5:"posts";s:5:"count";s:4:"2110";}s:7:"sidebar";a:3:{s:4:"name";s:7:"sidebar";s:4:"slug";s:7:"sidebar";s:5:"count";s:4:"1756";}s:6:"google";a:3:{s:4:"name";s:6:"google";s:4:"slug";s:6:"google";s:5:"count";s:4:"1553";}s:7:"twitter";a:3:{s:4:"name";s:7:"twitter";s:4:"slug";s:7:"twitter";s:5:"count";s:4:"1513";}s:8:"comments";a:3:{s:4:"name";s:8:"comments";s:4:"slug";s:8:"comments";s:5:"count";s:4:"1465";}s:6:"images";a:3:{s:4:"name";s:6:"images";s:4:"slug";s:6:"images";s:5:"count";s:4:"1449";}s:4:"page";a:3:{s:4:"name";s:4:"page";s:4:"slug";s:4:"page";s:5:"count";s:4:"1401";}s:9:"shortcode";a:3:{s:4:"name";s:9:"shortcode";s:4:"slug";s:9:"shortcode";s:5:"count";s:4:"1340";}s:5:"image";a:3:{s:4:"name";s:5:"image";s:4:"slug";s:5:"image";s:5:"count";s:4:"1308";}s:8:"facebook";a:3:{s:4:"name";s:8:"Facebook";s:4:"slug";s:8:"facebook";s:5:"count";s:4:"1157";}s:3:"seo";a:3:{s:4:"name";s:3:"seo";s:4:"slug";s:3:"seo";s:5:"count";s:4:"1116";}s:5:"links";a:3:{s:4:"name";s:5:"links";s:4:"slug";s:5:"links";s:5:"count";s:4:"1096";}s:9:"wordpress";a:3:{s:4:"name";s:9:"wordpress";s:4:"slug";s:9:"wordpress";s:5:"count";s:3:"999";}s:7:"gallery";a:3:{s:4:"name";s:7:"gallery";s:4:"slug";s:7:"gallery";s:5:"count";s:3:"955";}s:6:"social";a:3:{s:4:"name";s:6:"social";s:4:"slug";s:6:"social";s:5:"count";s:3:"955";}s:7:"widgets";a:3:{s:4:"name";s:7:"widgets";s:4:"slug";s:7:"widgets";s:5:"count";s:3:"789";}s:3:"rss";a:3:{s:4:"name";s:3:"rss";s:4:"slug";s:3:"rss";s:5:"count";s:3:"782";}s:5:"pages";a:3:{s:4:"name";s:5:"pages";s:4:"slug";s:5:"pages";s:5:"count";s:3:"781";}s:6:"jquery";a:3:{s:4:"name";s:6:"jquery";s:4:"slug";s:6:"jquery";s:5:"count";s:3:"769";}s:5:"email";a:3:{s:4:"name";s:5:"email";s:4:"slug";s:5:"email";s:5:"count";s:3:"766";}s:5:"media";a:3:{s:4:"name";s:5:"media";s:4:"slug";s:5:"media";s:5:"count";s:3:"703";}s:4:"ajax";a:3:{s:4:"name";s:4:"AJAX";s:4:"slug";s:4:"ajax";s:5:"count";s:3:"678";}s:5:"video";a:3:{s:4:"name";s:5:"video";s:4:"slug";s:5:"video";s:5:"count";s:3:"662";}s:10:"javascript";a:3:{s:4:"name";s:10:"javascript";s:4:"slug";s:10:"javascript";s:5:"count";s:3:"651";}s:7:"content";a:3:{s:4:"name";s:7:"content";s:4:"slug";s:7:"content";s:5:"count";s:3:"619";}s:10:"buddypress";a:3:{s:4:"name";s:10:"buddypress";s:4:"slug";s:10:"buddypress";s:5:"count";s:3:"610";}s:5:"photo";a:3:{s:4:"name";s:5:"photo";s:4:"slug";s:5:"photo";s:5:"count";s:3:"592";}s:4:"link";a:3:{s:4:"name";s:4:"link";s:4:"slug";s:4:"link";s:5:"count";s:3:"583";}s:4:"feed";a:3:{s:4:"name";s:4:"feed";s:4:"slug";s:4:"feed";s:5:"count";s:3:"579";}s:5:"login";a:3:{s:4:"name";s:5:"login";s:4:"slug";s:5:"login";s:5:"count";s:3:"579";}s:6:"photos";a:3:{s:4:"name";s:6:"photos";s:4:"slug";s:6:"photos";s:5:"count";s:3:"568";}s:8:"category";a:3:{s:4:"name";s:8:"category";s:4:"slug";s:8:"category";s:5:"count";s:3:"532";}s:7:"youtube";a:3:{s:4:"name";s:7:"youtube";s:4:"slug";s:7:"youtube";s:5:"count";s:3:"525";}s:4:"spam";a:3:{s:4:"name";s:4:"spam";s:4:"slug";s:4:"spam";s:5:"count";s:3:"524";}s:8:"security";a:3:{s:4:"name";s:8:"security";s:4:"slug";s:8:"security";s:5:"count";s:3:"510";}s:5:"share";a:3:{s:4:"name";s:5:"Share";s:4:"slug";s:5:"share";s:5:"count";s:3:"507";}}', 'yes'),
 (420, 'tmve_cascade_on_deactivate', 'false', 'yes'),
 (421, 'tmve_db_version', '1.0', 'yes'),
-(569, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1409042059;s:7:"checked";a:1:{s:6:"cathay";s:3:"1.0";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
+(569, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1409077097;s:7:"checked";a:1:{s:6:"cathay";s:3:"1.0";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
 (748, '_site_transient_timeout_browser_376956767818a23f320b0ffbb60a9092', '1409200859', 'yes'),
 (749, '_site_transient_browser_376956767818a23f320b0ffbb60a9092', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:7:"Firefox";s:7:"version";s:4:"31.0";s:10:"update_url";s:23:"http://www.firefox.com/";s:7:"img_src";s:50:"http://s.wordpress.org/images/browsers/firefox.png";s:11:"img_src_ssl";s:49:"https://wordpress.org/images/browsers/firefox.png";s:15:"current_version";s:2:"16";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
-(855, '_site_transient_timeout_theme_roots', '1409043858', 'yes'),
-(856, '_site_transient_theme_roots', 'a:1:{s:6:"cathay";s:7:"/themes";}', 'yes'),
-(857, '_site_transient_update_plugins', 'O:8:"stdClass":3:{s:12:"last_checked";i:1409042059;s:8:"response";a:7:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.0.2";s:3:"url";s:37:"http://wordpress.org/plugins/akismet/";s:7:"package";s:55:"http://downloads.wordpress.org/plugin/akismet.3.0.2.zip";}s:36:"contact-form-7/wp-contact-form-7.php";O:8:"stdClass":6:{s:2:"id";s:3:"790";s:4:"slug";s:14:"contact-form-7";s:6:"plugin";s:36:"contact-form-7/wp-contact-form-7.php";s:11:"new_version";s:5:"3.9.1";s:3:"url";s:44:"http://wordpress.org/plugins/contact-form-7/";s:7:"package";s:62:"http://downloads.wordpress.org/plugin/contact-form-7.3.9.1.zip";}s:58:"contact-form-7-to-database-extension/contact-form-7-db.php";O:8:"stdClass":6:{s:2:"id";s:5:"16507";s:4:"slug";s:36:"contact-form-7-to-database-extension";s:6:"plugin";s:58:"contact-form-7-to-database-extension/contact-form-7-db.php";s:11:"new_version";s:5:"2.8.9";s:3:"url";s:66:"http://wordpress.org/plugins/contact-form-7-to-database-extension/";s:7:"package";s:84:"http://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.8.9.zip";}s:41:"better-wp-security/better-wp-security.php";O:8:"stdClass":7:{s:2:"id";s:5:"18308";s:4:"slug";s:18:"better-wp-security";s:6:"plugin";s:41:"better-wp-security/better-wp-security.php";s:11:"new_version";s:6:"4.3.11";s:14:"upgrade_notice";s:76:"Version 4.3.11 contains a security fix and should be installed by all users.";s:3:"url";s:48:"http://wordpress.org/plugins/better-wp-security/";s:7:"package";s:67:"http://downloads.wordpress.org/plugin/better-wp-security.4.3.11.zip";}s:45:"simple-page-ordering/simple-page-ordering.php";O:8:"stdClass":6:{s:2:"id";s:5:"16828";s:4:"slug";s:20:"simple-page-ordering";s:6:"plugin";s:45:"simple-page-ordering/simple-page-ordering.php";s:11:"new_version";s:5:"2.2.2";s:3:"url";s:50:"http://wordpress.org/plugins/simple-page-ordering/";s:7:"package";s:68:"http://downloads.wordpress.org/plugin/simple-page-ordering.2.2.2.zip";}s:33:"w3-total-cache/w3-total-cache.php";O:8:"stdClass":7:{s:2:"id";s:4:"9376";s:4:"slug";s:14:"w3-total-cache";s:6:"plugin";s:33:"w3-total-cache/w3-total-cache.php";s:11:"new_version";s:5:"0.9.4";s:14:"upgrade_notice";s:294:"Thanks for using W3 Total Cache! This release introduces hundreds of well-tested stability fixes since the last release as well as a new mode called &quot;edge mode,&quot; which allows us to make releases more often containing new features that are still undergoing testing or active iteration.";s:3:"url";s:44:"http://wordpress.org/plugins/w3-total-cache/";s:7:"package";s:62:"http://downloads.wordpress.org/plugin/w3-total-cache.0.9.4.zip";}s:24:"wordpress-seo/wp-seo.php";O:8:"stdClass":6:{s:2:"id";s:4:"5899";s:4:"slug";s:13:"wordpress-seo";s:6:"plugin";s:24:"wordpress-seo/wp-seo.php";s:11:"new_version";s:7:"1.5.5.3";s:3:"url";s:43:"http://wordpress.org/plugins/wordpress-seo/";s:7:"package";s:63:"http://downloads.wordpress.org/plugin/wordpress-seo.1.5.5.3.zip";}}s:12:"translations";a:0:{}}', 'yes');
+(867, '_site_transient_timeout_theme_roots', '1409078892', 'yes'),
+(868, '_site_transient_theme_roots', 'a:1:{s:6:"cathay";s:7:"/themes";}', 'yes'),
+(869, '_site_transient_update_plugins', 'O:8:"stdClass":3:{s:12:"last_checked";i:1409077095;s:8:"response";a:7:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.0.2";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.0.2.zip";}s:36:"contact-form-7/wp-contact-form-7.php";O:8:"stdClass":6:{s:2:"id";s:3:"790";s:4:"slug";s:14:"contact-form-7";s:6:"plugin";s:36:"contact-form-7/wp-contact-form-7.php";s:11:"new_version";s:5:"3.9.1";s:3:"url";s:45:"https://wordpress.org/plugins/contact-form-7/";s:7:"package";s:63:"https://downloads.wordpress.org/plugin/contact-form-7.3.9.1.zip";}s:58:"contact-form-7-to-database-extension/contact-form-7-db.php";O:8:"stdClass":6:{s:2:"id";s:5:"16507";s:4:"slug";s:36:"contact-form-7-to-database-extension";s:6:"plugin";s:58:"contact-form-7-to-database-extension/contact-form-7-db.php";s:11:"new_version";s:5:"2.8.9";s:3:"url";s:67:"https://wordpress.org/plugins/contact-form-7-to-database-extension/";s:7:"package";s:85:"https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.8.9.zip";}s:41:"better-wp-security/better-wp-security.php";O:8:"stdClass":7:{s:2:"id";s:5:"18308";s:4:"slug";s:18:"better-wp-security";s:6:"plugin";s:41:"better-wp-security/better-wp-security.php";s:11:"new_version";s:6:"4.3.11";s:14:"upgrade_notice";s:76:"Version 4.3.11 contains a security fix and should be installed by all users.";s:3:"url";s:49:"https://wordpress.org/plugins/better-wp-security/";s:7:"package";s:68:"https://downloads.wordpress.org/plugin/better-wp-security.4.3.11.zip";}s:45:"simple-page-ordering/simple-page-ordering.php";O:8:"stdClass":6:{s:2:"id";s:5:"16828";s:4:"slug";s:20:"simple-page-ordering";s:6:"plugin";s:45:"simple-page-ordering/simple-page-ordering.php";s:11:"new_version";s:5:"2.2.2";s:3:"url";s:51:"https://wordpress.org/plugins/simple-page-ordering/";s:7:"package";s:69:"https://downloads.wordpress.org/plugin/simple-page-ordering.2.2.2.zip";}s:33:"w3-total-cache/w3-total-cache.php";O:8:"stdClass":7:{s:2:"id";s:4:"9376";s:4:"slug";s:14:"w3-total-cache";s:6:"plugin";s:33:"w3-total-cache/w3-total-cache.php";s:11:"new_version";s:5:"0.9.4";s:14:"upgrade_notice";s:294:"Thanks for using W3 Total Cache! This release introduces hundreds of well-tested stability fixes since the last release as well as a new mode called &quot;edge mode,&quot; which allows us to make releases more often containing new features that are still undergoing testing or active iteration.";s:3:"url";s:45:"https://wordpress.org/plugins/w3-total-cache/";s:7:"package";s:63:"https://downloads.wordpress.org/plugin/w3-total-cache.0.9.4.zip";}s:24:"wordpress-seo/wp-seo.php";O:8:"stdClass":6:{s:2:"id";s:4:"5899";s:4:"slug";s:13:"wordpress-seo";s:6:"plugin";s:24:"wordpress-seo/wp-seo.php";s:11:"new_version";s:5:"1.5.6";s:3:"url";s:44:"https://wordpress.org/plugins/wordpress-seo/";s:7:"package";s:62:"https://downloads.wordpress.org/plugin/wordpress-seo.1.5.6.zip";}}s:12:"translations";a:0:{}}', 'yes');
 
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_postmeta`
+-- 表的结构 `wp_postmeta`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_postmeta` (
@@ -273,7 +264,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2002 ;
 
 --
--- 列出以下資料庫的數據： `wp_postmeta`
+-- 转存表中的数据 `wp_postmeta`
 --
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
@@ -2045,7 +2036,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1845, 458, 'next_page', '353'),
 (1846, 458, '_next_page', 'field_53c49a7cb8777'),
 (1847, 459, '_edit_last', '1'),
-(1848, 459, '_wp_page_template', 'default'),
+(1848, 459, '_wp_page_template', 'template-sitemap.php'),
 (1849, 460, 'prev_page', 'null'),
 (1850, 460, '_prev_page', 'field_53e33a83997c4'),
 (1851, 460, 'next_page', 'null'),
@@ -2054,7 +2045,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1854, 459, '_prev_page', 'field_53e33a83997c4'),
 (1855, 459, 'next_page', 'null'),
 (1856, 459, '_next_page', 'field_53c49a7cb8777'),
-(1857, 459, '_edit_lock', '1408935781:1'),
+(1857, 459, '_edit_lock', '1409077259:1'),
 (1858, 56, 'prev_page', 'null'),
 (1859, 56, '_prev_page', 'field_53e33a83997c4'),
 (1860, 56, 'next_page', 'null'),
@@ -2203,7 +2194,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_posts`
+-- 表的结构 `wp_posts`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_posts` (
@@ -2238,7 +2229,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=493 ;
 
 --
--- 列出以下資料庫的數據： `wp_posts`
+-- 转存表中的数据 `wp_posts`
 --
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
@@ -2727,7 +2718,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (456, 1, '2014-08-25 03:00:38', '2014-08-25 03:00:38', '', 'Abbreviations and Glossary', '', 'inherit', 'open', 'open', '', '364-revision-v1', '', '', '2014-08-25 03:00:38', '2014-08-25 03:00:38', '', 364, 'http://cx-sr2013.local.com/364-revision-v1/', 0, 'revision', '', 0),
 (457, 1, '2014-08-25 03:01:21', '2014-08-25 03:01:21', 'We wish to thank Edelman Hong Kong, Futerra and Sedgwick Richardson for their assistance in the development and preparation of this report.\r\n<h3>Our principle subsidiaries based in Hong Kong</h3>\r\n<div class="row">\r\n<div class="col-xs-12 logo-container"><img src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/logo_dragonair.gif" alt="Dragonair" width="150" height="67" /> <img src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/logo_catering.jpg" alt="Cathay Pacific Catering Service" width="150" height="67" /> <img src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/logo_cxholidays.jpg" alt="Cathay Pacific holidays" width="150" height="67" /> <img src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/logo_has.gif" alt="Hong Kong Airport Services Ltd" width="150" height="67" /> <img src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/logo_vogue-laundry.gif" alt="Vogue Laundry" width="150" height="67" /> <img src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/logo_airhongkong.gif" alt="air Hongkong" width="150" height="67" /></div>\r\n</div>\r\n<div class="row">\r\n<div class="col-xs-12"><img class="pull-left" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/logo_FTSE4Good.jpg" alt="" width="150" height="124" />\r\n<p class="note">FTSE Group confirms that Cathay Pacific Airways Limited has been independently assessed according to the FTSE4Good criteria, and has satisfied the requirements to become a constituent of the FTSE4Good Index Series. Created by the global index company FTSE Group, FTSE4Good is an equity index series that is designed to facilitate investment in companies that meet globally recognised corporate responsibility standards. Companies in the FTSE4Good Index Series have met stringent social and environmental criteria, and are positioned to capitalise on the benefits of responsible business practice.</p>\r\n\r\n</div>\r\n</div>\r\n<div class="row">\r\n<div class="col-xs-12 logo-container"><img src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/main-logo-djsi.jpg" alt="" width="200" height="65" /><img src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/main-logo-cdp.gif" alt="" width="244" height="25" /> <img src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/main-logo-cdli.gif" alt="" width="180" height="81" /><img src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/main-logo-hkaee.jpg" alt="" width="152" height="106" /><img src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/swire-logo.jpg" alt="" width="293" height="69" /></div>\r\n</div>', 'Acknowledgements', '', 'inherit', 'open', 'open', '', '366-revision-v1', '', '', '2014-08-25 03:01:21', '2014-08-25 03:01:21', '', 366, 'http://cx-sr2013.local.com/366-revision-v1/', 0, 'revision', '', 0),
 (458, 1, '2014-08-25 03:02:07', '2014-08-25 03:02:07', 'Welcome to our 5<sup>th</sup> Sustainable Development Report, which covers our sustainability performance – both achievements and challenges in 2013. We continue to present a wide range of information in different formats to suit the needs of different stakeholders: As soon as you land of the report website, you will be able to read the main text which is a summary of the key issues and their updates. The <a href="http://cx-sr2013.local.com/resources/pdf-download/">downloadable pdf Factsheets</a> are designed to engage with those who would like more in-depth data, information and stories. Finally, we have produced many fresh new videos to accompany this year’s report, demonstrating the excellent sustainability achievements of our key stakeholders — our staff — in the past year.\r\n\r\nA summary leaflet in both English and Chinese has been published together with this online report. These are downloadable from the website.\r\n<h2>Why do we report?</h2>\r\nOur reporting has evolved since 1996, the first year we launched our Environmental Report, but our commitment to transparency and accountability remains unchanged.\r\n\r\nWe publish our Sustainable Development Report yearly to:\r\n<ul>\r\n	<li>Disclose our sustainability performance in a transparent, accountable and clear manner;</li>\r\n	<li>Engage with our stakeholders on sustainability issues that are material to our business so we can address them effectively and appropriately; and</li>\r\n	<li>Discuss the challenges and setbacks we face as a company in progressing along this sustainable journey, learn how to overcome them, and how we are approaching them in our governance, environmental and societal practices.</li>\r\n</ul>', 'Overview', '', 'inherit', 'open', 'open', '', '351-revision-v1', '', '', '2014-08-25 03:02:07', '2014-08-25 03:02:07', '', 351, 'http://cx-sr2013.local.com/351-revision-v1/', 0, 'revision', '', 0),
-(459, 1, '2014-08-25 03:04:01', '2014-08-25 03:04:01', '', 'Sitemap', '', 'publish', 'open', 'open', '', 'sitemap', '', '', '2014-08-25 03:04:01', '2014-08-25 03:04:01', '', 0, 'http://cx-sr2013.local.com/?page_id=459', 0, 'page', '', 0),
+(459, 1, '2014-08-25 03:04:01', '2014-08-25 03:04:01', '', 'Sitemap', '', 'publish', 'open', 'open', '', 'sitemap', '', '', '2014-08-26 18:20:59', '2014-08-26 18:20:59', '', 0, 'http://cx-sr2013.local.com/?page_id=459', 0, 'page', '', 0),
 (460, 1, '2014-08-25 03:04:01', '2014-08-25 03:04:01', '', 'Sitemap', '', 'inherit', 'open', 'open', '', '459-revision-v1', '', '', '2014-08-25 03:04:01', '2014-08-25 03:04:01', '', 459, 'http://cx-sr2013.local.com/459-revision-v1/', 0, 'revision', '', 0),
 (461, 1, '2014-08-25 03:06:40', '2014-08-25 03:06:40', '', 'Video Gallery', '', 'inherit', 'open', 'open', '', '75-revision-v1', '', '', '2014-08-25 03:06:40', '2014-08-25 03:06:40', '', 75, 'http://cx-sr2013.local.com/75-revision-v1/', 0, 'revision', '', 0),
 (462, 1, '2014-08-25 03:07:41', '2014-08-25 03:07:41', '', 'PDF Download', '', 'inherit', 'open', 'open', '', '443-revision-v1', '', '', '2014-08-25 03:07:41', '2014-08-25 03:07:41', '', 443, 'http://cx-sr2013.local.com/443-revision-v1/', 0, 'revision', '', 0),
@@ -2771,7 +2762,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_terms`
+-- 表的结构 `wp_terms`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_terms` (
@@ -2785,7 +2776,7 @@ CREATE TABLE IF NOT EXISTS `wp_terms` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- 列出以下資料庫的數據： `wp_terms`
+-- 转存表中的数据 `wp_terms`
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
@@ -2796,7 +2787,7 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_term_relationships`
+-- 表的结构 `wp_term_relationships`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
@@ -2808,7 +2799,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- 列出以下資料庫的數據： `wp_term_relationships`
+-- 转存表中的数据 `wp_term_relationships`
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
@@ -2846,7 +2837,7 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_term_taxonomy`
+-- 表的结构 `wp_term_taxonomy`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
@@ -2862,7 +2853,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- 列出以下資料庫的數據： `wp_term_taxonomy`
+-- 转存表中的数据 `wp_term_taxonomy`
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
@@ -2873,7 +2864,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_tmve_allowed_elements`
+-- 表的结构 `wp_tmve_allowed_elements`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_tmve_allowed_elements` (
@@ -2883,7 +2874,7 @@ CREATE TABLE IF NOT EXISTS `wp_tmve_allowed_elements` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- 列出以下資料庫的數據： `wp_tmve_allowed_elements`
+-- 转存表中的数据 `wp_tmve_allowed_elements`
 --
 
 INSERT INTO `wp_tmve_allowed_elements` (`name`, `attribute`) VALUES
@@ -2894,7 +2885,7 @@ INSERT INTO `wp_tmve_allowed_elements` (`name`, `attribute`) VALUES
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_usermeta`
+-- 表的结构 `wp_usermeta`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_usermeta` (
@@ -2908,7 +2899,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
 
 --
--- 列出以下資料庫的數據： `wp_usermeta`
+-- 转存表中的数据 `wp_usermeta`
 --
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
@@ -2943,7 +2934,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 -- --------------------------------------------------------
 
 --
--- 資料表格式： `wp_users`
+-- 表的结构 `wp_users`
 --
 
 CREATE TABLE IF NOT EXISTS `wp_users` (
@@ -2963,8 +2954,12 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- 列出以下資料庫的數據： `wp_users`
+-- 转存表中的数据 `wp_users`
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'admin', '$P$BosFsdyQsz3OVRIWjqB3gvRirRcVyZ1', 'admin', 'alvar@sedgwick-richardson.com', '', '2014-03-14 06:16:27', '', 0, 'admin');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

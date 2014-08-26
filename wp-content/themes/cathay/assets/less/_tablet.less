@@ -124,6 +124,14 @@
   }
 
 /*---------------------------Section specific----------------------------------------*/
+body.sitemap{
+    .content-container{
+      .row{
+        margin-bottom: 30px;
+      }
+    }
+  }
+
   body.home{
 
     .main-banner{
@@ -547,7 +555,7 @@
 
     .main{
       .page-header{
-        margin-top: 0;
+        margin-top: 10px;
 
         h1{
           width: 85%;
@@ -890,6 +898,32 @@
   .navbar-default{
     margin: 0;
 
+    &.down{
+      .container{
+        .navbar-collapse{
+          margin-top: 0;
+          #menu-primary-navigation-1>li>a{
+            padding: 5px 10px;
+          }
+        }
+        .navbar-header{
+          height: 60px;
+          .utility-menu-container{
+            margin-top: 0;
+            .search-form{
+              display: none;
+            }
+            #menu-utility-menu{
+              display: none;
+            }
+          }
+          .top-logo{
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
     .container{
       padding: 0;
 
@@ -1187,5 +1221,13 @@
         }
       }
     }
+  }
+/*---------------------------general----------------------------------------*/
+  #shareBox{
+    right: 14px;
+    /*top: 63px;*/top: 74px;
+    left: initial;
+    padding-right: 70px;
+    padding-left: 0;
   }
 }

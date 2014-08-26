@@ -1529,7 +1529,7 @@ body#child-of-making-the-connection{
             width: 93px;
             height: 93px;
             background: url(../img/btn-video-gallery-play.png) no-repeat;
-            text-indent: -999px;
+            text-indent: -9999px;
           }
         }
 
@@ -1634,6 +1634,103 @@ body#child-of-making-the-connection{
     }
   }
 
+  body.sitemap{
+    .content-container{
+      .row{
+       /* margin-bottom: 20px;*/
+      }
+      .sitemapDiv .sectionHeader {
+          font-size: 120%;
+          line-height: 120%;
+          min-height: 20px;
+          padding-bottom: 0;
+          font-family: 'Myriad W01 SmBd';
+          margin-bottom: 0.5em;
+      }
+      .sitemapDiv {
+        margin-bottom: 2em;
+        
+          &.businessMap{
+            .sectionHeader{
+              color:@cathay-green;
+            }
+          }
+          &.ourApproachMap{
+            .sectionHeader{
+              color:@progress-red;
+            }
+          }
+          &.safetyMap{
+            .sectionHeader{
+              color:@safety-green;
+            }
+          }
+          &.climateMap{
+            .sectionHeader{
+              color:@climate-blue;
+            }
+          }
+          &.wasteManagementMap{
+            .sectionHeader{
+              color:@waste-green;
+            }
+          }
+          &.sourcingMap{
+            .sectionHeader{
+              color:@sourcing-brown;
+            }
+          }
+          &.biodiversityMap{
+            .sectionHeader{
+              color:@bio-purple;
+            }
+          }
+          &.peopleMap{
+            .sectionHeader{
+              color:@people-orange;
+            }
+          }
+          &.aboutMap{
+            .sectionHeader{
+              color:@others;
+            }
+          }
+      }
+      .sitemapDiv ul{
+        padding-left: 0;
+      }
+      .sitemapDiv ul li ul {
+          padding-bottom: 5px !important;
+      }
+      .sitemapDiv ul li {
+          background: none repeat scroll 0 0 transparent !important;
+          font-size: 110%;
+          list-style: none outside none;
+      }
+      .sitemapDiv ul li {
+          padding: 0 !important;
+      }
+      .sitemapDiv ul li a {
+          color: #403F41;
+        font-size: 90%;
+        line-height: 120%;
+      }
+      .sitemapDiv ul li a, .sitemapDiv ul li span {
+          display: block;
+          margin-bottom: 5px;
+          text-decoration: none;
+      }
+      .sitemapDiv ul li a:hover {
+          text-decoration: underline;
+      }
+      .sitemapDiv ul li ul li {
+          font-size: 90%;
+          list-style: none outside none;
+          padding-left: 10px !important;
+      }
+    }
+  }
+
 /*---------------------------general----------------------------------------*/
 .wrap{
   .main{
@@ -1654,20 +1751,23 @@ body#child-of-making-the-connection{
   }
 }
 
-#shareBox{padding-top: 40px;
-display: none;
-position: absolute;
-right: 14px;
-/* border-radius: 4px; */
-top: 100px;}
-.shareBox-container{background-color: #ebebeb;
-padding: 5px;
-border-radius: 4px;
-display: inline-block;}
+#shareBox{
+  display: none;
+  position: absolute;
+  top: 74px;
+  left: 14px;
+  padding-left: 70px;
+}
+.shareBox-container{
+  background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block;
+}
 .addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300m{padding:0!important;}
 .addthis_button_facebook, .addthis_button_twitter, .addthis_button_google_plusone_badge, .addthis_button_linkedin, .addthis_button_instagram .at15nc.at15t_instagram, .addthis_button_pinterest_share{height:22px;width: 22px;margin-right: 5px;}
-.addthis_button_google_plusone_badge{background: url(../img/icon-gone.png) no-repeat;cursor: pointer;}
-.addthis_button_google_plusone_badge img{display: none;}
+.addthis_button_google_plusone_badge{background: url(../img/icon-gone.png) no-repeat;cursor: pointer!important;}
+.addthis_button_google_plusone_badge img{display: none;cursor: pointer;}
 .addthis_button_google_plusone_badge:hover{background-position: -22px 0;}
 .addthis_default_style .at300b i{font-size: 22px;color:#797979}
 .addthis_default_style .at300b:hover i{color:#000;}

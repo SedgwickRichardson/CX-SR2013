@@ -1,6 +1,7 @@
 <?=get_template_part('partials/page_title');?>
 
-<a href="#" class="btn-share">Share<i class="fa fa-share-square-o"></i></a> <a href="javascript:;" id="back-to-top"><i class="fa fa-chevron-circle-up"></i></a>
+<?=get_template_part('partials/share');?>
+
 <div class="content-container">
 
 <div class="clearfix">
