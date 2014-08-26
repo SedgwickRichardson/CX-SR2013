@@ -226,6 +226,9 @@
         break;
       default:
         //echo 'id="child-of-others"';
+?>
+        </div></div>
+<?
         break;
     }
 ?>

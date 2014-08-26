@@ -30,6 +30,44 @@ var Roots = {
         isIE8 = true;
       }
 
+      function initShare(){
+        if(!d.getElementById('shareBox')){return;}
+        if(!d.getElementById('headerShareBtn')){return;}
+        var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
+
+        console.log('initShare');
+        
+        if (isiDevice){
+          document.getElementById("headerShareBtn").addEventListener('touchstart',function(){
+            $('#shareBox').css('display','block');
+          },false);
+          
+          $('html').bind('touchstart',function(e) {
+            if($(e.target).is('a')){
+              return;
+            }else {
+              $('#shareBox').css('display','none');
+            }
+          });
+        }else{
+          $('#headerShareBtn').mouseover(function(){
+            $('#shareBox').css('display','inline-block');
+          });
+          
+          $('#shareBox').mouseover(function(){
+            $('#shareBox').css('display','inline-block');
+          });
+          
+          $('#headerShareBtn').mouseout(function(){
+            $('#shareBox').css('display','none');
+          });
+          
+          $('#shareBox').mouseout(function(){
+            $('#shareBox').css('display','none');
+          });
+        }
+      }
+
       function setMobileMenu(){
         if(window.innerWidth<768){
           $(".navbar-collapse").css({overflow:"auto", maxHeight: $(window).height() - $(".navbar-header").height() - 30 + "px" });
@@ -195,6 +233,7 @@ var Roots = {
          $('.fancybox').fancybox({padding:0});
          setMobileMenu();
          initBackToTop();
+         //initShare();
          //console.log($('.navbar').height());
          $('content-container').localScroll({hash:true,offset:-($('.navbar').height())});
 
