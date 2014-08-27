@@ -112,7 +112,7 @@ var Roots = {
                 $('#sidebar').css("top","170px");
               }
               else{*/
-                $('#sidebar').css("top","180px");
+                $('#sidebar').css("top","190px");
               //}
             }
           }
@@ -267,14 +267,14 @@ var Roots = {
          //fix the left menu
          if($('.video-banner-container img').length>0){
           $("#sidebar").sticky({topSpacing:190,getWidthFrom:".sidebar",responsiveWidth: true});
-          $('.wrap .main .page-header').css("margin-top","0");
+          //$('.wrap .main .page-header').css("margin-top","0");
         }
         else{
           /*if(window.innerWidth>1200){
             $("#sidebar").sticky({topSpacing:170,getWidthFrom:".sidebar",responsiveWidth: true});
           }
           else{*/
-            $("#sidebar").sticky({topSpacing:180,getWidthFrom:".sidebar",responsiveWidth: true});
+            $("#sidebar").sticky({topSpacing:190,getWidthFrom:".sidebar",responsiveWidth: true});
           //}
         }
 
