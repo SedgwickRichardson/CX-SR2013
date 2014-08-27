@@ -536,6 +536,17 @@ var Roots = {
       });
     }
   },
+  search_result: {
+    init: function() {
+      // JavaScript to be fired on the about us page
+      /*$(document).ready(function(){
+        $(window).resize(function(){
+          console.log('resize');
+          $('#cse-search-results iframe').attr("width",$('.content-container').width());
+        });
+      });*/
+    }
+  },
   pdf_download: {
     init: function() {
       // JavaScript to be fired on the about us page

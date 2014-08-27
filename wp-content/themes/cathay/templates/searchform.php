@@ -1,9 +1,11 @@
-<form role="search" method="get" class="search-form form-inline" action="<?php echo home_url('/'); ?>">
-  <div class="input-group">
-    <input type="search" value="<?php if (is_search()) { echo get_search_query(); } ?>" name="s" class="search-field form-control" placeholder="<?php _e('Search', 'roots'); ?>">
-    <label class="hide"><?php _e('Search for:', 'roots'); ?></label>
-    <span class="input-group-btn">
-      <button type="submit" class="search-submit btn btn-default"><?php _e('Search', 'roots'); ?></button>
-    </span>
-  </div>
+<form role="search" id="cse-search-box" class="search-form form-inline" action="<?=site_url()?>/search-result/" >
+<div class="input-group">
+	<input type="hidden" name="cx" value="003050160993696772205:dwflbbbaanq" />
+	<input type="hidden" name="cof" value="FORID:9;NB:1" />
+	<input type="hidden" name="ie" value="UTF-8" />
+	<input type="text" name="q" size="31" class="search-field form-control" id="gstext" value="<?php if (is_search()) { echo get_search_query(); } ?>" />
+	<span class="input-group-btn open">
+		<input type="submit" name="sa" id="search" value="<?php _e('Search', 'roots'); ?>" class="search-submit btn btn-default" />
+	</span>
+</div>
 </form>
