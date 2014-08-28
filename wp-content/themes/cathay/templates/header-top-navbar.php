@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div class="col-xs-10 col-sm-3">
+      <div class="col-xs-8 col-sm-3">
         <a class="top-logo" href="<?php echo home_url(); ?>">Cathay Pacific</a>
         <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?><span>Making the connection</span></a>
       </div>

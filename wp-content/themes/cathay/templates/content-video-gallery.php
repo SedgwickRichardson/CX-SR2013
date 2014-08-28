@@ -348,3 +348,4 @@ if(get_field("prev_page",$post->ID)){
 }
 ?>
 </div>
+</div>

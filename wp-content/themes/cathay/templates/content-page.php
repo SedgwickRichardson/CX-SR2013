@@ -35,3 +35,4 @@ if(get_field("prev_page",$post->ID)){
 <div class="bottom-factsheet-container hidden-sm hidden-md hidden-lg">
 	<?=get_template_part('partials/factsheet'); ?>
 </div>
+</div>
