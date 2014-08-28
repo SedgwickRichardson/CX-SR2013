@@ -95,7 +95,7 @@
       case 2:
         //echo 'id="child-of-making-the-connection"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>PARTNERING WITH STAKEHOLDERS</p>
         <a class="btn-video-watch btn-show-video-popup" href="javascript:;">Watch videos</a>
         </div>
       <div class="video-overlay"></div>
@@ -111,7 +111,8 @@
       case 9:
         //echo 'id="child-of-2013-progress"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>PERFORMANCE HIGHLIGHTS</p>
+        <span class="btn-video-watch video-tagline"></span>
         </div>
       <div class="video-overlay"></div>
       <img src="<?=get_stylesheet_directory_uri()?>/assets/video/plane.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
@@ -126,24 +127,24 @@
       case 14:
         //echo 'id="child-of-safety"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>CORE CULTURE</p>
         <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
         <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://youtu.be/rqZ3oWJ1dr8" target="_blank">Play video</a>
         </div>
       <div class="video-overlay"></div>
-      <img src="<?=get_stylesheet_directory_uri()?>/assets/video/safety.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
-      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/video/safety.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
-        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/safety.webm" type="video/webm">
-        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/safety.mp4" type="video/mp4">
-        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/safety.ogv" type="video/ogg">
-        <img src="<?=get_stylesheet_directory_uri()?>/assets/video/safety.jpg" class="img-responsive" />
+      <img src="<?=get_stylesheet_directory_uri()?>/assets/video/safety2.jpg" class="img-responsive visible-xs visible-sm visible-md hidden-lg" />
+      <video autoplay loop poster="<?=get_stylesheet_directory_uri()?>/assets/video/safety2.jpg" id="video-loop" class="hidden-xs hidden-sm hidden-md visible-lg">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/safety2.webm" type="video/webm">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/safety2.mp4" type="video/mp4">
+        <source src="<?=get_stylesheet_directory_uri()?>/assets/video/safety2.ogv" type="video/ogg">
+        <img src="<?=get_stylesheet_directory_uri()?>/assets/video/safety2.jpg" class="img-responsive" />
       </video>
 <?
         break;
       case 16:
         //echo 'id="child-of-climate-change"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>TAKING ON RESPONSIBILITY</p>
         <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
         <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://youtu.be/C_Q9YEgAXYo" target="_blank">Play video</a>
         </div>
@@ -160,7 +161,7 @@
       case 18:
         //echo 'id="child-of-waste"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>REDUCE, REUSE & RECYCLE</p>
         <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
         <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://youtu.be/BezF1LljE4Y" target="_blank">Play video</a>
         </div>
@@ -177,7 +178,7 @@
       case 20:
         //echo 'id="child-of-sourcing"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>WORKING WITH OUR SUPPLIERS</p>
         <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
         <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://youtu.be/dfLuQlZv5JI" target="_blank">Play video</a>
         </div>
@@ -194,7 +195,7 @@
       case 22:
         //echo 'id="child-of-biodiversity"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>SUPPORTING CONSERVATION</p>
         <a class="btn-video-play btn-show-video-popup hidden-xs visible-sm visible-md visible-lg" href="javascript:;">Play video</a>
         <a class="btn-video-play btn-show-video-popup visible-xs hidden-sm hidden-md hidden-lg" href="http://youtu.be/nmRhCZDvjQs" target="_blank">Play video</a>
         </div>
@@ -211,7 +212,7 @@
       case 24:
         //echo 'id="child-of-people"';
 ?>
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>DIVERSE, VIBRANT AND ENGAGED</p>
         <a class="btn-video-watch btn-show-video-popup" href="javascript:;">Watch videos</a>
         </div>
       <div class="video-overlay"></div>
