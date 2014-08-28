@@ -80,7 +80,8 @@
         </div>
       </div>
       <div class="overlay color1"></div>
-      <img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/banner-home-no-filter.jpg" />
+      <img class="img-responsive hidden-xs" src="<?=get_stylesheet_directory_uri()?>/assets/img/banner-home-no-filter.jpg" />
+      <img class="img-responsive visible-xs" src="<?=get_stylesheet_directory_uri()?>/assets/img/main-banner.jpg" />
     </div>
   <? else: ?>
     <!-- <div id="video-container">
