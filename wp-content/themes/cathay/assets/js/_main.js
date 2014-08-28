@@ -94,15 +94,17 @@ var Roots = {
             $('#back-to-top').fadeOut();
           }
 
-          if ($(wind).scrollTop() > 372){
+          if ($(wind).scrollTop() > 50){
             $('.navbar').addClass('down');
-            if(window.innerWidth>1200){
+            /*if(window.innerWidth>1200){
               $('#sidebar').css("top","120px");
             }
             else{
               $('#sidebar').css("top","135px");
-            }
-          } else {
+            }*/
+          }
+          else
+          {
             $('.navbar').removeClass('down');
             if($('.video-banner-container img').length>0){
               $('#sidebar').css("top","190px");
@@ -112,7 +114,7 @@ var Roots = {
                 $('#sidebar').css("top","170px");
               }
               else{*/
-                $('#sidebar').css("top","190px");
+                $('#sidebar').css("top","120px");
               //}
             }
           }
@@ -265,17 +267,21 @@ var Roots = {
          $('content-container').localScroll({hash:true,offset:-($('.navbar').height())});
 
          //fix the left menu
-         if($('.video-banner-container img').length>0){
-          $("#sidebar").sticky({topSpacing:190,getWidthFrom:".sidebar",responsiveWidth: true});
-          //$('.wrap .main .page-header').css("margin-top","0");
+        if($('.video-banner-container img').length>0){
+          if(window.innerWidth<1200){
+            $("#sidebar").sticky({topSpacing:130,getWidthFrom:".sidebar",responsiveWidth: true});
+          }
+          else{
+            $("#sidebar").sticky({topSpacing:120,getWidthFrom:".sidebar",responsiveWidth: true});
+          }
         }
         else{
-          /*if(window.innerWidth>1200){
-            $("#sidebar").sticky({topSpacing:170,getWidthFrom:".sidebar",responsiveWidth: true});
+          if(window.innerWidth>1200){
+            $("#sidebar").sticky({topSpacing:120,getWidthFrom:".sidebar",responsiveWidth: true});
           }
-          else{*/
-            $("#sidebar").sticky({topSpacing:190,getWidthFrom:".sidebar",responsiveWidth: true});
-          //}
+          else{
+            $("#sidebar").sticky({topSpacing:140,getWidthFrom:".sidebar",responsiveWidth: true});
+          }
         }
 
          /*----------------------init video panel-----------------------*/
