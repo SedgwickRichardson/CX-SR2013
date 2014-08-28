@@ -26,6 +26,8 @@ var Roots = {
 
       /*var isIE8 = $(browser).msie && +$(browser).version === 8;*/
       var isIE8 = false;
+      var site_url = "http://cx-sr2013.local.com";
+
       if($("html").hasClass("ie8")){
         isIE8 = true;
       }
@@ -375,7 +377,8 @@ var Roots = {
           });
         }
         else{
-          alert('oldie!');
+          //if it's old browser, direct user to video gallery page
+          $('.btn-video-watch,.btn-video-play').attr("href",site_url+"/resources/video-gallery/");
         }
 
         /*----------------------end init video panel-----------------------*/
@@ -385,6 +388,8 @@ var Roots = {
 
          //add icon to factsheet link
          $('.factsheet-link').append('<i class="fa fa-file-text"></i>');
+
+         /*$('.note-container').localScroll({offset:-($('.navbar').height())});*/
 
          /*var mobile_search_field = $('.navbar-collapse .search-field');
          $(mobile_search_field).attr("placeholder","Search");
