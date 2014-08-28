@@ -119,6 +119,23 @@
       margin: 0;
       border-top: 1px solid #a1a1a1;
 
+      &#menu-primary-navigation{
+        .open{
+          .dropdown-menu{
+            &>.active{
+              a{
+                color: #000;
+              }
+            }
+            &>li{
+              a{
+                color: #555;
+              }
+            }
+          }
+        }
+      }
+
       &>li{
         &.active{
           &>a{
@@ -138,6 +155,10 @@
       }
 
       .open{
+
+        a{
+          background-color: transparent;
+        }
 
         .dropdown-menu{
 
@@ -161,6 +182,7 @@
               white-space: normal;
               line-height: 120%;
               font-size: 120%;
+              color:#fff;
             }
           }
         }

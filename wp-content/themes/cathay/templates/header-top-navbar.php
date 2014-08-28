@@ -39,7 +39,7 @@
       get_search_form();
       echo '</div>';
       if (has_nav_menu('utility_menu')) :
-              wp_nav_menu(array('theme_location' => 'utility_menu', 'menu_class' => 'nav navbar-nav visible-xs hidden-sm hidden-md hidden-lg','depth' => 1));
+              wp_nav_menu(array('theme_location' => 'utility_menu', 'menu_class' => 'nav navbar-nav visible-xs hidden-sm hidden-md hidden-lg','depth' => 5));
             endif;
         /*$args = array('depth' => 1,'exclude' => '4');
         wp_list_pages( $args );*/

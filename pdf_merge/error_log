@@ -1,0 +1,48 @@
+[22-Aug-2013 05:16:26] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error outputting PDF to 'download'.' in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php:124
+Stack trace:
+#0 /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit.php(193): PDFMerger->merge('download', 'CX_SDR12.pdf')
+#1 {main}
+  thrown in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php on line 124
+[22-Aug-2013 05:49:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit.php:190) in /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit.php on line 195
+[22-Aug-2013 05:55:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit.php:195) in /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit.php on line 200
+[22-Aug-2013 05:57:17] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error outputting PDF to 'download'.' in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php:124
+Stack trace:
+#0 /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit.php(198): PDFMerger->merge('download', 'CX_SDR12.pdf')
+#1 {main}
+  thrown in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php on line 124
+[22-Aug-2013 05:57:53] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error outputting PDF to 'download'.' in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php:124
+Stack trace:
+#0 /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit.php(198): PDFMerger->merge('download', 'CX_SDR12.pdf')
+#1 {main}
+  thrown in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php on line 124
+[22-Aug-2013 06:17:34] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error outputting PDF to 'download'.' in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php:124
+Stack trace:
+#0 /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit_factsheet.php(58): PDFMerger->merge('download', 'CX_SDR12_FACTSH...')
+#1 {main}
+  thrown in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php on line 124
+[22-Aug-2013 06:18:53] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error outputting PDF to 'download'.' in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php:124
+Stack trace:
+#0 /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit_factsheet.php(58): PDFMerger->merge('download', 'CX_SDR12_FACTSH...')
+#1 {main}
+  thrown in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php on line 124
+[22-Aug-2013 06:19:42] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit_factsheet.php:55) in /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit_factsheet.php on line 60
+[22-Aug-2013 18:51:58] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error outputting PDF to 'download'.' in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php:124
+Stack trace:
+#0 /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit.php(198): PDFMerger->merge('download', 'CX_SDR12.pdf')
+#1 {main}
+  thrown in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php on line 124
+[23-Aug-2013 02:41:18] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error outputting PDF to 'download'.' in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php:124
+Stack trace:
+#0 /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit_factsheet.php(58): PDFMerger->merge('download', 'CX_SDR12_FACTSH...')
+#1 {main}
+  thrown in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php on line 124
+[23-Aug-2013 02:42:31] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error outputting PDF to 'download'.' in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php:124
+Stack trace:
+#0 /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit_factsheet.php(58): PDFMerger->merge('download', 'CX_SDR12_FACTSH...')
+#1 {main}
+  thrown in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php on line 124
+[23-Aug-2013 02:43:37] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error outputting PDF to 'download'.' in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php:124
+Stack trace:
+#0 /home/sedgwick/public_html/CX-SR2012/resources/pdf_submit.php(198): PDFMerger->merge('download', 'CX_SDR12.pdf')
+#1 {main}
+  thrown in /home/sedgwick/public_html/CX-SR2012/resources/PDFMerger.php on line 124

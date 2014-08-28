@@ -196,23 +196,28 @@ var Roots = {
            },500);
         });
 
-         $('#btn-close-video-popup').click(function(){
+        function close_video_popup(){
           $('#embed-video-container>div').each(function(){
-            if(isIE8){
+            /*if(isIE8){
               $('#video_'+$(this).index()).empty();
             }
-            else{
+            else{*/
               yt_players['player_'+$(this).index()].pauseVideo();
-            }
+            //}
           });
 
-          $(this).parent().fadeOut();
-        });
+          $('#video-popup').fadeOut();
+        }
+
+         $('#btn-close-video-popup,#video-popup').click(close_video_popup);
+
+         /*var video_arr = ["//www.youtube.com/embed/vQNNUfJCumg?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0",
+                  "//www.youtube.com/embed/fnZpypJQQzc?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0"];*/
 
         $('#video-carousel .owl-item').each(function(){
            var slide_index = $(this).index();
 
-           $(this).find('a').click(function(){
+           $(this).find('a').click(function(evt){
             //console.log('video img clicked');
             $('#embed-video-container>div').each(function(){
               if($(this).index()===slide_index){
@@ -250,6 +255,11 @@ var Roots = {
             }*/
             //console.log('index = '+slide_index);
             $('#embed-video-container div').eq(slide_index).css({'visibility':'visible'/*, 'text-indent':'0'*/});
+            /*if($('#embed-video-container>div>iframe').eq(slide_index).attr("src")===""){
+              $('#embed-video-container>div>iframe').attr('src',video_arr[slide_index]);
+            }*/
+
+            evt.stopPropagation();
            });
         });
       }
@@ -319,41 +329,54 @@ var Roots = {
           //console.log(this.owl.visibleItems[this.owl.visibleItems.length-1]+" "+this.owl.currentItem);
         }
 
-        //if there're more than 3 video, make a carousel
-        if($('#video-carousel div').length>3){
-          $('#video-carousel').owlCarousel({pagination: false,
-                                       items : 4,
-                                       itemsDesktop : [1199,4],
-                                       itemsDesktopSmall : [991,3],
-                                       itemsTablet: false,
-                                       itemsMobile : false,
-                                       afterInit : function(){
-                                        //console.log('afterInit 1');
-                                        videoCarouselAfterAction();
-                                        //console.log('afterInit 2');
-                                        initVideo();
-                                      },
-                                       afterAction : videoCarouselAfterAction});
-          $("#video-carousel-prev").click(function(){
-            $('#video-carousel').trigger('owl.prev');
+        //init video popup only if it's later than IE8
+        if(!($('html').hasClass('oldie'))){
+
+          //if there're more than 3 video, make a carousel
+          if($('#video-carousel div').length>3){
+            $('#video-carousel').owlCarousel({pagination: false,
+                                         items : 4,
+                                         itemsDesktop : [1199,4],
+                                         itemsDesktopSmall : [991,3],
+                                         itemsTablet: false,
+                                         itemsMobile : false,
+                                         afterInit : function(){
+                                          //console.log('afterInit 1');
+                                          videoCarouselAfterAction();
+                                          //console.log('afterInit 2');
+                                          initVideo();
+                                        },
+                                         afterAction : videoCarouselAfterAction});
+            $("#video-carousel-prev").click(function(){
+              $('#video-carousel').trigger('owl.prev');
+            });
+            $("#video-carousel-next").click(function(){
+              $('#video-carousel').trigger('owl.next');
+            });
+          }
+          else{
+            $('#video-carousel-container').addClass("no-carousel");
+            initVideo();
+          }
+
+          //init the video size in popup
+           $allVideos = $("iframe[src^='//www.youtube.com']");
+
+          // Figure out and save aspect ratio for each video
+          $allVideos.each(function(){
+            $(this).data('aspectRatio', this.height / this.width).removeAttr('height').removeAttr('width');
           });
-          $("#video-carousel-next").click(function(){
-            $('#video-carousel').trigger('owl.next');
+          setEmbedVideoSize();
+
+          $('.btn-show-video-popup').click(function(){
+            if($('#video-popup').is(':hidden')){
+              $('#video-popup').fadeIn();
+            }
           });
         }
         else{
-          $('#video-carousel-container').addClass("no-carousel");
-          initVideo();
+          alert('oldie!');
         }
-
-        //init the video size in popup
-         $allVideos = $("iframe[src^='//www.youtube.com']");
-
-        // Figure out and save aspect ratio for each video
-        $allVideos.each(function(){
-          $(this).data('aspectRatio', this.height / this.width).removeAttr('height').removeAttr('width');
-        });
-        setEmbedVideoSize();
 
         /*----------------------end init video panel-----------------------*/
 
@@ -385,19 +408,14 @@ var Roots = {
           }
         });
 
-        $('.btn-show-video-popup').click(function(){
-          if($('#video-popup').is(':hidden')){
-            $('#video-popup').fadeIn();
-          }
-        });
-
       });
 
       $(window).resize(function(){
-        setVideoPosition();
         setMobileMenu();
-        setEmbedVideoSize();
-
+        if(!($('html').hasClass('oldie'))){
+          setVideoPosition();
+          setEmbedVideoSize();
+        }
       });
     }
   },
@@ -488,15 +506,6 @@ var Roots = {
             .setTween(sd_tween)
             .addTo(controller);
 
-          /*var key_offset = -100;
-          $('#section-key .key-circle').each(function(){
-            new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
-            .setTween(TweenMax.from($(this), 1, {autoAlpha: 0}))
-            .addTo(controller);
-
-            key_offset += 30;
-          });*/
-
           var key_offset = -180;
           new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-safety'), 1, {left:229, top: 130, autoAlpha: 0}))
@@ -560,12 +569,6 @@ var Roots = {
   search_result: {
     init: function() {
       // JavaScript to be fired on the about us page
-      /*$(document).ready(function(){
-        $(window).resize(function(){
-          console.log('resize');
-          $('#cse-search-results iframe').attr("width",$('.content-container').width());
-        });
-      });*/
     }
   },
   pdf_download: {
@@ -632,13 +635,37 @@ var Roots = {
           });
 
           $('#factsheetDownloadListContainer input').change(function(){
-            if($(this).is(':checked') && $(this).parent().is('.sectionTitleDivContainer')) {
-               $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', true);
+            if($(this).parent().is('.sectionTitleDivContainer')){//if it's the parent checkbox
+               if($(this).is(':checked')){
+                $(this).parent().siblings('.expandContentLargeContent').find('input').prop('checked', true);
+                console.log('parent checked');
+               }
+               else{
+                $(this).parent().siblings('.expandContentLargeContent').find('input').prop('checked', false);
+                console.log('parent unchecked');
+               }
+            }
+            else{//if it's the child checkbox
+              if($(this).is(':checked')){
+                if($(this).parent().siblings('.sectionItem').find('input:not(:checked)').length===0){
+                  //all child checkbox are checked
+                  $(this).parent().parent().siblings('.sectionTitleDivContainer').find('input').prop('checked', true);
+                }
+              }
+              else{
+                if($(this).parent().siblings('.sectionItem').find('input:checked').length===0){
+                  $(this).parent().parent().siblings('.sectionTitleDivContainer').find('input').prop('checked', false);
+                }
+              }
+            }
+            /*if($(this).is(':checked') && $(this).parent().is('.sectionTitleDivContainer')) {
+              $(this).parent().siblings('.expandContentLargeContent').find('input').attr('checked', true);
+               //$('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', true);
                console.log("checked");
             } else {
               $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', false);
               console.log("not checked "+$('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())));
-            }
+            }*/
             var checkTotal = 0;
             checkTotal = $('#factsheetDownloadListContainer .sectionItem input:checked').length;
 
