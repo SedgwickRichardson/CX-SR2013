@@ -14,7 +14,7 @@
 <div class="row">
 	<div class="col-lg-8 col-lg-offset-2 headline-container">
 	  <h1><span class="quote-left">“</span>We are committed to sustainable development as it is the right thing to do for our planet, people and communities. We are in it for the long term in order for our business to be successful and sustainable.<span class="quote-right">“</span></h1>
-	  <p>Involving stakeholders in our Sustainable Development Strategy is an indispensible part of advancing toward our business vision. We have been listening to our diverse stakeholders’ needs and concerns, and we are responding by engaging and working with them to find innovative solutions to reduce our impacts and reach our targets.</p>
+	  <p>Involving stakeholders in our Sustainable Development Strategy is an indispensible part of advancing toward our business vision. We have been listening to our stakeholders’ diverse needs and concerns, and we are responding by engaging and working with them to find innovative solutions, reduce our impacts and reach our targets.</p>
 	</div>
 </div>
 <div class="row">

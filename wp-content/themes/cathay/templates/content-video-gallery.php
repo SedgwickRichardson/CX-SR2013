@@ -10,7 +10,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     	<div class="gallery-img-container">
-          <a class="various fancybox.iframe" href="http://www.youtube.com/embed/vQNNUfJCumg?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/making_the_connection_thumb.jpg" /></a>
+          <a class="various fancybox.iframe" href="http://www.youtube.com/embed/vQNNUfJCumg?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/making_the_connection_thumb.jpg" /></a>
           <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/vQNNUfJCumg?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption caption1">
@@ -22,7 +22,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/vQNNUfJCumg?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/working_towards_sustainable_future_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/vQNNUfJCumg?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/working_towards_sustainable_future_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/fnZpypJQQzc?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption caption1">
@@ -40,7 +40,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/k4JCSmmeVXM?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/community_investment_video_1_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/k4JCSmmeVXM?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/community_investment_video_1_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/k4JCSmmeVXM?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -51,7 +51,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/UZ6IXHlcfrI?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/community_investment_video_2_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/UZ6IXHlcfrI?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/community_investment_video_2_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/UZ6IXHlcfrI?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -67,7 +67,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/4nu7qVC60EQ?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/community_investment_video_3_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/4nu7qVC60EQ?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/community_investment_video_3_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/4nu7qVC60EQ?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -78,7 +78,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/rqZ3oWJ1dr8?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/safety_video_1_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/rqZ3oWJ1dr8?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/safety_video_1_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/rqZ3oWJ1dr8?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -96,7 +96,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/C_Q9YEgAXYo?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/climate_change_video_1_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/C_Q9YEgAXYo?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/climate_change_video_1_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/C_Q9YEgAXYo?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -108,7 +108,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/BezF1LljE4Y?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/waste_management_video_1_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/BezF1LljE4Y?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/waste_management_video_1_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/BezF1LljE4Y?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -126,7 +126,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/dfLuQlZv5JI?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/sustainable_sourcing_video_1_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/dfLuQlZv5JI?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/sustainable_sourcing_video_1_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/dfLuQlZv5JI?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -138,7 +138,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/nmRhCZDvjQs?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/biodiversity_video_1_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/nmRhCZDvjQs?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/biodiversity_video_1_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/nmRhCZDvjQs?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -155,7 +155,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/h8chpOI59VA?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_1_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/h8chpOI59VA?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_1_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/h8chpOI59VA?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption caption2">
@@ -166,7 +166,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/qyL2lm0ZUQM?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_2_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/qyL2lm0ZUQM?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_2_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/qyL2lm0ZUQM?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption caption2">
@@ -180,7 +180,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/tuLW9uHacAY?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_3_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/tuLW9uHacAY?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_3_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/tuLW9uHacAY?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp">view video</a>
       </div>
       <div class="caption">
@@ -191,7 +191,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/fpW3Yewh6dI?autoplay=1&amp;rel=0&list=PLJygCojJ69v3lF3Y2U8KDQuubl3zxEGD5&feature=c4-overview-vl"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_4_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/fpW3Yewh6dI?autoplay=1&amp;rel=0&list=PLJygCojJ69v3lF3Y2U8KDQuubl3zxEGD5&feature=c4-overview-vl"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_4_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/fpW3Yewh6dI?autoplay=1&amp;rel=0&list=PLJygCojJ69v3lF3Y2U8KDQuubl3zxEGD5&feature=c4-overview-vl">view video</a>
       </div>
       <div class="caption">
@@ -204,7 +204,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/0ndu54A7Mcc?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_5_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/0ndu54A7Mcc?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_5_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/0ndu54A7Mcc?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -215,7 +215,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/gkf9P4DDX0M?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&index=7"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_6_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/gkf9P4DDX0M?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&index=7"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_6_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/gkf9P4DDX0M?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&index=7">view video</a>
       </div>
       <div class="caption">
@@ -228,7 +228,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/-xpD5OXmygk?autoplay=1&amp;rel=0&list=PLSGWXJX5QKUU1QCmGAE27Jpqnz604Q9A5&feature=c4-overview-vl"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_7_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/-xpD5OXmygk?autoplay=1&amp;rel=0&list=PLSGWXJX5QKUU1QCmGAE27Jpqnz604Q9A5&feature=c4-overview-vl"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_7_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/-xpD5OXmygk?autoplay=1&amp;rel=0&list=PLSGWXJX5QKUU1QCmGAE27Jpqnz604Q9A5&feature=c4-overview-vl">view video</a>
       </div>
       <div class="caption">
@@ -239,7 +239,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/-N38ccok2sI?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_8_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/-N38ccok2sI?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_8_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/-N38ccok2sI?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -252,7 +252,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L4oap7d77O0?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&index=7"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_9_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L4oap7d77O0?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&index=7"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_9_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/L4oap7d77O0?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&index=7">view video</a>
       </div>
       <div class="caption">
@@ -263,7 +263,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/QGEhidjLrI8?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_10_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/QGEhidjLrI8?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_10_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/QGEhidjLrI8?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -276,7 +276,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/PDLnhUJvxs0?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_11_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/PDLnhUJvxs0?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_11_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/PDLnhUJvxs0?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -287,7 +287,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/HTHkzfTPSkc?autoplay=1&amp;rel=0"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_12_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/HTHkzfTPSkc?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_12_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/HTHkzfTPSkc?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
@@ -300,7 +300,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/PU3NtV4tbPs?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&feature=c4-overview-vl"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_13_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/PU3NtV4tbPs?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&feature=c4-overview-vl"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_13_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/PU3NtV4tbPs?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&feature=c4-overview-vl">view video</a>
       </div>
       <div class="caption">
@@ -311,7 +311,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/gU--X30HOz8?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_14_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/gU--X30HOz8?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_14_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/gU--X30HOz8?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp">view video</a>
       </div>
       <div class="caption">
@@ -324,7 +324,7 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/aE1KUZUPi60?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp"><img class="img-responsive" src="http://cx-sr2013.local.com/wp-content/themes/cathay/assets/img/thumb/our_people_video_15_thumb.jpg" /></a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/aE1KUZUPi60?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_15_thumb.jpg" /></a>
       <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/aE1KUZUPi60?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp">view video</a>
       </div>
       <div class="caption">

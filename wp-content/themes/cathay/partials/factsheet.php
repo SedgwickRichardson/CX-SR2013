@@ -18,7 +18,10 @@ $page_ancestors = get_ancestors($post->ID, 'page' );
 	</ul>
 </div>
 <div class="factsheet-container">
-  <h3><a target="_blank" href="<?=get_stylesheet_directory_uri()?>/assets/pdf/CX_SDR2013_Sustainability_All_Around_You.pdf">Sustainability all around you<i class="fa fa-file-image-o"></i></a></h3>
+  <h3>INFOGRAPHIC<i class="fa fa-file-text-o"></i></h3>
+  <ul>
+    <li><a target="_blank" href="<?=get_stylesheet_directory_uri()?>/assets/pdf/CX_SDR2013_Sustainability_All_Around_You.pdf">Sustainability all around you (PDF 486kb)</a></li>
+  </ul>
 </div>
 <?
         break;

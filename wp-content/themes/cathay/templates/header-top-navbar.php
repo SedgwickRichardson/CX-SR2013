@@ -62,13 +62,13 @@
         </div>
         <div class="main-banner-text">
           <!-- <h1>Connecting</h1> -->
-          <h2>the Cathay Pacific’s Sustainable Development Strategy</h2>
+          <h2>Cathay Pacific’s Sustainable Development Strategy</h2>
           <p>with</p>
-          <h2><strong>Business Vision</strong></h2>
+          <h2><strong>Our Business Vision</strong></h2>
         </div>
         <div class="main-banner-text">
           <!-- <h1>Connecting</h1> -->
-          <h2>Addressing Operational Impacts</h2>
+          <h2>Addressing Our Operational Impacts</h2>
           <p>with</p>
           <h2><strong>Creating Value</strong></h2>
         </div>
