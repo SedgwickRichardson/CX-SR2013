@@ -36,12 +36,12 @@ var Roots = {
         var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
 
         //console.log('initShare');
-        
+
         if (isiDevice){
           document.getElementById("headerShareBtn").addEventListener('touchstart',function(){
             $('#shareBox').css('display','block');
           },false);
-          
+
           $('html').bind('touchstart',function(e) {
             if($(e.target).is('a')){
               return;
@@ -53,15 +53,15 @@ var Roots = {
           $('#headerShareBtn').mouseover(function(){
             $('#shareBox').css('display','inline-block');
           });
-          
+
           $('#shareBox').mouseover(function(){
             $('#shareBox').css('display','inline-block');
           });
-          
+
           $('#headerShareBtn').mouseout(function(){
             $('#shareBox').css('display','none');
           });
-          
+
           $('#shareBox').mouseout(function(){
             $('#shareBox').css('display','none');
           });
@@ -84,7 +84,7 @@ var Roots = {
       function initBackToTop()
       {
         //console.log('initBackToTop');
-        //back-to-top 
+        //back-to-top
         var wind = $(window);
         $(wind).scroll(function(){
           //console.log("scrollTop = "+$(wind).scrollTop());
@@ -119,7 +119,7 @@ var Roots = {
             }
           }
         });
-        
+
         $('#back-to-top').click(function(){
           var body = (window.opera) ? (document.compatMode === "CSS1Compat" ? $('html') : $('body')) : $('html,body');
           if($(wind).scrollTop() > 0){
@@ -226,7 +226,7 @@ var Roots = {
                 yt_players['player_'+$(this).index()].pauseVideo();
               }
             });
-            
+
             /*if( isIE8 ){
               var filter = false;
               if (typeof videoContentArray === 'undefined') return;
@@ -240,9 +240,9 @@ var Roots = {
                   }
                 }
               }
-              
+
               $('<div id="video_'+ $(this).index() +'_replace">').appendTo('#video_'+$(this).index());
-              var videoPath = filter[$(this).index()].path.replace('embed', 'v');       
+              var videoPath = filter[$(this).index()].path.replace('embed', 'v');
               var params = { allowScriptAccess: "always" };
               var atts = { id: 'player_'+ $(this).index() };
               var destinationDiv = 'video_'+ $(this).index() +'_replace';
@@ -397,7 +397,7 @@ var Roots = {
         setVideoPosition();
         setMobileMenu();
         setEmbedVideoSize();
-        
+
       });
     }
   },
@@ -407,22 +407,36 @@ var Roots = {
       $(window).stellar();
       var isIE8 = document.all && !document.addEventListener;
       var bannerVar;
+      var counter = 0;
+      var prevCounter = 0;
+      var colorArray = ['color1', 'color2', 'color3', 'color4'];
+
       $.localScroll({hash:false,offset:-($('.navbar').height())});
 
       function setupBannerRotator(){
          if($('.main-banner-text').length > 1){
              $('.main-banner-text:first').addClass('current').fadeIn(500);
-             bannerVar = setInterval(function(){textRotate();}, 8000);
+             bannerVar = setInterval(function(){textRotate();}, 5000);
          }
       }
 
       function textRotate(){
+        prevCounter = counter;
+        if (counter < colorArray.length-1) {
+          counter++;
+        } else {
+          counter = 0;
+        }
          var current = $('#main-banner-text-container > .current');
          current.removeClass('current').children('h2').animate({opacity:0.001},500,function(){
           //console.log("1");
           $(this).parent().children('p').animate({width:"30px"},300,function(){
             //console.log("2");
             $(this).parent().fadeOut('300',function(){
+              console.log('prevCounter:'+prevCounter+' counter:'+counter);
+              $(".overlay").addClass(colorArray[counter]).removeClass(colorArray[prevCounter]);
+
+
               //clearInterval(bannerVar);
               //console.log("3");
               if(current.next().length === 0){
@@ -443,12 +457,13 @@ var Roots = {
             });
           });
          });
+
       }
 
       $(document).ready(function(){
         setupBannerRotator();
         $('img[usemap]').rwdImageMaps();
-        
+
         if(!isIE8){
           var controller = new ScrollMagic();
 
@@ -481,7 +496,7 @@ var Roots = {
 
             key_offset += 30;
           });*/
-          
+
           var key_offset = -180;
           new ScrollScene({triggerElement: "#section-key", duration: 200, offset: key_offset})
           .setTween(TweenMax.from($('#section-key #circle-safety'), 1, {left:229, top: 130, autoAlpha: 0}))
@@ -563,7 +578,7 @@ var Roots = {
           }
           return false;
         });
-        
+
         $("#btnFactsheetSelectDownload").click(function(){
           if($('#factsheetDownloadListContainer .sectionItem input:checkbox:checked').length>0){
             $("#form2").submit();
@@ -573,19 +588,19 @@ var Roots = {
 
         function stakeHolderExpandableInit(){
           var reportSelectCount = 0;
-          
+
           $('.expandContentLargeContent').each(function(){
             $(this).css('display','none');
           });
-          
+
           $('.sectionTitleDivContainer').each(function(){
             $(this).click(
               function(e){
-              
+
                 if($(e.target).is('input')){
                   return;
                 }
-                
+
                 if($('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this))).css('display') === 'none')
                 {
                   $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this))).css('display','block');
@@ -603,7 +618,7 @@ var Roots = {
                 }
             });
           });
-          
+
           $('#reportDownloadListContainer input').change(function () {
             if($(this).is(':checked') && $(this).parent().is('.sectionTitleDivContainer')) {
                $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', true);
@@ -615,7 +630,7 @@ var Roots = {
             $("#reportSelectedNoDiv span").html("(" + checkTotal + ")");
             $("#reportSelectedNoDiv .cartCaption").html(checkTotal+' files added. Add files from list below and download pdf file to your computer.');
           });
-          
+
           $('#factsheetDownloadListContainer input').change(function(){
             if($(this).is(':checked') && $(this).parent().is('.sectionTitleDivContainer')) {
                $('.expandContentLargeContent').eq($('.sectionTitleDivContainer').index($(this).parent())).find('.downloadCheckBox').attr('checked', true);

@@ -139,6 +139,7 @@ body.sitemap{
       #main-banner-text-container{
         width: 716px;
         left: 50%;
+        z-index: 2000;
         margin-left: -358px;
         top: 17%;
         display: block;
@@ -166,7 +167,7 @@ body.sitemap{
           width: 716px;
           margin-left: -358px;
 
-          
+
 
           h2{
             font-size: 20px;
@@ -438,7 +439,7 @@ body.sitemap{
       }
     }
  }
-  
+
 
   body#child-of-waste-management .side-menu li.current_page_item>a,
   body#child-of-waste-management .side-menu li a:hover{
@@ -671,7 +672,7 @@ body.sitemap{
               .list-container{
                 padding: 0;
               }
-            }  
+            }
         }
 
         .list-with-h3-heading{
@@ -720,7 +721,7 @@ body.sitemap{
           /*.quote-text:before {
             content: '';
             display: inline-block;
-            height: 100%; 
+            height: 100%;
             vertical-align: bottom;
           }
           .quote-text {
@@ -735,7 +736,7 @@ body.sitemap{
 
           .two-col-with-gap{
             margin-bottom: 4px;
-            
+
             .col-left{
               padding-right: 2px;
               margin-bottom: 0
@@ -820,7 +821,7 @@ body.sitemap{
           background: transparent url(../img/arrow-right-slider.png) right center no-repeat;
           right: -30px;
         }
-        
+
 
         #video-carousel{
           margin: 20px auto 0 auto;
@@ -856,6 +857,33 @@ body.sitemap{
 
   .video-banner-container{
     margin-top: 149px;
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 1000;
+      opacity: 0.8;
+      -moz-transition: all 500ms;
+      -webkit-transition: all 500ms;
+      transition: all 500ms;
+
+      &.color1 {
+        background: #096267;
+      }
+      &.color2 {
+        background: #a94654;
+      }
+      &.color3 {
+        background: #9f9835;
+      }
+      &.color4 {
+        background: #2484C6;
+      }
+
+    }
 
     .video-banner-text-container{
       width: 768px;
@@ -1057,7 +1085,7 @@ body.sitemap{
                   text-decoration: underline;
                 }
 
-                
+
               }
 
               /*&:last-of-type{
@@ -1065,7 +1093,7 @@ body.sitemap{
                   padding-right: 0;
                   margin-right: 0;
                   border-right:none;
-                } 
+                }
               }*/
             }
           }
@@ -1193,7 +1221,7 @@ body.sitemap{
       .btn-download{
         position: absolute;
         right: 50%;
-        text-align: right; 
+        text-align: right;
 
         p{
           margin-left: -60px;
@@ -1204,7 +1232,7 @@ body.sitemap{
       .btn-video-gallery{
         position: absolute;
         left: 47.5%;
-        text-align: right; 
+        text-align: right;
 
         p{
           margin-top: 65px;
@@ -1268,7 +1296,7 @@ body.sitemap{
 
     .input-group-btn{
       /*&.open{*/
-        
+
 
         .search-submit{
           background-position: -21px 3px;
@@ -1287,5 +1315,5 @@ body.sitemap{
       //}
     }
   }
-  
+
 }

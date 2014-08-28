@@ -79,7 +79,8 @@
           <h2><strong>Innovative Solutions</strong></h2>
         </div>
       </div>
-      <img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/main-banner.jpg" />
+      <div class="overlay color1"></div>
+      <img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/banner-home-no-filter.jpg" />
     </div>
   <? else: ?>
     <!-- <div id="video-container">
