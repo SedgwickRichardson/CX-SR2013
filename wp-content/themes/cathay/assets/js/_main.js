@@ -213,7 +213,7 @@ var Roots = {
           $('#video-popup').fadeOut();
         }
 
-         $('#btn-close-video-popup,#video-popup').click(close_video_popup);
+         $('#btn-close-video-popup').click(close_video_popup);
 
          /*var video_arr = ["//www.youtube.com/embed/vQNNUfJCumg?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0",
                   "//www.youtube.com/embed/fnZpypJQQzc?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0"];*/
@@ -364,7 +364,7 @@ var Roots = {
           }
 
           //init the video size in popup
-           $allVideos = $("iframe[src^='//www.youtube.com']");
+           $allVideos = $("iframe[src*='//www.youtube.com']");
            console.log("video no = "+$allVideos.length);
 
           // Figure out and save aspect ratio for each video
