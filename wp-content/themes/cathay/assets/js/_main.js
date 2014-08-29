@@ -26,7 +26,7 @@ var Roots = {
 
       /*var isIE8 = $(browser).msie && +$(browser).version === 8;*/
       var isIE8 = false;
-      var site_url = "cx-sr2013.sedgwick-richardson.hk/static";
+      var site_url = "http://downloads.cathaypacific.com/cx/aboutus/sd/2013";
 
       if($("html").hasClass("ie8")){
         isIE8 = true;
