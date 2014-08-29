@@ -365,6 +365,7 @@ var Roots = {
 
           //init the video size in popup
            $allVideos = $("iframe[src^='//www.youtube.com']");
+           console.log("video no = "+$allVideos.length);
 
           // Figure out and save aspect ratio for each video
           $allVideos.each(function(){
