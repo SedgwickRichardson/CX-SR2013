@@ -26,7 +26,7 @@ var Roots = {
 
       /*var isIE8 = $(browser).msie && +$(browser).version === 8;*/
       var isIE8 = false;
-      var site_url = "http://cx-sr2013.local.com";
+      var site_url = "cx-sr2013.sedgwick-richardson.hk/static";
 
       if($("html").hasClass("ie8")){
         isIE8 = true;
@@ -365,12 +365,12 @@ var Roots = {
 
           //init the video size in popup
            $allVideos = $("iframe[src*='//www.youtube.com']");
-           console.log("video no = "+$allVideos.length);
+           //console.log("video no = "+$allVideos.length);
 
           // Figure out and save aspect ratio for each video
           $allVideos.each(function(){
             $(this).data('aspectRatio', this.height / this.width).removeAttr('height').removeAttr('width');
-            console.log("video ratio = "+$(this).data('aspectRatio'));
+            //console.log("video ratio = "+$(this).data('aspectRatio'));
           });
           setEmbedVideoSize();
 
