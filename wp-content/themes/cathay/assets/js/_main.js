@@ -162,6 +162,8 @@ var Roots = {
           .width(newWidth)
           .height(newHeight);
 
+          //console.log("newWidth = "+newWidth+", newHeight = "+newHeight+", ratio = "+$el.data('aspectRatio'));
+
           $('#embed-video-container').width(newWidth).height(newHeight);
           $(this).parent().width(newWidth).height(newHeight);
         });
@@ -367,6 +369,7 @@ var Roots = {
           // Figure out and save aspect ratio for each video
           $allVideos.each(function(){
             $(this).data('aspectRatio', this.height / this.width).removeAttr('height').removeAttr('width');
+            console.log("video ratio = "+$(this).data('aspectRatio'));
           });
           setEmbedVideoSize();
 
