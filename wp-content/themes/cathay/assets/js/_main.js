@@ -27,6 +27,15 @@ var Roots = {
       /*var isIE8 = $(browser).msie && +$(browser).version === 8;*/
       var isIE8 = false;
       var site_url = "http://cx-sr2013.sedgwick-richardson.hk";
+      var isIE;
+      var msie = window.navigator.userAgent.indexOf("MSIE ");
+      if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)){
+        isIE = true;
+      }
+      else{
+        isIE = false;
+      }
+      console.log("isIE = "+isIE);
 
       if($("html").hasClass("ie8")){
         isIE8 = true;
@@ -134,9 +143,6 @@ var Roots = {
 
       function setEmbedVideoSize(){
         var window_height = window.innerHeight;
-        //console.log(window_height+" "+$('#video-carousel-container').height()+" "+parseInt($('#video-popup').css('padding-top'),10)+" "+parseInt($('#video-popup').css('padding-bottom'),10)+" "+$('#btn-close-video-popup').height());
-        //15 is the offset for scrollbar
-        /*var newHeight = window_height - $('#video-carousel-container').height() - parseInt($('#video-popup').css('padding-top'),10) - parseInt($('#video-popup').css('padding-bottom'),10) - $('#btn-close-video-popup').height();*/
 
         var newHeight;
 
@@ -174,11 +180,6 @@ var Roots = {
           return;
         }
 
-        /*var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);*/
-
         var yt_int, yt_players={},
              initYT = function() {
                 //console.log('initYT 1');
@@ -195,6 +196,7 @@ var Roots = {
               if(typeof YT === "object"){
                 initYT();
                 clearInterval(yt_int);
+                $('#embed-video-container>div:not(:first)').css('visibility','hidden');
               }
               //console.log('getScript');
            },500);
@@ -202,12 +204,15 @@ var Roots = {
 
         function close_video_popup(){
           $('#embed-video-container>div').each(function(){
-            /*if(isIE8){
-              $('#video_'+$(this).index()).empty();
+            var player = yt_players['player_'+$(this).index()];
+            if(player.getPlayerState()===1){
+              /*if(isIE){
+                yt_players['player_'+$(this).index()].stopVideo();
+              }
+              else{*/
+                player.pauseVideo();
+              //}
             }
-            else{*/
-              yt_players['player_'+$(this).index()].pauseVideo();
-            //}
           });
 
           $('#video-popup').fadeOut();
@@ -215,8 +220,6 @@ var Roots = {
 
          $('#btn-close-video-popup').click(close_video_popup);
 
-         /*var video_arr = ["//www.youtube.com/embed/vQNNUfJCumg?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0",
-                  "//www.youtube.com/embed/fnZpypJQQzc?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0"];*/
 
         $('#video-carousel .owl-item').each(function(){
            var slide_index = $(this).index();
@@ -228,40 +231,19 @@ var Roots = {
                 return;
               }
               $(this).css({'visibility':'hidden'/*, 'text-indent':'-9999px'*/});
-              if(isIE8){
-                $('#video_'+$(this).index()).empty();
-              }
-              else{
-                yt_players['player_'+$(this).index()].pauseVideo();
+              var player = yt_players['player_'+$(this).index()];
+              //console.log('index='+$(this).index()+' player='+player+' status='+player.getPlayerState());
+              if(player.getPlayerState()===1){
+                /*if(isIE){
+                  yt_players['player_'+$(this).index()].stopVideo();
+                }
+                else{*/
+                  player.pauseVideo();
+                //}
               }
             });
 
-            /*if( isIE8 ){
-              var filter = false;
-              if (typeof videoContentArray === 'undefined') return;
-              for(var i=0; i<videoContentArray.length; i++)
-              {
-                if(videoContentArray[i].section == levelArray[0])
-                {
-                  if (!filter) { filter = [] }
-                  for(var j=0; j<videoContentArray[i].video.length; j++){
-                    filter.push(videoContentArray[i].video[j]);
-                  }
-                }
-              }
-
-              $('<div id="video_'+ $(this).index() +'_replace">').appendTo('#video_'+$(this).index());
-              var videoPath = filter[$(this).index()].path.replace('embed', 'v');
-              var params = { allowScriptAccess: "always" };
-              var atts = { id: 'player_'+ $(this).index() };
-              var destinationDiv = 'video_'+ $(this).index() +'_replace';
-              swfobject.embedSWF(videoPath+"?enablejsapi=1&playerapiid=ytplayer&version=3&rel=0", destinationDiv, "701", "394", "8", null, null, params, atts);
-            }*/
-            //console.log('index = '+slide_index);
             $('#embed-video-container div').eq(slide_index).css({'visibility':'visible'/*, 'text-indent':'0'*/});
-            /*if($('#embed-video-container>div>iframe').eq(slide_index).attr("src")===""){
-              $('#embed-video-container>div>iframe').attr('src',video_arr[slide_index]);
-            }*/
 
             evt.stopPropagation();
            });
@@ -334,7 +316,7 @@ var Roots = {
         }
 
         //init video popup only if it's later than IE8
-        if(!($('html').hasClass('oldie'))){
+        if(!isIE){
 
           //if there're more than 3 video, make a carousel
           if($('#video-carousel div').length>3){
@@ -393,15 +375,6 @@ var Roots = {
          //add icon to factsheet link
          $('.factsheet-link').append('<i class="fa fa-file-text"></i>');
 
-         /*$('.note-container').localScroll({offset:-($('.navbar').height())});*/
-
-         /*var mobile_search_field = $('.navbar-collapse .search-field');
-         $(mobile_search_field).attr("placeholder","Search");
-         $(mobile_search_field).focus(function(){
-            if((this).text()==="Search"){
-              (this).text("");
-            }
-         });*/
         $('.video-banner-container').css('margin-top',$('.navbar-default').height()+'px');
 
         //init the video popup
