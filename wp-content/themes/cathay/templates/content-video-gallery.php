@@ -32,7 +32,7 @@
     </div>
   </div>
 </div>
-
+<a name="people"></a>
 <h2>Stories from Our People</h2>
 <p>The videos below are stories told by Cathay Pacific people on how they have integrated sustainability elements into their personal day-to-day job.</p>
 <h4>Community Investment</h4>
@@ -252,8 +252,8 @@
   <div class="col-sm-6">
     <div class="thumbnail">
     <div class="gallery-img-container">
-      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L4oap7d77O0?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&index=7"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_9_thumb.jpg" /></a>
-      <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/L4oap7d77O0?autoplay=1&amp;rel=0&list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&index=7">view video</a>
+      <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L4oap7d77O0?autoplay=1&amp;rel=0"><img class="img-responsive" src="<?=get_stylesheet_directory_uri()?>/assets/img/thumb/our_people_video_9_thumb.jpg" /></a>
+      <a class="various fancybox.iframe btn-gallery-play" href="http://www.youtube.com/embed/L4oap7d77O0?autoplay=1&amp;rel=0">view video</a>
       </div>
       <div class="caption">
         <h3>Meet Our Cadets and Pilots</h3>

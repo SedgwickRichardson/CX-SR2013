@@ -26,7 +26,7 @@ var Roots = {
 
       /*var isIE8 = $(browser).msie && +$(browser).version === 8;*/
       var isIE8 = false;
-      var site_url = "http://downloads.cathaypacific.com/cx/aboutus/sd/2013";
+      var site_url = "http://cx-sr2013.sedgwick-richardson.hk";
 
       if($("html").hasClass("ie8")){
         isIE8 = true;
@@ -140,9 +140,9 @@ var Roots = {
 
         var newHeight;
 
-        //now assume max height of carousel is 190px
+        //now assume max height of carousel is 210px
         if($('#video-carousel-container').length>0){
-          newHeight = window_height - 190 - parseInt($('#video-carousel-container').css('margin-bottom'),10) - parseInt($('#video-popup').css('padding-top'),10) - parseInt($('#video-popup').css('padding-bottom'),10) - $('#btn-close-video-popup').height();
+          newHeight = window_height - 210 - parseInt($('#video-carousel-container').css('margin-bottom'),10) - parseInt($('#video-popup').css('padding-top'),10) - parseInt($('#video-popup').css('padding-bottom'),10) - $('#btn-close-video-popup').height();
         }
         else{
           newHeight = window_height - parseInt($('#video-popup').css('padding-top'),10) - parseInt($('#video-popup').css('padding-bottom'),10) - $('#btn-close-video-popup').height();

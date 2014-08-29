@@ -11,9 +11,9 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'ec7322d3566bc80506d6f4a6d48e9a5a');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '340dd7cf1bab352bb7d2881c819a3d1e');
   wp_enqueue_style('font_awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', false, '90912b55a3d6b2070ca68c801a5ef6bb');
-  wp_enqueue_script('web_font','http://fast.fonts.net/jsapi/4822f06a-5741-4e82-ac28-45e4b555fd56.js');
+/*  wp_enqueue_script('web_font','http://fast.fonts.net/jsapi/4822f06a-5741-4e82-ac28-45e4b555fd56.js');*/
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
   // It's kept in the header instead of footer to avoid conflicts with plugins.
@@ -30,7 +30,7 @@ function roots_scripts() {
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.7.0.min.js', array(), null, false);
   wp_register_script('respond', '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js', array(), null, false);
   wp_register_script('stellar', get_template_directory_uri() . '/assets/js/vendor/stellar.min.js', array(), true);
-  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), 'b321ae93449e9c405eaf19d1537bd67b', true);
+  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '0f2811187378575600ede28bc3057240', true);
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('stellar');
