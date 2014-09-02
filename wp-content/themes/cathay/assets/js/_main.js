@@ -35,7 +35,7 @@ var Roots = {
       else{
         isIE = false;
       }
-      console.log("isIE = "+isIE);
+      //console.log("isIE = "+isIE);
 
       if($("html").hasClass("ie8")){
         isIE8 = true;
@@ -433,7 +433,7 @@ var Roots = {
           $(this).parent().children('p').animate({width:"30px"},300,function(){
             //console.log("2");
             $(this).parent().fadeOut('300',function(){
-              console.log('prevCounter:'+prevCounter+' counter:'+counter);
+              //console.log('prevCounter:'+prevCounter+' counter:'+counter);
               $(".overlay").addClass(colorArray[counter]).removeClass(colorArray[prevCounter]);
 
 
@@ -620,11 +620,11 @@ var Roots = {
             if($(this).parent().is('.sectionTitleDivContainer')){//if it's the parent checkbox
                if($(this).is(':checked')){
                 $(this).parent().siblings('.expandContentLargeContent').find('input').prop('checked', true);
-                console.log('parent checked');
+                //console.log('parent checked');
                }
                else{
                 $(this).parent().siblings('.expandContentLargeContent').find('input').prop('checked', false);
-                console.log('parent unchecked');
+                //console.log('parent unchecked');
                }
             }
             else{//if it's the child checkbox
