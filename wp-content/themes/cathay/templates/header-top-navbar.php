@@ -23,7 +23,6 @@
               wp_nav_menu(array('theme_location' => 'utility_menu', 'menu_class' => 'nav navbar-nav','depth' => 1));
             endif;
         ?>
-        <a href="<?php echo home_url(); ?>/search-result/">search</a>
         <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?> <span>Making the connection</span></a>
       </div>
     </div>

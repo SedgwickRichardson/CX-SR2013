@@ -1,4 +1,4 @@
-<form role="search" id="cse-search-box" class="search-form form-inline" action="<?=site_url()?>/search-result/" >
+<form role="search" id="cse-search-box" class="search-form form-inline" action="<?=site_url()?>/search-result/index.html" >
 <div class="input-group">
 	<input type="hidden" name="cx" value="003050160993696772205:jikybs9hxmk" />
 	<input type="hidden" name="cof" value="FORID:9;NB:1" />
