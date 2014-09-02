@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       <div class="col-xs-9 col-sm-3">
-        <a class="top-logo" href="<?php echo home_url(); ?>">Cathay Pacific</a>
+        <a class="top-logo" href="http://www.cathaypacific.com/" target="_blank">Cathay Pacific</a>
         <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?><span>Making the connection</span></a>
       </div>
       <div class="col-xs-9 col-sm-9 visible-sm visible-md visible-lg utility-menu-container clearfix">
@@ -23,6 +23,7 @@
               wp_nav_menu(array('theme_location' => 'utility_menu', 'menu_class' => 'nav navbar-nav','depth' => 1));
             endif;
         ?>
+        <a href="http://cx-sr2013.local.com/search-result/">search</a>
         <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?> <span>Making the connection</span></a>
       </div>
     </div>

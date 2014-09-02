@@ -24,7 +24,7 @@
     	<li><a href="<?=site_url();?>/contact-us">Contact us</a></li>
     	<li><a href="<?=site_url();?>/sitemap">Sitemap</a></li>
     </ul>
-    <p class="copyright">Copyright &copy; <?php echo date('Y'); ?> <a href="http://www.cathaypacific.com/" target="_blank">Cathay Pacific</a>. All Right reserved.</p>
+    <p class="copyright">Copyright &copy; <?php echo date('Y'); ?> <a href="http://www.cathaypacific.com/" target="_blank">Cathay Pacific Airways Limited 國泰航空有限公司</a>. All Right reserved.</p>
   </div>
 </footer>
 

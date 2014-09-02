@@ -26,7 +26,7 @@ var Roots = {
 
       /*var isIE8 = $(browser).msie && +$(browser).version === 8;*/
       var isIE8 = false;
-      var site_url = "http://cx-sr2013.sedgwick-richardson.hk";
+      var gallery_url = "http://downloads.cathaypacific.com/cx/aboutus/sd/2013/resources/index.html";
       var isIE;
       var msie = window.navigator.userAgent.indexOf("MSIE ");
       if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)){
@@ -364,7 +364,7 @@ var Roots = {
         }
         else{
           //if it's old browser, direct user to video gallery page
-          $('.btn-video-watch,.btn-video-play').attr("href",site_url+"/resources/video-gallery/");
+          $('.btn-video-watch,.btn-video-play').attr("href",gallery_url);
         }
 
         /*----------------------end init video panel-----------------------*/
