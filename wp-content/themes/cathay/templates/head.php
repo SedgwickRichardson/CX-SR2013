@@ -13,8 +13,6 @@
 
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>">
   <!--[if lte IE 8]>
-    <script type="text/javascript">
-    isIE8 = true;
-	</script>
+    <link rel="stylesheet" href="<?php bloginfo('template_url')?>/assets/css/ie8.css" type="text/css" />
   <![endif]-->
 </head>
