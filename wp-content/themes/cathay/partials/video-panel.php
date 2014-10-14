@@ -9,8 +9,8 @@
 <!-- ------------------Making the Connection--------------------- -->
   <div class="desktop-video-container hidden-xs visible-sm visible-md visible-lg">
     <div id="embed-video-container">
-      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/vQNNUfJCumg?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
-      <div id="video_1" style=" z-index: 999;"><iframe id="player_1" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/fnZpypJQQzc?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/vQNNUfJCumg?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_1" style=" z-index: 999;"><iframe id="player_1" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/fnZpypJQQzc?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
     </div>
     <div id="video-carousel-container">
     <a class="slider-arrow slider-arrow-prev" id="video-carousel-prev" href="javascript:;">Previous</a>
@@ -49,7 +49,7 @@
         <div class="caption">
           <h3>Working Toward a Sustainable Future</h3>
           <!-- <p>Mark Watson, Head of Environmental Affairs</p> -->
-          <a href="https://www.youtube.com/watch?v=fnZpypJQQzc" target="_blank">Watch video</a>
+          <a href="http://www.youtube.com/watch?v=fnZpypJQQzc" target="_blank">Watch video</a>
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@
 <!-- ------------------Safety--------------------- -->
   <div class="desktop-video-container">
     <div id="embed-video-container">
-      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/rqZ3oWJ1dr8?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/rqZ3oWJ1dr8?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
     </div>
   </div>
   <a href="javascript:;" id="btn-close-video-popup">Close</a>
@@ -79,7 +79,7 @@
 <!-- ------------------Climate change--------------------- -->
   <div class="desktop-video-container">
     <div id="embed-video-container">
-      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/C_Q9YEgAXYo?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/C_Q9YEgAXYo?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
     </div>
   </div>
   <a href="javascript:;" id="btn-close-video-popup">Close</a>
@@ -91,7 +91,7 @@
 <!-- ------------------Waste management--------------------- -->
   <div class="desktop-video-container">
     <div id="embed-video-container">
-      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/BezF1LljE4Y?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/BezF1LljE4Y?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
     </div>
   </div>
   <a href="javascript:;" id="btn-close-video-popup">Close</a>
@@ -103,7 +103,7 @@
 <!-- ------------------Sustainable sourcing--------------------- -->
   <div class="desktop-video-container">
     <div id="embed-video-container">
-      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/dfLuQlZv5JI?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/dfLuQlZv5JI?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
     </div>
   </div>
   <a href="javascript:;" id="btn-close-video-popup">Close</a>
@@ -115,7 +115,7 @@
 <!-- ------------------Biodiversity--------------------- -->
   <div class="desktop-video-container">
     <div id="embed-video-container">
-      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/nmRhCZDvjQs?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/nmRhCZDvjQs?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
     </div>
   </div>
   <a href="javascript:;" id="btn-close-video-popup">Close</a>
@@ -127,14 +127,14 @@
 <!-- ------------------our people--------------------- -->
   <div class="desktop-video-container hidden-xs visible-sm visible-md visible-lg">
     <div id="embed-video-container">
-      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/h8chpOI59VA?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
-      <div id="video_1" style=" z-index: 999;"><iframe id="player_1" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/fpW3Yewh6dI?list=PLJygCojJ69v3lF3Y2U8KDQuubl3zxEGD5&feature=c4-overview-vl&enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
-      <div id="video_2" style=" z-index: 999;"><iframe id="player_2" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/0ndu54A7Mcc?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
-      <div id="video_3" style=" z-index: 999;"><iframe id="player_3" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/-N38ccok2sI?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
-      <div id="video_4" style=" z-index: 999;"><iframe id="player_4" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/L4oap7d77O0?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
-      <div id="video_5" style=" z-index: 999;"><iframe id="player_5" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/QGEhidjLrI8?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
-      <div id="video_6" style=" z-index: 999;"><iframe id="player_6" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/HTHkzfTPSkc?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
-      <div id="video_7" style=" z-index: 999;"><iframe id="player_7" class="ytplayer" width="839" height="472" src="//www.youtube.com/embed/aE1KUZUPi60?list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_0" style=" z-index: 999;"><iframe id="player_0" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/h8chpOI59VA?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_1" style=" z-index: 999;"><iframe id="player_1" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/fpW3Yewh6dI?list=PLJygCojJ69v3lF3Y2U8KDQuubl3zxEGD5&feature=c4-overview-vl&enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_2" style=" z-index: 999;"><iframe id="player_2" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/0ndu54A7Mcc?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_3" style=" z-index: 999;"><iframe id="player_3" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/-N38ccok2sI?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_4" style=" z-index: 999;"><iframe id="player_4" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/L4oap7d77O0?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_5" style=" z-index: 999;"><iframe id="player_5" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/QGEhidjLrI8?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_6" style=" z-index: 999;"><iframe id="player_6" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/HTHkzfTPSkc?enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
+      <div id="video_7" style=" z-index: 999;"><iframe id="player_7" class="ytplayer" width="839" height="472" src="http://www.youtube.com/embed/aE1KUZUPi60?list=PLJygCojJ69v0H3ynbLPOWQVSPv4T8VVOp&enablejsapi=1&modestbranding=1&showinfo=0&rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe></div>
     </div>
     <div id="video-carousel-container">
     <a class="slider-arrow slider-arrow-prev" id="video-carousel-prev" href="javascript:;">Previous</a>

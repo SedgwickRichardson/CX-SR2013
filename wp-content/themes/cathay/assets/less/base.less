@@ -88,7 +88,7 @@ h3 {
   font-size: 17px;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-transform: capitalize; 
+  /*text-transform: capitalize; */
   em,i{
     font-family:'Myriad W01 SmBd It';
   }
@@ -342,6 +342,7 @@ h5{
       -webkit-overflow-scrolling: touch;
       margin-bottom: 0;
       border-bottom: 5px solid #8a8a8a;
+      background-color: #fbfbfb;
 
       h3{
         margin: 0;
@@ -364,11 +365,21 @@ h5{
           border-top: 3px solid #000;
         }
         tr{
-          td,th{font-size: 95%;}
+          td,th{font-size: 95%;border-left: 3px solid #fbfbfb;}
+          td{
+            strong{
+              font-family: 'Myriad W01 SmBd';
+              font-weight: normal;
+            }
+            p{
+              font-size: 100%;
+
+            }
+          }
         }
         .col2,.col3,.col4,.col5{
-          background-color: #5d5d5d;
-          color: #fff;
+          background-color: #b1b2b3;
+          color: #202020;
         }
       }
     }
@@ -838,7 +849,7 @@ body#child-of-making-the-connection{
       }
 
       .commitmentsBoxContainer{
-        background-color: #e8edee;
+        /*background-color: #e8edee;*/
         /*border-left: 1px solid @climate-blue;
         border-right: 1px solid @climate-blue;*/
         border-top: none;
@@ -854,7 +865,7 @@ body#child-of-making-the-connection{
 
         tr{
           th,td{
-            border-left: 3px solid #e8edee;
+            /*border-left: 3px solid #e8edee;*/
           }
 
           td{
@@ -940,7 +951,7 @@ body#child-of-making-the-connection{
       }
 
       .commitmentsBoxContainer{
-        background-color: #F6EBEB;
+        /*background-color: #F6EBEB;*/
         /*border-left: 1px solid @climate-blue;
         border-right: 1px solid @climate-blue;*/
         border-top: none;
@@ -962,7 +973,7 @@ body#child-of-making-the-connection{
 
           tr{
             th,td{
-              border-left: 3px solid #F6EBEB;
+              /*border-left: 3px solid #F6EBEB;*/
             }
 
             td{
@@ -991,7 +1002,7 @@ body#child-of-making-the-connection{
       }
 
       .commitmentsBoxContainer{
-        background-color: #f6f4e9;
+        /*background-color: #f6f4e9;*/
         /*border-left: 1px solid @safety-green;
         border-right: 1px solid @safety-green;*/
         border-top: none;
@@ -1006,7 +1017,7 @@ body#child-of-making-the-connection{
 
         tr{
           th,td{
-            border-left: 3px solid #f6f4e9;
+            /*border-left: 3px solid #f6f4e9;*/
           }
 
           td{
@@ -1089,7 +1100,7 @@ body#child-of-making-the-connection{
       }
 
       .commitmentsBoxContainer{
-        background-color: #EDF1FA;
+        /*background-color: #EDF1FA;*/
         /*border-left: 1px solid @climate-blue;
         border-right: 1px solid @climate-blue;*/
         border-top: none;
@@ -1105,7 +1116,7 @@ body#child-of-making-the-connection{
 
         tr{
           th,td{
-            border-left: 3px solid #EDF1FA;
+            /*border-left: 3px solid #EDF1FA;*/
           }
 
           td{
@@ -1181,7 +1192,7 @@ body#child-of-making-the-connection{
       }
 
       .commitmentsBoxContainer{
-        background-color: #fbfbfb;
+        /*background-color: #fbfbfb;*/
         /*border-left: 1px solid @waste-green;
         border-right: 1px solid @waste-green;*/
         border-top: none;
@@ -1201,7 +1212,7 @@ body#child-of-making-the-connection{
 
         tr{
           th,td{
-            border-left: 3px solid #fbfbfb;
+            /*border-left: 3px solid #fbfbfb;*/
           }
 
           th{
@@ -1288,7 +1299,7 @@ body#child-of-making-the-connection{
       }
 
       .commitmentsBoxContainer{
-        background-color: #fbfbfb;
+        /*background-color: #fbfbfb;*/
         /*border-left: 1px solid @sourcing-brown;
         border-right: 1px solid @sourcing-brown;*/
         border-top: none;
@@ -1308,7 +1319,7 @@ body#child-of-making-the-connection{
 
         tr{
           th,td{
-            border-left: 3px solid #fbfbfb;
+            /*border-left: 3px solid #fbfbfb;*/
           }
 
           th{
@@ -1415,7 +1426,7 @@ body#child-of-making-the-connection{
       }
 
       .commitmentsBoxContainer{
-        background-color: #fbfbfb;
+        /*background-color: #fbfbfb;*/
         /*border-left: 1px solid @bio-purple;
         border-right: 1px solid @bio-purple;*/
         border-top: none;
@@ -1435,7 +1446,7 @@ body#child-of-making-the-connection{
 
         tr{
           th,td{
-            border-left: 3px solid #fbfbfb;
+            /*border-left: 3px solid #fbfbfb;*/
           }
 
           th{
@@ -1840,6 +1851,8 @@ body#child-of-making-the-connection{
 }
 
 .btn-prev-page,.btn-next-page{
+  text-decoration: none;
+  
   i{
     color: #7a7a7a;
   }

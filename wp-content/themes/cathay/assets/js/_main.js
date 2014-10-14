@@ -37,6 +37,11 @@ var Roots = {
       }
       //console.log("isIE = "+isIE);
 
+      var isSafari = false;
+      if (navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Chrome') === -1){
+        isSafari = true;
+      }
+
       if($("html").hasClass("ie8")){
         isIE8 = true;
       }
@@ -250,6 +255,11 @@ var Roots = {
         });
       }
 
+      //put the codes here to fix the white gap in safari
+      $(window).on('load', function() {
+        $('.video-banner-container').css('margin-top',$('.navbar-default').height()+'px');
+      });
+
       //fix the mobile menu scrolling problem
       $(document).ready(function(){
          setMobileMenu();
@@ -263,20 +273,22 @@ var Roots = {
          $('content-container').localScroll({hash:true,offset:-($('.navbar').height())});
 
          //fix the left menu
-        if($('.video-banner-container img').length>0){
-          if(window.innerWidth<1200){
-            $("#sidebar").sticky({topSpacing:130,getWidthFrom:".sidebar",responsiveWidth: true});
+         if(!isSafari){
+          if($('.video-banner-container img').length>0){
+            if(window.innerWidth<1200){
+              $("#sidebar").sticky({topSpacing:130,getWidthFrom:".sidebar",responsiveWidth: true});
+            }
+            else{
+              $("#sidebar").sticky({topSpacing:120,getWidthFrom:".sidebar",responsiveWidth: true});
+            }
           }
           else{
-            $("#sidebar").sticky({topSpacing:120,getWidthFrom:".sidebar",responsiveWidth: true});
-          }
-        }
-        else{
-          if(window.innerWidth>1200){
-            $("#sidebar").sticky({topSpacing:120,getWidthFrom:".sidebar",responsiveWidth: true});
-          }
-          else{
-            $("#sidebar").sticky({topSpacing:140,getWidthFrom:".sidebar",responsiveWidth: true});
+            if(window.innerWidth>1200){
+              $("#sidebar").sticky({topSpacing:120,getWidthFrom:".sidebar",responsiveWidth: true});
+            }
+            else{
+              $("#sidebar").sticky({topSpacing:140,getWidthFrom:".sidebar",responsiveWidth: true});
+            }
           }
         }
 
@@ -375,7 +387,7 @@ var Roots = {
          //add icon to factsheet link
          $('.factsheet-link').append('<i class="fa fa-file-text"></i>');
 
-        $('.video-banner-container').css('margin-top',$('.navbar-default').height()+'px');
+        /*$('.video-banner-container').css('margin-top',$('.navbar-default').height()+'px');*/
 
         //init the video popup
         $('.fancybox-media').fancybox({

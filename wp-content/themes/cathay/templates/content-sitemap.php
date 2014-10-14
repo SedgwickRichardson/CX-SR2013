@@ -3,7 +3,7 @@
 <div class="content-container">
 <div class="row">
   <div class="col-sm-3 sitemapDiv businessMap">
-    <p class="sectionHeader">Sustainability Matters</p>
+    <p class="sectionHeader">Making the Connection</p>
     <ul>
       <li><a href="<?=site_url()?>/making-the-connection/message-from-the-chief-executive/">Message from the Chief Executive</a></li>
       <li><a href="<?=site_url()?>/making-the-connection/making-connection/">Making the Connection</a>
@@ -80,7 +80,7 @@
     <p class="sectionHeader">Our People</p>
     <ul>
       <li><a href="<?=site_url()?>/our-people/people-matter/">Our People Matter</a></li>
-      <li><a href="<?=site_url()?>/our-people/updates-2013/">Updates for 2012</a></li>
+      <li><a href="<?=site_url()?>/our-people/updates-2013/">Updates for 2013</a></li>
       <li><a href="<?=site_url()?>/our-people/stakeholder-views/">Stakeholder Views</a></li>
     </ul>
   </div>
