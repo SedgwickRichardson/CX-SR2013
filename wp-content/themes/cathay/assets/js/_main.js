@@ -494,7 +494,7 @@ var Roots = {
             progress_offset += 0;
           });
 
-          var sd_tween = TweenMax.from($('#sd-img'), 1, {autoAlpha: 0, marginLeft: -300});
+          var sd_tween = TweenMax.from($('#sd-img'), 1, {autoAlpha: 0, left: -300});
 
           new ScrollScene({triggerElement: "#section-strategy", duration: 400, offset: -200})
             .setTween(sd_tween)
